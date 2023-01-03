@@ -17,7 +17,6 @@ flowchart LR
   gs(Grype Scan) --> pr(Push Reports)
   sbom(SBOM) --> pr(Push Reports)
 
-
 ```
 
 ## Chains in Security Matrix
