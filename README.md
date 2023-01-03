@@ -2,24 +2,25 @@
 
 ```mermaid
 
-flowchart LR
+flowchart TB
+  A([AssetMantle]) -->|release| cib(Build daemon)
+  B([Axelar]) -->|release| cib
+  C([Osmosis]) -->|release| cib
+  D([...]) -->|release| cib
 
-  A([AssetMantle]) -->|version release| cib(Build daemon)
-  B([Axelar]) -->|version release| cib(Build daemon)
-  C([...]) -->|version release| cib(Build daemon)
-  D([...]) -->|version release| cib(Build daemon)
+  bdu(Vulnerability Database Update) -->|triggers| ts(Trivy Vulnerability Scan)
+  bdu -->|triggers| gs(Grype Vulnerability Scan)
+  cib --> ts
+  cib --> gs
+  cib --> sbom(SBOM Scan)
 
- cib(Build daemon) --> ts(Trivy Scan)
- cib(Build daemon) --> gs(Grype Scan)
- cib(Build daemon) --> sbom(SBOM)
-
-  ts(Trivy Scan) --> pr(Push Reports)
-  gs(Grype Scan) --> pr(Push Reports)
-  sbom(SBOM) --> pr(Push Reports)
+  ts --> pr(Push Reports)
+  gs --> pr
+  sbom --> pr
 
 ```
 
-## Chains in Security Matrix
+## Chains as of now
 
 * [assetmantle](https://github.com/AssetMantle/node)
 
