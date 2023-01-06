@@ -22,7 +22,7 @@ flowchart TB
 
 ## Chains as of now
 
-* [assetmantle](https://github.com/AssetMantle/node)
+* [assetmantle](https://github.com/assetmantle/node)
 
 * [axelar](https://github.com/axelarnetwork/axelar-core)
 
@@ -41,6 +41,8 @@ flowchart TB
 * [comdex](https://github.com/comdex-official/comdex)
 
 * [gaia](https://github.com/cosmos/gaia)
+
+* [ics](https://github.com/cosmos/interchain-security)
 
 * [crescent](https://github.com/crescent-network/crescent)
 
@@ -64,15 +66,23 @@ flowchart TB
 
 * [ibc-go-simd](https://github.com/cosmos/ibc-go)
 
+* [icad](https://github.com/cosmos/interchain-accounts-demo)
+
+* [icqd](https://github.com/quasar-finance/interchain-query-demo)
+
 * [irisnet](https://github.com/irisnet/irishub)
 
 * [juno](https://github.com/CosmosContracts/juno)
 
 * [kichain](https://github.com/KiFoundation/ki-tools)
 
+* [kujira](https://github.com/Team-Kujira/core)
+
 * [likecoin](https://github.com/likecoin/likecoin-chain)
 
 * [lumnetwork](https://github.com/lum-network/chain)
+
+* [nomic](https://github.com/nomic-io/nomic)
 
 * [neutron](https://github.com/neutron-org/neutron)
 
@@ -81,6 +91,8 @@ flowchart TB
 * [onomy](https://github.com/onomyprotocol/onomy)
 
 * [regen](https://github.com/regen-network/regen-ledger)
+
+* [rizon](https://github.com/rizon-world/rizon)
 
 * [sentinel](https://github.com/sentinel-official/hub)
 
