@@ -1,0 +1,43 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:88a235ce-22d2-4293-9635-e06ca9731746",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2023-01-12T14:49:39+00:00",
+    "tools": [
+      {
+        "vendor": "aquasecurity",
+        "name": "trivy",
+        "version": "0.36.1"
+      }
+    ],
+    "component": {
+      "bom-ref": "d9a4e365-13f4-4535-90f4-f27eed45bf8d",
+      "type": "container",
+      "name": "tofnd_v0.10.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        },
+        {
+          "name": "aquasecurity:trivy:ImageID",
+          "value": "sha256:4390f3399c8aa503eb36f90bca9087b3b3a7121d8ffc46fdf536ba62d905a682"
+        },
+        {
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:5112bde15fd80b9d7606ec5b7f5056461cf9e8093e2669e74f094c43474f7289"
+        }
+      ]
+    }
+  },
+  "components": null,
+  "dependencies": [
+    {
+      "ref": "d9a4e365-13f4-4535-90f4-f27eed45bf8d",
+      "dependsOn": null
+    }
+  ],
+  "vulnerabilities": []
+}
