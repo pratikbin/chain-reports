@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:8e720a86-8636-461d-b7ea-6a258ef9d1b6",
+  "serialNumber": "urn:uuid:3fcaebdd-5596-49ed-addf-8acff4561c38",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-13T01:54:15+00:00",
+    "timestamp": "2023-01-13T07:00:58+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "81887197-33ad-4f9f-9115-41471a7194a9",
+      "bom-ref": "cbadc557-c623-4d4a-9d4a-ef66e6d24c99",
       "type": "container",
       "name": "rizon_v0.4.1",
       "properties": [
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "bom-ref": "91a4e283-c941-4119-ba6e-a8684f2820a2",
+      "bom-ref": "318bed1b-4f60-496d-b955-a23e9aa53e21",
       "type": "application",
       "name": "bin/rizond",
       "properties": [
@@ -2130,7 +2130,7 @@
   ],
   "dependencies": [
     {
-      "ref": "91a4e283-c941-4119-ba6e-a8684f2820a2",
+      "ref": "318bed1b-4f60-496d-b955-a23e9aa53e21",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2234,9 +2234,9 @@
       ]
     },
     {
-      "ref": "81887197-33ad-4f9f-9115-41471a7194a9",
+      "ref": "cbadc557-c623-4d4a-9d4a-ef66e6d24c99",
       "dependsOn": [
-        "91a4e283-c941-4119-ba6e-a8684f2820a2"
+        "318bed1b-4f60-496d-b955-a23e9aa53e21"
       ]
     }
   ],
