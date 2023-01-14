@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:787f09b4-53c2-4623-97e1-cceef9d9f4b4",
+  "serialNumber": "urn:uuid:b025332a-3d7a-4983-98fa-1d399c24f28e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-13T19:33:54+00:00",
+    "timestamp": "2023-01-14T01:34:30+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "67a4ca6a-35f0-4b3b-95d5-d7c38b003d19",
+      "bom-ref": "efd4c709-b4a3-4e17-8b0f-ad0cbea30b08",
       "type": "container",
       "name": "ics_v0.2.1",
       "properties": [
@@ -2033,7 +2033,7 @@
       ]
     },
     {
-      "bom-ref": "cae3f464-f934-4ffe-8e36-8897f466a451",
+      "bom-ref": "bb56aa9d-065a-4c0a-a000-c53132b5ae03",
       "type": "application",
       "name": "bin/interchain-security-pd",
       "properties": [
@@ -2048,7 +2048,7 @@
       ]
     },
     {
-      "bom-ref": "d4ce0757-df17-428c-b93d-94a0b27264db",
+      "bom-ref": "13f7cab0-a433-4d73-956f-e285abe039bd",
       "type": "application",
       "name": "bin/interchain-security-cd",
       "properties": [
@@ -2065,7 +2065,7 @@
   ],
   "dependencies": [
     {
-      "ref": "cae3f464-f934-4ffe-8e36-8897f466a451",
+      "ref": "bb56aa9d-065a-4c0a-a000-c53132b5ae03",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2165,7 +2165,7 @@
       ]
     },
     {
-      "ref": "d4ce0757-df17-428c-b93d-94a0b27264db",
+      "ref": "13f7cab0-a433-4d73-956f-e285abe039bd",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2263,10 +2263,10 @@
       ]
     },
     {
-      "ref": "67a4ca6a-35f0-4b3b-95d5-d7c38b003d19",
+      "ref": "efd4c709-b4a3-4e17-8b0f-ad0cbea30b08",
       "dependsOn": [
-        "cae3f464-f934-4ffe-8e36-8897f466a451",
-        "d4ce0757-df17-428c-b93d-94a0b27264db"
+        "bb56aa9d-065a-4c0a-a000-c53132b5ae03",
+        "13f7cab0-a433-4d73-956f-e285abe039bd"
       ]
     }
   ],
