@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:05d376e1-b519-4f38-9691-86a9869fbae0",
+  "serialNumber": "urn:uuid:25c4310d-6e97-45e4-93c8-7bb0408a4bec",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-15T13:10:27+00:00",
+    "timestamp": "2023-01-15T19:11:02+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "deb6c33f-edf7-48bc-862f-25330944b929",
+      "bom-ref": "6baa5599-cf91-4a4b-86d4-9dcb68b1d1b5",
       "type": "container",
       "name": "assetmantle_v0.3.0",
       "properties": [
@@ -1987,7 +1987,7 @@
       ]
     },
     {
-      "bom-ref": "fdd3cd30-b387-4b03-adc7-3803c1e2edcf",
+      "bom-ref": "5ec1623d-aa70-4000-ad63-b21322f10a89",
       "type": "application",
       "name": "bin/mantleNode",
       "properties": [
@@ -2004,7 +2004,7 @@
   ],
   "dependencies": [
     {
-      "ref": "fdd3cd30-b387-4b03-adc7-3803c1e2edcf",
+      "ref": "5ec1623d-aa70-4000-ad63-b21322f10a89",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2102,9 +2102,9 @@
       ]
     },
     {
-      "ref": "deb6c33f-edf7-48bc-862f-25330944b929",
+      "ref": "6baa5599-cf91-4a4b-86d4-9dcb68b1d1b5",
       "dependsOn": [
-        "fdd3cd30-b387-4b03-adc7-3803c1e2edcf"
+        "5ec1623d-aa70-4000-ad63-b21322f10a89"
       ]
     }
   ],
