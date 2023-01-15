@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:d90dcd90-274e-45b6-9abe-8a33557f61d3",
+  "serialNumber": "urn:uuid:203c1803-d5ce-4126-a33e-e55095f61072",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-15T07:04:28+00:00",
+    "timestamp": "2023-01-15T13:09:16+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "bf806dcf-9f21-4c31-89ef-9e575a613c39",
+      "bom-ref": "5ab43e82-dcd6-4101-83a1-7e8bbceee4fa",
       "type": "container",
       "name": "decentr_v1.6.2",
       "properties": [
@@ -2071,7 +2071,7 @@
       ]
     },
     {
-      "bom-ref": "0073896d-168c-497c-85d9-dc5ad2f824d9",
+      "bom-ref": "55cdef72-326a-497d-a7bf-6add748112c2",
       "type": "application",
       "name": "bin/decentrd",
       "properties": [
@@ -2088,7 +2088,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0073896d-168c-497c-85d9-dc5ad2f824d9",
+      "ref": "55cdef72-326a-497d-a7bf-6add748112c2",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2190,9 +2190,9 @@
       ]
     },
     {
-      "ref": "bf806dcf-9f21-4c31-89ef-9e575a613c39",
+      "ref": "5ab43e82-dcd6-4101-83a1-7e8bbceee4fa",
       "dependsOn": [
-        "0073896d-168c-497c-85d9-dc5ad2f824d9"
+        "55cdef72-326a-497d-a7bf-6add748112c2"
       ]
     }
   ],
