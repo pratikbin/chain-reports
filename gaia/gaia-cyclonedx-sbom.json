@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:7eb4c616-9487-4ca4-a3c8-8cf415329540",
+  "serialNumber": "urn:uuid:aee3e86c-dd2b-4ee1-bc62-2fb197db853e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-15T19:22:15+00:00",
+    "timestamp": "2023-01-16T01:22:51+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "3fe2f6c3-0d1f-4eb4-8491-9c94d8390e0d",
+      "bom-ref": "a429cf29-2fd9-4d4e-bf03-0b4b8e647cdb",
       "type": "container",
       "name": "gaia_v7.1.0",
       "properties": [
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "bom-ref": "1549418a-5330-4441-80cd-557cf2796211",
+      "bom-ref": "1af66e40-db50-493d-9b46-e0a68884a1c5",
       "type": "application",
       "name": "bin/gaiad",
       "properties": [
@@ -2130,7 +2130,7 @@
   ],
   "dependencies": [
     {
-      "ref": "1549418a-5330-4441-80cd-557cf2796211",
+      "ref": "1af66e40-db50-493d-9b46-e0a68884a1c5",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2234,9 +2234,9 @@
       ]
     },
     {
-      "ref": "3fe2f6c3-0d1f-4eb4-8491-9c94d8390e0d",
+      "ref": "a429cf29-2fd9-4d4e-bf03-0b4b8e647cdb",
       "dependsOn": [
-        "1549418a-5330-4441-80cd-557cf2796211"
+        "1af66e40-db50-493d-9b46-e0a68884a1c5"
       ]
     }
   ],
