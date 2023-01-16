@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:b41d8064-ca6f-4fa3-a4e5-56928142d5c3",
+  "serialNumber": "urn:uuid:09a1e542-01f9-41ad-9c3e-e3142e98009f",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-16T07:24:16+00:00",
+    "timestamp": "2023-01-16T13:28:59+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "c47920ad-88ed-48c0-baff-a9d03ebc4c3d",
+      "bom-ref": "7deda128-2562-4d58-926f-81cd4e691e85",
       "type": "container",
       "name": "cronos_v0.8.3",
       "properties": [
@@ -2638,7 +2638,7 @@
       ]
     },
     {
-      "bom-ref": "615f97f1-9580-4804-82ae-feef242a7fcb",
+      "bom-ref": "b930fb1b-b6e7-443e-a1da-3c0506be16e8",
       "type": "application",
       "name": "bin/cronosd",
       "properties": [
@@ -2655,7 +2655,7 @@
   ],
   "dependencies": [
     {
-      "ref": "615f97f1-9580-4804-82ae-feef242a7fcb",
+      "ref": "b930fb1b-b6e7-443e-a1da-3c0506be16e8",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2784,9 +2784,9 @@
       ]
     },
     {
-      "ref": "c47920ad-88ed-48c0-baff-a9d03ebc4c3d",
+      "ref": "7deda128-2562-4d58-926f-81cd4e691e85",
       "dependsOn": [
-        "615f97f1-9580-4804-82ae-feef242a7fcb"
+        "b930fb1b-b6e7-443e-a1da-3c0506be16e8"
       ]
     }
   ],
