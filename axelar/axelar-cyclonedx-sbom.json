@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:77e60da9-d019-420a-a2aa-b89a54948138",
+  "serialNumber": "urn:uuid:cbe48a3e-66f4-46b4-9cca-0c08e300bbe9",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-17T07:20:19+00:00",
+    "timestamp": "2023-01-17T13:25:26+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "f97e8121-942e-41a7-8ab7-d82d2cf9289d",
+      "bom-ref": "eecdd29b-c029-453d-9dfa-7ad4b9d370bc",
       "type": "container",
       "name": "axelar_v0.29.1",
       "properties": [
@@ -2386,7 +2386,7 @@
       ]
     },
     {
-      "bom-ref": "6d08fa6b-6a54-442a-9619-7d5f22bd7cbb",
+      "bom-ref": "3c7777dd-b2e8-41be-ad76-c3a2c735bbb6",
       "type": "application",
       "name": "bin/axelard",
       "properties": [
@@ -2403,7 +2403,7 @@
   ],
   "dependencies": [
     {
-      "ref": "6d08fa6b-6a54-442a-9619-7d5f22bd7cbb",
+      "ref": "3c7777dd-b2e8-41be-ad76-c3a2c735bbb6",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2520,9 +2520,9 @@
       ]
     },
     {
-      "ref": "f97e8121-942e-41a7-8ab7-d82d2cf9289d",
+      "ref": "eecdd29b-c029-453d-9dfa-7ad4b9d370bc",
       "dependsOn": [
-        "6d08fa6b-6a54-442a-9619-7d5f22bd7cbb"
+        "3c7777dd-b2e8-41be-ad76-c3a2c735bbb6"
       ]
     }
   ],
