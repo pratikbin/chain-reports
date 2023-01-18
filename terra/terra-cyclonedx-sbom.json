@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:2837f962-e89a-4d55-bc47-ca0087748fb3",
+  "serialNumber": "urn:uuid:7aa95778-4b90-4f69-ad74-fce462201eca",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-18T14:03:51+00:00",
+    "timestamp": "2023-01-18T19:12:41+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "a1cfe8a2-15e0-498a-8da6-805ec0adc962",
+      "bom-ref": "80f347eb-3f3d-4cc2-a4e6-5ab62dd5c4d2",
       "type": "container",
       "name": "terra_v2.2.0",
       "properties": [
@@ -2197,7 +2197,7 @@
       ]
     },
     {
-      "bom-ref": "30a964db-9168-4280-b718-045e9587d375",
+      "bom-ref": "c5558b41-0faa-4f4a-a5ee-65f1c965a1ca",
       "type": "application",
       "name": "bin/terrad",
       "properties": [
@@ -2214,7 +2214,7 @@
   ],
   "dependencies": [
     {
-      "ref": "30a964db-9168-4280-b718-045e9587d375",
+      "ref": "c5558b41-0faa-4f4a-a5ee-65f1c965a1ca",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2322,9 +2322,9 @@
       ]
     },
     {
-      "ref": "a1cfe8a2-15e0-498a-8da6-805ec0adc962",
+      "ref": "80f347eb-3f3d-4cc2-a4e6-5ab62dd5c4d2",
       "dependsOn": [
-        "30a964db-9168-4280-b718-045e9587d375"
+        "c5558b41-0faa-4f4a-a5ee-65f1c965a1ca"
       ]
     }
   ],
