@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:9e44afb0-7fbe-4246-a520-1a1df85a121d",
+  "serialNumber": "urn:uuid:880d5312-9a4d-4a59-b77a-d19e1534e4b2",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-18T11:48:34+00:00",
+    "timestamp": "2023-01-18T14:05:32+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "0286b9d1-2516-41c1-b433-bbeb17296d6f",
+      "bom-ref": "3c3aaba3-35ea-4e5f-8fd5-8fa42e25b496",
       "type": "container",
       "name": "juno_v11.0.3",
       "properties": [
@@ -2155,7 +2155,7 @@
       ]
     },
     {
-      "bom-ref": "366b5cec-7703-4088-96d6-1d12714dfe47",
+      "bom-ref": "ba0a9b9d-8e90-438c-945b-ec9ab1fb52f1",
       "type": "application",
       "name": "bin/junod",
       "properties": [
@@ -2172,7 +2172,7 @@
   ],
   "dependencies": [
     {
-      "ref": "366b5cec-7703-4088-96d6-1d12714dfe47",
+      "ref": "ba0a9b9d-8e90-438c-945b-ec9ab1fb52f1",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2278,9 +2278,9 @@
       ]
     },
     {
-      "ref": "0286b9d1-2516-41c1-b433-bbeb17296d6f",
+      "ref": "3c3aaba3-35ea-4e5f-8fd5-8fa42e25b496",
       "dependsOn": [
-        "366b5cec-7703-4088-96d6-1d12714dfe47"
+        "ba0a9b9d-8e90-438c-945b-ec9ab1fb52f1"
       ]
     }
   ],
