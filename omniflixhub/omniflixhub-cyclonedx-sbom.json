@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:188f4b44-0968-445f-bbb7-86986ebe37a3",
+  "serialNumber": "urn:uuid:30287d06-701e-4dda-92fe-1cdd8df63d4d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-19T07:30:02+00:00",
+    "timestamp": "2023-01-19T13:21:02+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "d34fd72b-65a8-4908-b651-615bc5f55a24",
+      "bom-ref": "2e30d7a7-65f3-4dfe-9556-da8547ffa4bc",
       "type": "container",
       "name": "omniflixhub_v0.8.0",
       "properties": [
@@ -2197,7 +2197,7 @@
       ]
     },
     {
-      "bom-ref": "e2bfa499-4e90-4378-8de9-72d7080596f0",
+      "bom-ref": "18679f25-f5dc-4b01-8166-51251f93df53",
       "type": "application",
       "name": "bin/omniflixhubd",
       "properties": [
@@ -2214,7 +2214,7 @@
   ],
   "dependencies": [
     {
-      "ref": "e2bfa499-4e90-4378-8de9-72d7080596f0",
+      "ref": "18679f25-f5dc-4b01-8166-51251f93df53",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2322,9 +2322,9 @@
       ]
     },
     {
-      "ref": "d34fd72b-65a8-4908-b651-615bc5f55a24",
+      "ref": "2e30d7a7-65f3-4dfe-9556-da8547ffa4bc",
       "dependsOn": [
-        "e2bfa499-4e90-4378-8de9-72d7080596f0"
+        "18679f25-f5dc-4b01-8166-51251f93df53"
       ]
     }
   ],
