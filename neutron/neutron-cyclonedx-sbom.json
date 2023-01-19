@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:bfd57c32-5410-48f6-9af0-691d6717cc4c",
+  "serialNumber": "urn:uuid:b9a2aa7e-34de-4b95-9400-fa207da10593",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-19T07:40:47+00:00",
+    "timestamp": "2023-01-19T13:42:24+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "97e96cc0-5abb-4b60-a2a5-1ff80e7e2231",
+      "bom-ref": "4741d3ec-d62d-4deb-a1be-dd502838fb38",
       "type": "container",
       "name": "neutron_v0.1.1",
       "properties": [
@@ -2155,7 +2155,7 @@
       ]
     },
     {
-      "bom-ref": "dfc981ed-090a-405d-81d1-8f50c9c10afd",
+      "bom-ref": "87529dc3-43b0-496d-8bda-cebd13a9e142",
       "type": "application",
       "name": "bin/neutrond",
       "properties": [
@@ -2172,7 +2172,7 @@
   ],
   "dependencies": [
     {
-      "ref": "dfc981ed-090a-405d-81d1-8f50c9c10afd",
+      "ref": "87529dc3-43b0-496d-8bda-cebd13a9e142",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2278,9 +2278,9 @@
       ]
     },
     {
-      "ref": "97e96cc0-5abb-4b60-a2a5-1ff80e7e2231",
+      "ref": "4741d3ec-d62d-4deb-a1be-dd502838fb38",
       "dependsOn": [
-        "dfc981ed-090a-405d-81d1-8f50c9c10afd"
+        "87529dc3-43b0-496d-8bda-cebd13a9e142"
       ]
     }
   ],
