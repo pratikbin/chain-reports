@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:30050a47-7dc3-403c-b3f5-6c7739dd7a6d",
+  "serialNumber": "urn:uuid:fe069c66-695a-4e33-894d-01077a340f96",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-20T14:00:08+00:00",
+    "timestamp": "2023-01-20T19:24:30+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "8db275d4-4cc8-4bf5-8f24-e8bf6e9d27a4",
+      "bom-ref": "f4f28750-26e9-45b1-9d55-0764f824093c",
       "type": "container",
       "name": "ics_v.1.0.0-rc3",
       "properties": [
@@ -2117,7 +2117,7 @@
       ]
     },
     {
-      "bom-ref": "226cc5a8-9aa1-4c53-b742-f6314bc48af0",
+      "bom-ref": "bdb4ff97-143e-4126-bce4-cf2e6efe4289",
       "type": "application",
       "name": "bin/interchain-security-pd",
       "properties": [
@@ -2132,7 +2132,7 @@
       ]
     },
     {
-      "bom-ref": "7261ba33-d43d-4ead-95a5-bde4f81f8f61",
+      "bom-ref": "32f56b1f-85a0-4183-9182-757b29f3c80c",
       "type": "application",
       "name": "bin/interchain-security-cd",
       "properties": [
@@ -2149,7 +2149,7 @@
   ],
   "dependencies": [
     {
-      "ref": "226cc5a8-9aa1-4c53-b742-f6314bc48af0",
+      "ref": "bdb4ff97-143e-4126-bce4-cf2e6efe4289",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2253,7 +2253,7 @@
       ]
     },
     {
-      "ref": "7261ba33-d43d-4ead-95a5-bde4f81f8f61",
+      "ref": "32f56b1f-85a0-4183-9182-757b29f3c80c",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2355,10 +2355,10 @@
       ]
     },
     {
-      "ref": "8db275d4-4cc8-4bf5-8f24-e8bf6e9d27a4",
+      "ref": "f4f28750-26e9-45b1-9d55-0764f824093c",
       "dependsOn": [
-        "226cc5a8-9aa1-4c53-b742-f6314bc48af0",
-        "7261ba33-d43d-4ead-95a5-bde4f81f8f61"
+        "bdb4ff97-143e-4126-bce4-cf2e6efe4289",
+        "32f56b1f-85a0-4183-9182-757b29f3c80c"
       ]
     }
   ],
