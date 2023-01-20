@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:73be74ec-0777-4d79-909f-960144dae538",
+  "serialNumber": "urn:uuid:8dd733b5-c623-44bb-bef2-e6c612e057d2",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-20T07:50:04+00:00",
+    "timestamp": "2023-01-20T13:58:37+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "93c593e0-1163-49f8-bd09-b82a937d12c4",
+      "bom-ref": "a437ac43-79d2-455f-877c-3fbac30c8ca4",
       "type": "container",
       "name": "cronos_v1.0.2",
       "properties": [
@@ -3331,7 +3331,7 @@
       ]
     },
     {
-      "bom-ref": "ffda7054-f591-4dbf-9901-d554c56cf7fb",
+      "bom-ref": "0936fe70-3e9a-4315-968a-22a3b6c3f14f",
       "type": "application",
       "name": "bin/cronosd",
       "properties": [
@@ -3348,7 +3348,7 @@
   ],
   "dependencies": [
     {
-      "ref": "ffda7054-f591-4dbf-9901-d554c56cf7fb",
+      "ref": "0936fe70-3e9a-4315-968a-22a3b6c3f14f",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go@v0.104.0",
         "pkg:golang/cloud.google.com/go/compute@v1.7.0",
@@ -3510,9 +3510,9 @@
       ]
     },
     {
-      "ref": "93c593e0-1163-49f8-bd09-b82a937d12c4",
+      "ref": "a437ac43-79d2-455f-877c-3fbac30c8ca4",
       "dependsOn": [
-        "ffda7054-f591-4dbf-9901-d554c56cf7fb"
+        "0936fe70-3e9a-4315-968a-22a3b6c3f14f"
       ]
     }
   ],
