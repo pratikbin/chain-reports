@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:23ce8a07-63c7-4b17-a5ad-0b79d4212e7b",
+  "serialNumber": "urn:uuid:c7edce4d-d06f-4014-a5d6-7507449b2074",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-30T07:16:55+00:00",
+    "timestamp": "2023-01-30T13:22:04+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5a404acc-0304-4cb9-847a-6439d49f2904",
+      "bom-ref": "e64a6bcb-42bc-400c-a631-ac9bf9031e95",
       "type": "container",
       "name": "onomy_v1.0.1",
       "properties": [
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "bom-ref": "0220af1e-ac82-4bd2-9a0a-677a034cc57a",
+      "bom-ref": "9699b678-ce13-4b8d-a13f-2bd0b54f4987",
       "type": "application",
       "name": "bin/onomyd",
       "properties": [
@@ -2130,7 +2130,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0220af1e-ac82-4bd2-9a0a-677a034cc57a",
+      "ref": "9699b678-ce13-4b8d-a13f-2bd0b54f4987",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2234,9 +2234,9 @@
       ]
     },
     {
-      "ref": "5a404acc-0304-4cb9-847a-6439d49f2904",
+      "ref": "e64a6bcb-42bc-400c-a631-ac9bf9031e95",
       "dependsOn": [
-        "0220af1e-ac82-4bd2-9a0a-677a034cc57a"
+        "9699b678-ce13-4b8d-a13f-2bd0b54f4987"
       ]
     }
   ],
