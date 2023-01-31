@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:657ed7f6-03ec-4214-a466-529445883427",
+  "serialNumber": "urn:uuid:4b13b6a3-2e11-4575-8a52-c7941c6a4423",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-30T19:18:54+00:00",
+    "timestamp": "2023-01-31T01:14:34+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "00cc2e7e-0103-48fc-b964-61b55aaddb86",
+      "bom-ref": "6ea907b6-1c65-46eb-b9b7-be907d39377e",
       "type": "container",
       "name": "evmos_v11.0.0",
       "properties": [
@@ -3310,7 +3310,7 @@
       ]
     },
     {
-      "bom-ref": "fad61bdb-6789-4092-a889-7a9f278e7ea6",
+      "bom-ref": "cdc9d257-a158-409b-a88d-771f2c3f8fe9",
       "type": "application",
       "name": "bin/evmosd",
       "properties": [
@@ -3327,7 +3327,7 @@
   ],
   "dependencies": [
     {
-      "ref": "fad61bdb-6789-4092-a889-7a9f278e7ea6",
+      "ref": "cdc9d257-a158-409b-a88d-771f2c3f8fe9",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go@v0.105.0",
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.1",
@@ -3488,9 +3488,9 @@
       ]
     },
     {
-      "ref": "00cc2e7e-0103-48fc-b964-61b55aaddb86",
+      "ref": "6ea907b6-1c65-46eb-b9b7-be907d39377e",
       "dependsOn": [
-        "fad61bdb-6789-4092-a889-7a9f278e7ea6"
+        "cdc9d257-a158-409b-a88d-771f2c3f8fe9"
       ]
     }
   ],
