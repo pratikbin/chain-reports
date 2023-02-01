@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:c1d48192-b75d-4354-971d-1add56874de1",
+  "serialNumber": "urn:uuid:7defe3e4-eef9-4aeb-98b8-8a924f9be6eb",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-31T19:11:18+00:00",
+    "timestamp": "2023-02-01T01:32:23+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "04b78bf4-72e8-41ab-a453-d2986ba5a33e",
+      "bom-ref": "40068f9e-cc28-48dd-aceb-a1bfc69bc06c",
       "type": "container",
       "name": "dig_v3.3.1",
       "properties": [
@@ -2848,7 +2848,7 @@
       ]
     },
     {
-      "bom-ref": "8cc8a977-b778-4879-8664-7c33cfc3240d",
+      "bom-ref": "56d7388c-e196-4373-bb11-12b1ba5b534f",
       "type": "application",
       "name": "bin/digd",
       "properties": [
@@ -2865,7 +2865,7 @@
   ],
   "dependencies": [
     {
-      "ref": "8cc8a977-b778-4879-8664-7c33cfc3240d",
+      "ref": "56d7388c-e196-4373-bb11-12b1ba5b534f",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go@v0.102.1",
         "pkg:golang/cloud.google.com/go/compute@v1.7.0",
@@ -3004,9 +3004,9 @@
       ]
     },
     {
-      "ref": "04b78bf4-72e8-41ab-a453-d2986ba5a33e",
+      "ref": "40068f9e-cc28-48dd-aceb-a1bfc69bc06c",
       "dependsOn": [
-        "8cc8a977-b778-4879-8664-7c33cfc3240d"
+        "56d7388c-e196-4373-bb11-12b1ba5b534f"
       ]
     }
   ],
