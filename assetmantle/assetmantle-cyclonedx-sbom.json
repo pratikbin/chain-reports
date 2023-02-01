@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:c281a334-067c-4b65-bcb4-2ec9c2f96140",
+  "serialNumber": "urn:uuid:cdda77e2-5539-48e8-aa99-2b3669dd648c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-01T13:13:42+00:00",
+    "timestamp": "2023-02-01T19:26:32+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.37.0"
+        "version": "0.37.1"
       }
     ],
     "component": {
-      "bom-ref": "13bc421a-aa18-4ea1-b843-8a002ea67864",
+      "bom-ref": "57ee37bb-7b4c-46ec-906d-0fea7072c7ea",
       "type": "container",
       "name": "assetmantle_v0.3.1",
       "properties": [
@@ -1987,7 +1987,7 @@
       ]
     },
     {
-      "bom-ref": "5b61ac1a-cecd-4ea3-804f-ae9fd2f579f9",
+      "bom-ref": "b7519e37-414c-4eab-aed5-95b08fd3b0d3",
       "type": "application",
       "name": "bin/mantleNode",
       "properties": [
@@ -2004,7 +2004,7 @@
   ],
   "dependencies": [
     {
-      "ref": "5b61ac1a-cecd-4ea3-804f-ae9fd2f579f9",
+      "ref": "b7519e37-414c-4eab-aed5-95b08fd3b0d3",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2102,9 +2102,9 @@
       ]
     },
     {
-      "ref": "13bc421a-aa18-4ea1-b843-8a002ea67864",
+      "ref": "57ee37bb-7b4c-46ec-906d-0fea7072c7ea",
       "dependsOn": [
-        "5b61ac1a-cecd-4ea3-804f-ae9fd2f579f9"
+        "b7519e37-414c-4eab-aed5-95b08fd3b0d3"
       ]
     }
   ],
