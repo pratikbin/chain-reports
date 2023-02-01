@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:99d27f2b-a479-41b5-9090-6fb41db0ba66",
+  "serialNumber": "urn:uuid:45271cd1-feef-45e4-b9f1-16929787b4fb",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-01T07:24:14+00:00",
+    "timestamp": "2023-02-01T13:35:40+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.36.1"
+        "version": "0.37.0"
       }
     ],
     "component": {
-      "bom-ref": "6543af9b-5653-4ff4-995e-561b1b5b8aea",
+      "bom-ref": "f1ed293c-b690-411d-a0c1-0274f6b5abc3",
       "type": "container",
       "name": "sim_v0.45.12",
       "properties": [
@@ -2029,7 +2029,7 @@
       ]
     },
     {
-      "bom-ref": "97ec01d0-364a-446d-adf1-cbe1cb17c0fc",
+      "bom-ref": "3499d2f1-fd05-4def-aad6-3164b6004204",
       "type": "application",
       "name": "bin/simd",
       "properties": [
@@ -2046,7 +2046,7 @@
   ],
   "dependencies": [
     {
-      "ref": "97ec01d0-364a-446d-adf1-cbe1cb17c0fc",
+      "ref": "3499d2f1-fd05-4def-aad6-3164b6004204",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2146,9 +2146,9 @@
       ]
     },
     {
-      "ref": "6543af9b-5653-4ff4-995e-561b1b5b8aea",
+      "ref": "f1ed293c-b690-411d-a0c1-0274f6b5abc3",
       "dependsOn": [
-        "97ec01d0-364a-446d-adf1-cbe1cb17c0fc"
+        "3499d2f1-fd05-4def-aad6-3164b6004204"
       ]
     }
   ],
