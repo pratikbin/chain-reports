@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:7bc20752-0d9f-4cbd-95f5-8bcfa791f282",
+  "serialNumber": "urn:uuid:ea5169e7-1f2c-4ed8-a76e-4c88a5e807f4",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-01T13:15:15+00:00",
+    "timestamp": "2023-02-01T19:30:04+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.37.0"
+        "version": "0.37.1"
       }
     ],
     "component": {
-      "bom-ref": "cd44e298-a5fe-4d00-a608-8a393122fee5",
+      "bom-ref": "c3adcfbd-62e1-47a4-bf55-a14bcd5c846e",
       "type": "container",
       "name": "irisnet_v1.4.1",
       "properties": [
@@ -3247,7 +3247,7 @@
       ]
     },
     {
-      "bom-ref": "c7503d64-2750-4cd1-a00e-37d728f86a4b",
+      "bom-ref": "41ca99f9-1e71-416b-b2f1-4bbc83d583df",
       "type": "application",
       "name": "bin/iris",
       "properties": [
@@ -3264,7 +3264,7 @@
   ],
   "dependencies": [
     {
-      "ref": "c7503d64-2750-4cd1-a00e-37d728f86a4b",
+      "ref": "41ca99f9-1e71-416b-b2f1-4bbc83d583df",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go@v0.102.1",
         "pkg:golang/cloud.google.com/go/compute@v1.7.0",
@@ -3422,9 +3422,9 @@
       ]
     },
     {
-      "ref": "cd44e298-a5fe-4d00-a608-8a393122fee5",
+      "ref": "c3adcfbd-62e1-47a4-bf55-a14bcd5c846e",
       "dependsOn": [
-        "c7503d64-2750-4cd1-a00e-37d728f86a4b"
+        "41ca99f9-1e71-416b-b2f1-4bbc83d583df"
       ]
     }
   ],
