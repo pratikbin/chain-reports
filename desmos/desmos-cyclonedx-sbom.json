@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:e0204cec-9e25-4216-b4c4-9946ec6bd2db",
+  "serialNumber": "urn:uuid:9663096b-fed5-4592-b6df-4449621ebd63",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-01T07:18:08+00:00",
+    "timestamp": "2023-02-01T13:31:17+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.36.1"
+        "version": "0.37.0"
       }
     ],
     "component": {
-      "bom-ref": "b64e7122-18dd-41a9-a68f-f4ac6452c894",
+      "bom-ref": "81b44d94-2ac3-47ff-8d12-23e71caf5fa8",
       "type": "container",
       "name": "desmos_v4.7.1",
       "properties": [
@@ -2302,7 +2302,7 @@
       ]
     },
     {
-      "bom-ref": "7c4720b7-f93c-4547-a80f-4c88dd01aff6",
+      "bom-ref": "596f4fc8-3ec0-4fa6-a86d-ab13169c6c59",
       "type": "application",
       "name": "bin/desmos",
       "properties": [
@@ -2319,7 +2319,7 @@
   ],
   "dependencies": [
     {
-      "ref": "7c4720b7-f93c-4547-a80f-4c88dd01aff6",
+      "ref": "596f4fc8-3ec0-4fa6-a86d-ab13169c6c59",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2432,9 +2432,9 @@
       ]
     },
     {
-      "ref": "b64e7122-18dd-41a9-a68f-f4ac6452c894",
+      "ref": "81b44d94-2ac3-47ff-8d12-23e71caf5fa8",
       "dependsOn": [
-        "7c4720b7-f93c-4547-a80f-4c88dd01aff6"
+        "596f4fc8-3ec0-4fa6-a86d-ab13169c6c59"
       ]
     }
   ],
