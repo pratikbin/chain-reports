@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:16df047c-9de6-430a-9809-afe1288f9d56",
+  "serialNumber": "urn:uuid:c4ba93bc-6086-4d1e-88a8-dd30f1e22cfc",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-01-31T19:30:51+00:00",
+    "timestamp": "2023-02-01T01:34:15+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "b2cc6ab8-eec8-47a7-bd54-75399ed3970b",
+      "bom-ref": "40a706ed-8f7d-4722-a26d-aca93925e4cb",
       "type": "container",
       "name": "cheqd_v1.2.2",
       "properties": [
@@ -2995,7 +2995,7 @@
       ]
     },
     {
-      "bom-ref": "d11884d5-0fa6-41ce-bd17-92f062af304e",
+      "bom-ref": "50e14f06-fab1-48e2-a2d2-5175a923ed74",
       "type": "application",
       "name": "bin/cheqd-noded",
       "properties": [
@@ -3012,7 +3012,7 @@
   ],
   "dependencies": [
     {
-      "ref": "d11884d5-0fa6-41ce-bd17-92f062af304e",
+      "ref": "50e14f06-fab1-48e2-a2d2-5175a923ed74",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go@v0.105.0",
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.1",
@@ -3158,9 +3158,9 @@
       ]
     },
     {
-      "ref": "b2cc6ab8-eec8-47a7-bd54-75399ed3970b",
+      "ref": "40a706ed-8f7d-4722-a26d-aca93925e4cb",
       "dependsOn": [
-        "d11884d5-0fa6-41ce-bd17-92f062af304e"
+        "50e14f06-fab1-48e2-a2d2-5175a923ed74"
       ]
     }
   ],
