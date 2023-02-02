@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:6ce7c59b-da39-4618-92fb-ed5f8a72938b",
+  "serialNumber": "urn:uuid:b1487bdd-0541-4e53-82a6-146e0d226091",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-02T13:39:32+00:00",
+    "timestamp": "2023-02-02T19:37:38+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "97e040d3-b014-4e15-a7de-be20ffc172e6",
+      "bom-ref": "b4823c9c-6b6c-46a2-9020-8a200eae7201",
       "type": "container",
       "name": "kujira_v0.7.1",
       "properties": [
@@ -3205,7 +3205,7 @@
       ]
     },
     {
-      "bom-ref": "ed36ab1e-1243-437f-a7fe-bb705f046135",
+      "bom-ref": "03c99768-b05b-4bb0-82d1-7b0234104a74",
       "type": "application",
       "name": "bin/kujirad",
       "properties": [
@@ -3222,7 +3222,7 @@
   ],
   "dependencies": [
     {
-      "ref": "ed36ab1e-1243-437f-a7fe-bb705f046135",
+      "ref": "03c99768-b05b-4bb0-82d1-7b0234104a74",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -3378,9 +3378,9 @@
       ]
     },
     {
-      "ref": "97e040d3-b014-4e15-a7de-be20ffc172e6",
+      "ref": "b4823c9c-6b6c-46a2-9020-8a200eae7201",
       "dependsOn": [
-        "ed36ab1e-1243-437f-a7fe-bb705f046135"
+        "03c99768-b05b-4bb0-82d1-7b0234104a74"
       ]
     }
   ],
