@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:35722aa8-9e4d-4ed3-b011-409400629e01",
+  "serialNumber": "urn:uuid:2f32c3d6-31e4-48d0-8424-3326d13db5bc",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-02T07:47:38+00:00",
+    "timestamp": "2023-02-02T13:47:15+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "b376191b-09fb-4588-b307-366fe6514d8b",
+      "bom-ref": "41b00b06-c5b7-45c0-a208-6a8781011578",
       "type": "container",
       "name": "gravitybridge_v1.8.2",
       "properties": [
@@ -2659,7 +2659,7 @@
       ]
     },
     {
-      "bom-ref": "40d980a5-80b9-402a-8bb3-5e61155dec69",
+      "bom-ref": "62fd6c8d-4201-4eb0-94a6-97cc75fc7980",
       "type": "application",
       "name": "bin/gravity",
       "properties": [
@@ -2676,7 +2676,7 @@
   ],
   "dependencies": [
     {
-      "ref": "40d980a5-80b9-402a-8bb3-5e61155dec69",
+      "ref": "62fd6c8d-4201-4eb0-94a6-97cc75fc7980",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2806,9 +2806,9 @@
       ]
     },
     {
-      "ref": "b376191b-09fb-4588-b307-366fe6514d8b",
+      "ref": "41b00b06-c5b7-45c0-a208-6a8781011578",
       "dependsOn": [
-        "40d980a5-80b9-402a-8bb3-5e61155dec69"
+        "62fd6c8d-4201-4eb0-94a6-97cc75fc7980"
       ]
     }
   ],
