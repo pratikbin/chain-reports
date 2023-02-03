@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:f2219bb7-45d2-4d61-89e3-4e622bd9e8c5",
+  "serialNumber": "urn:uuid:c7768c6a-8e3c-474b-8699-b2f606aedd96",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-02T19:47:00+00:00",
+    "timestamp": "2023-02-03T01:47:56+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "cf5340e9-bcf2-4cd6-9168-33bb98798632",
+      "bom-ref": "fe47d016-123a-4386-b68c-6e670bdd9214",
       "type": "container",
       "name": "vidulum_v1.2.0",
       "properties": [
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "bom-ref": "28114d86-c373-4cc9-b194-50fff0b5f212",
+      "bom-ref": "743310c0-8760-4e62-b133-49b21533ec9f",
       "type": "application",
       "name": "bin/vidulumd",
       "properties": [
@@ -2130,7 +2130,7 @@
   ],
   "dependencies": [
     {
-      "ref": "28114d86-c373-4cc9-b194-50fff0b5f212",
+      "ref": "743310c0-8760-4e62-b133-49b21533ec9f",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2234,9 +2234,9 @@
       ]
     },
     {
-      "ref": "cf5340e9-bcf2-4cd6-9168-33bb98798632",
+      "ref": "fe47d016-123a-4386-b68c-6e670bdd9214",
       "dependsOn": [
-        "28114d86-c373-4cc9-b194-50fff0b5f212"
+        "743310c0-8760-4e62-b133-49b21533ec9f"
       ]
     }
   ],
