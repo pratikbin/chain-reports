@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:0118d2f4-5e9b-4485-9e9e-329faca03a6b",
+  "serialNumber": "urn:uuid:6509bac5-6399-4cc8-89a4-a25ff54a96cc",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-03T01:41:43+00:00",
+    "timestamp": "2023-02-03T07:44:02+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "edbc7ac6-0c74-43a7-9e2f-2fb9d2c0371a",
+      "bom-ref": "a623ac59-998b-40ab-a65a-215c93907157",
       "type": "container",
       "name": "tendermint_v0.34.24",
       "properties": [
@@ -1084,7 +1084,7 @@
       ]
     },
     {
-      "bom-ref": "1feb72ef-e118-44f4-a5ef-17ef9929296d",
+      "bom-ref": "06ef21b5-3698-4a9c-9772-bddccab15bc1",
       "type": "application",
       "name": "bin/tendermint",
       "properties": [
@@ -1101,7 +1101,7 @@
   ],
   "dependencies": [
     {
-      "ref": "1feb72ef-e118-44f4-a5ef-17ef9929296d",
+      "ref": "06ef21b5-3698-4a9c-9772-bddccab15bc1",
       "dependsOn": [
         "pkg:golang/github.com/workiva/go-datastructures@v1.0.53",
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
@@ -1156,9 +1156,9 @@
       ]
     },
     {
-      "ref": "edbc7ac6-0c74-43a7-9e2f-2fb9d2c0371a",
+      "ref": "a623ac59-998b-40ab-a65a-215c93907157",
       "dependsOn": [
-        "1feb72ef-e118-44f4-a5ef-17ef9929296d"
+        "06ef21b5-3698-4a9c-9772-bddccab15bc1"
       ]
     }
   ],
