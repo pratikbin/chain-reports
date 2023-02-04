@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:0800799a-af83-4d6f-9ba7-c06702dc7bb2",
+  "serialNumber": "urn:uuid:967b40ad-609f-4e38-bcf8-f7c6b305de63",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-04T13:31:16+00:00",
+    "timestamp": "2023-02-04T19:27:09+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5fa0dda4-e2f9-4bc7-b55d-9f09ca1eb1eb",
+      "bom-ref": "480d281a-67d6-46ae-b3a2-4ae064c34cc2",
       "type": "container",
       "name": "cryptoorgchain_v3.3.9",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "899b1f70-67d8-4b90-9415-b279f3db5b00",
+      "bom-ref": "d2210041-2e83-4fcd-8f22-a9185cf5224b",
       "type": "application",
       "name": "bin/chain-maind",
       "properties": [
@@ -2151,7 +2151,7 @@
   ],
   "dependencies": [
     {
-      "ref": "899b1f70-67d8-4b90-9415-b279f3db5b00",
+      "ref": "d2210041-2e83-4fcd-8f22-a9185cf5224b",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2256,9 +2256,9 @@
       ]
     },
     {
-      "ref": "5fa0dda4-e2f9-4bc7-b55d-9f09ca1eb1eb",
+      "ref": "480d281a-67d6-46ae-b3a2-4ae064c34cc2",
       "dependsOn": [
-        "899b1f70-67d8-4b90-9415-b279f3db5b00"
+        "d2210041-2e83-4fcd-8f22-a9185cf5224b"
       ]
     }
   ],
