@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:b5543ea7-73c2-4026-9e33-0a921ac3d8ed",
+  "serialNumber": "urn:uuid:ed52e5f4-7fce-4213-9f43-609ea852355b",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-04T13:39:32+00:00",
+    "timestamp": "2023-02-04T19:28:51+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "3962e0f5-c51c-42da-b2d9-4915559c190d",
+      "bom-ref": "c78ed27b-0fd2-4b6a-9df5-3431b06e6219",
       "type": "container",
       "name": "crescent_v4.0.0",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "bb77642a-450a-44a3-bbac-261c7f44cccc",
+      "bom-ref": "39941b78-63ef-476e-a5d3-50583533c1d9",
       "type": "application",
       "name": "bin/crescentd",
       "properties": [
@@ -2151,7 +2151,7 @@
   ],
   "dependencies": [
     {
-      "ref": "bb77642a-450a-44a3-bbac-261c7f44cccc",
+      "ref": "39941b78-63ef-476e-a5d3-50583533c1d9",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2256,9 +2256,9 @@
       ]
     },
     {
-      "ref": "3962e0f5-c51c-42da-b2d9-4915559c190d",
+      "ref": "c78ed27b-0fd2-4b6a-9df5-3431b06e6219",
       "dependsOn": [
-        "bb77642a-450a-44a3-bbac-261c7f44cccc"
+        "39941b78-63ef-476e-a5d3-50583533c1d9"
       ]
     }
   ],
