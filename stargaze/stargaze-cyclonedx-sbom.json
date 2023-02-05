@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:5cfb824a-8b95-4a8a-867c-9d4dbba255fb",
+  "serialNumber": "urn:uuid:a5dd85bb-9b8b-4d86-a306-91cc60fe428c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-05T13:45:25+00:00",
+    "timestamp": "2023-02-05T19:41:52+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5b862173-58d9-438b-a61d-5a0fb7eaba9d",
+      "bom-ref": "e81a5ce1-aefe-4b2f-8b65-b87aef100add",
       "type": "container",
       "name": "stargaze_v8.1.0",
       "properties": [
@@ -2260,7 +2260,7 @@
       ]
     },
     {
-      "bom-ref": "8273d720-8949-4666-be06-1d7854714391",
+      "bom-ref": "6fc0d465-77db-4749-9442-bfc82cd24eae",
       "type": "application",
       "name": "bin/starsd",
       "properties": [
@@ -2277,7 +2277,7 @@
   ],
   "dependencies": [
     {
-      "ref": "8273d720-8949-4666-be06-1d7854714391",
+      "ref": "6fc0d465-77db-4749-9442-bfc82cd24eae",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2388,9 +2388,9 @@
       ]
     },
     {
-      "ref": "5b862173-58d9-438b-a61d-5a0fb7eaba9d",
+      "ref": "e81a5ce1-aefe-4b2f-8b65-b87aef100add",
       "dependsOn": [
-        "8273d720-8949-4666-be06-1d7854714391"
+        "6fc0d465-77db-4749-9442-bfc82cd24eae"
       ]
     }
   ],
