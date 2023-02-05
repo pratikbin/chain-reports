@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:03d35ebb-d370-41b6-98ac-f7963b3893bf",
+  "serialNumber": "urn:uuid:3a333029-0c15-43da-8158-c57e09eeeaf7",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-05T01:47:52+00:00",
+    "timestamp": "2023-02-05T07:50:10+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "c479dcbc-86a6-4171-832b-81fa2eb8030b",
+      "bom-ref": "a8c21c82-9bd1-4d21-ba51-a54f5c13356c",
       "type": "container",
       "name": "kichain_4.2.0",
       "properties": [
@@ -2176,7 +2176,7 @@
       ]
     },
     {
-      "bom-ref": "4d78bd31-fb14-4217-a888-d50b51d979db",
+      "bom-ref": "80776e50-32a2-47c6-892a-d19fa0f30200",
       "type": "application",
       "name": "bin/kid",
       "properties": [
@@ -2193,7 +2193,7 @@
   ],
   "dependencies": [
     {
-      "ref": "4d78bd31-fb14-4217-a888-d50b51d979db",
+      "ref": "80776e50-32a2-47c6-892a-d19fa0f30200",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2300,9 +2300,9 @@
       ]
     },
     {
-      "ref": "c479dcbc-86a6-4171-832b-81fa2eb8030b",
+      "ref": "a8c21c82-9bd1-4d21-ba51-a54f5c13356c",
       "dependsOn": [
-        "4d78bd31-fb14-4217-a888-d50b51d979db"
+        "80776e50-32a2-47c6-892a-d19fa0f30200"
       ]
     }
   ],
