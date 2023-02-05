@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:ebb48244-447f-4931-861d-44519527c6df",
+  "serialNumber": "urn:uuid:2de84578-8c0d-4f52-a064-56aa0dc7556c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-05T13:36:09+00:00",
+    "timestamp": "2023-02-05T19:45:44+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "689b319c-f96a-4829-9a82-9173e8b40545",
+      "bom-ref": "08de0fe5-8027-4ed3-b7bf-624fc7fffb6d",
       "type": "container",
       "name": "nibiru_v0.18.0-rc4",
       "properties": [
@@ -2197,7 +2197,7 @@
       ]
     },
     {
-      "bom-ref": "b97c8039-03b6-4364-bc64-fa919873c92d",
+      "bom-ref": "893723e1-f1de-4b9b-947c-b1edcfd4e103",
       "type": "application",
       "name": "bin/nibid",
       "properties": [
@@ -2214,7 +2214,7 @@
   ],
   "dependencies": [
     {
-      "ref": "b97c8039-03b6-4364-bc64-fa919873c92d",
+      "ref": "893723e1-f1de-4b9b-947c-b1edcfd4e103",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2322,9 +2322,9 @@
       ]
     },
     {
-      "ref": "689b319c-f96a-4829-9a82-9173e8b40545",
+      "ref": "08de0fe5-8027-4ed3-b7bf-624fc7fffb6d",
       "dependsOn": [
-        "b97c8039-03b6-4364-bc64-fa919873c92d"
+        "893723e1-f1de-4b9b-947c-b1edcfd4e103"
       ]
     }
   ],
