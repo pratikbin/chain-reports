@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:7c8b6b41-ad7f-467f-8db5-47f55823d97c",
+  "serialNumber": "urn:uuid:720d5b30-d291-4e66-b13b-700e7320cb4e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-06T01:41:47+00:00",
+    "timestamp": "2023-02-06T07:32:13+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "2a5a932f-aadf-4be7-8400-6899efca2a37",
+      "bom-ref": "ed029aa7-0f42-4cf5-a85c-dab5f396b7c0",
       "type": "container",
       "name": "duality_v0.1.3",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "de0b983a-8e72-4755-8b7a-f04931c60efa",
+      "bom-ref": "36dc30a0-525e-4433-9b24-0354ad0084e1",
       "type": "application",
       "name": "bin/dualityd",
       "properties": [
@@ -2151,7 +2151,7 @@
   ],
   "dependencies": [
     {
-      "ref": "de0b983a-8e72-4755-8b7a-f04931c60efa",
+      "ref": "36dc30a0-525e-4433-9b24-0354ad0084e1",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2256,9 +2256,9 @@
       ]
     },
     {
-      "ref": "2a5a932f-aadf-4be7-8400-6899efca2a37",
+      "ref": "ed029aa7-0f42-4cf5-a85c-dab5f396b7c0",
       "dependsOn": [
-        "de0b983a-8e72-4755-8b7a-f04931c60efa"
+        "36dc30a0-525e-4433-9b24-0354ad0084e1"
       ]
     }
   ],
