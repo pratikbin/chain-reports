@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:c595a943-0927-450e-ad8c-4b07198cd08c",
+  "serialNumber": "urn:uuid:7fb7b432-c7dc-4d3c-aa60-af1d3f5924e1",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-02-08T01:42:00+00:00",
+    "timestamp": "2023-02-08T07:38:07+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "f31ed0db-f24c-4510-b722-b782094cb109",
+      "bom-ref": "a486f00a-2a55-4cd0-b64b-aedb589a48ef",
       "type": "container",
       "name": "cryptoorgchain_v4.2.2",
       "properties": [
@@ -2806,7 +2806,7 @@
       ]
     },
     {
-      "bom-ref": "f122fb67-0ea1-48f1-8dc4-a10c1fc37855",
+      "bom-ref": "3b303d46-86ad-491f-9c72-664ee8dee544",
       "type": "application",
       "name": "bin/chain-maind",
       "properties": [
@@ -2823,7 +2823,7 @@
   ],
   "dependencies": [
     {
-      "ref": "f122fb67-0ea1-48f1-8dc4-a10c1fc37855",
+      "ref": "3b303d46-86ad-491f-9c72-664ee8dee544",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go@v0.102.1",
         "pkg:golang/cloud.google.com/go/compute@v1.7.0",
@@ -2960,9 +2960,9 @@
       ]
     },
     {
-      "ref": "f31ed0db-f24c-4510-b722-b782094cb109",
+      "ref": "a486f00a-2a55-4cd0-b64b-aedb589a48ef",
       "dependsOn": [
-        "f122fb67-0ea1-48f1-8dc4-a10c1fc37855"
+        "3b303d46-86ad-491f-9c72-664ee8dee544"
       ]
     }
   ],
