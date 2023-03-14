@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:12a0615c-cc6e-4cc4-970e-210fd28bd2e5",
+  "serialNumber": "urn:uuid:3d9b8695-6dd4-4296-9179-c5307010629e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-03-13T19:22:59+00:00",
+    "timestamp": "2023-03-14T11:57:32+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.38.2"
+        "version": "0.38.3"
       }
     ],
     "component": {
-      "bom-ref": "1c01df19-8f8a-4fd8-8573-7e232448b46a",
+      "bom-ref": "12f32c1b-8b4e-498d-8a68-01406b0a15bb",
       "type": "container",
       "name": "gaia_v9.0.1",
       "properties": [
@@ -2176,7 +2176,7 @@
       ]
     },
     {
-      "bom-ref": "0b0c3ca4-0ab2-4555-af21-464b4cbd0847",
+      "bom-ref": "7d0942b4-86a4-4a38-8b91-603334080001",
       "type": "application",
       "name": "bin/gaiad",
       "properties": [
@@ -2193,7 +2193,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0b0c3ca4-0ab2-4555-af21-464b4cbd0847",
+      "ref": "7d0942b4-86a4-4a38-8b91-603334080001",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
@@ -2300,9 +2300,9 @@
       ]
     },
     {
-      "ref": "1c01df19-8f8a-4fd8-8573-7e232448b46a",
+      "ref": "12f32c1b-8b4e-498d-8a68-01406b0a15bb",
       "dependsOn": [
-        "0b0c3ca4-0ab2-4555-af21-464b4cbd0847"
+        "7d0942b4-86a4-4a38-8b91-603334080001"
       ]
     }
   ],
