@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:21e60e54-baed-4088-9dae-5c4b21c5cd4f",
+  "serialNumber": "urn:uuid:b0db2270-d2f7-4431-b238-a2c89c58a8de",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-03-08T12:19:40+00:00",
+    "timestamp": "2023-03-14T11:32:23+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.38.2"
+        "version": "0.38.3"
       }
     ],
     "component": {
-      "bom-ref": "425883e8-57e7-4ff4-a241-0ae0782881a8",
+      "bom-ref": "79868889-d2f3-47af-9a5d-eee18ed2a7e8",
       "type": "container",
       "name": "cryptoorgchain_v4.2.2",
       "properties": [
@@ -2806,7 +2806,7 @@
       ]
     },
     {
-      "bom-ref": "2f07a32f-a4bd-4f89-85e7-bf977c1e4848",
+      "bom-ref": "3b13487b-2a1b-4fc1-83bd-27d04f797111",
       "type": "application",
       "name": "bin/chain-maind",
       "properties": [
@@ -2823,7 +2823,7 @@
   ],
   "dependencies": [
     {
-      "ref": "2f07a32f-a4bd-4f89-85e7-bf977c1e4848",
+      "ref": "3b13487b-2a1b-4fc1-83bd-27d04f797111",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go@v0.102.1",
         "pkg:golang/cloud.google.com/go/compute@v1.7.0",
@@ -2960,9 +2960,9 @@
       ]
     },
     {
-      "ref": "425883e8-57e7-4ff4-a241-0ae0782881a8",
+      "ref": "79868889-d2f3-47af-9a5d-eee18ed2a7e8",
       "dependsOn": [
-        "2f07a32f-a4bd-4f89-85e7-bf977c1e4848"
+        "3b13487b-2a1b-4fc1-83bd-27d04f797111"
       ]
     }
   ],
