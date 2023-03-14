@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:eae28628-212d-423e-96aa-7a206bdc222c",
+  "serialNumber": "urn:uuid:e4f97b29-9093-42af-9c72-74e47f62f472",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-03-08T12:49:09+00:00",
+    "timestamp": "2023-03-14T12:12:00+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.38.2"
+        "version": "0.38.3"
       }
     ],
     "component": {
-      "bom-ref": "bbe9aebf-f14a-4a08-b56d-c38ea6262f85",
+      "bom-ref": "796bcd61-5ac9-4e76-920e-ac26f84165d4",
       "type": "container",
       "name": "injective_v1.9.0-1673970775",
       "properties": [
@@ -3070,7 +3070,7 @@
       ]
     },
     {
-      "bom-ref": "4b8650f5-fc2a-4172-8209-dc1d19d6effd",
+      "bom-ref": "c900b858-a89b-4642-b58f-5d1d0883df14",
       "type": "application",
       "name": "bin/injectived",
       "properties": [
@@ -4492,7 +4492,7 @@
       ]
     },
     {
-      "bom-ref": "5541b52d-6b0d-4dcd-a6d6-bef0594744bd",
+      "bom-ref": "4448956d-ed63-42a0-92c6-104a200f9e53",
       "type": "application",
       "name": "bin/peggo",
       "properties": [
@@ -6061,7 +6061,7 @@
       ]
     },
     {
-      "bom-ref": "33805437-1cbf-4ba3-b5e7-7f268f41bdad",
+      "bom-ref": "42fe8b6d-a452-4eb8-8f23-3e9f9762d628",
       "type": "application",
       "name": "bin/injective-exchange",
       "properties": [
@@ -6078,7 +6078,7 @@
   ],
   "dependencies": [
     {
-      "ref": "4b8650f5-fc2a-4172-8209-dc1d19d6effd",
+      "ref": "c900b858-a89b-4642-b58f-5d1d0883df14",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -6227,7 +6227,7 @@
       ]
     },
     {
-      "ref": "5541b52d-6b0d-4dcd-a6d6-bef0594744bd",
+      "ref": "4448956d-ed63-42a0-92c6-104a200f9e53",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -6354,7 +6354,7 @@
       ]
     },
     {
-      "ref": "33805437-1cbf-4ba3-b5e7-7f268f41bdad",
+      "ref": "42fe8b6d-a452-4eb8-8f23-3e9f9762d628",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -6537,11 +6537,11 @@
       ]
     },
     {
-      "ref": "bbe9aebf-f14a-4a08-b56d-c38ea6262f85",
+      "ref": "796bcd61-5ac9-4e76-920e-ac26f84165d4",
       "dependsOn": [
-        "4b8650f5-fc2a-4172-8209-dc1d19d6effd",
-        "5541b52d-6b0d-4dcd-a6d6-bef0594744bd",
-        "33805437-1cbf-4ba3-b5e7-7f268f41bdad"
+        "c900b858-a89b-4642-b58f-5d1d0883df14",
+        "4448956d-ed63-42a0-92c6-104a200f9e53",
+        "42fe8b6d-a452-4eb8-8f23-3e9f9762d628"
       ]
     }
   ],
