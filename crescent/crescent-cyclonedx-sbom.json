@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:f2a124a2-2ef2-4b83-b2a4-b0cb6a432839",
+  "serialNumber": "urn:uuid:61697aa7-dc8d-4bc4-8987-42fe19dc40e6",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-08T19:25:13+00:00",
+    "timestamp": "2023-04-09T14:36:56+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.0"
+        "version": "0.39.1"
       }
     ],
     "component": {
-      "bom-ref": "b7a5da55-0c76-4fdb-b580-369d59f61ea0",
+      "bom-ref": "d819d2ae-a515-4801-bf06-2e0d956a816a",
       "type": "container",
       "name": "crescent_v4.0.0",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "f62409b6-f51d-409c-b9cd-a6ed74649565",
+      "bom-ref": "bd19ccaa-5e5c-4650-b3fa-2eda8242f71f",
       "type": "application",
       "name": "bin/crescentd",
       "properties": [
@@ -2151,13 +2151,7 @@
   ],
   "dependencies": [
     {
-      "ref": "b7a5da55-0c76-4fdb-b580-369d59f61ea0",
-      "dependsOn": [
-        "f62409b6-f51d-409c-b9cd-a6ed74649565"
-      ]
-    },
-    {
-      "ref": "f62409b6-f51d-409c-b9cd-a6ed74649565",
+      "ref": "bd19ccaa-5e5c-4650-b3fa-2eda8242f71f",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2259,6 +2253,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "d819d2ae-a515-4801-bf06-2e0d956a816a",
+      "dependsOn": [
+        "bd19ccaa-5e5c-4650-b3fa-2eda8242f71f"
       ]
     }
   ],
