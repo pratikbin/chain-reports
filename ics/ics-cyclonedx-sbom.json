@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:50d605d3-8a5e-4872-88f9-5b42820bd116",
+  "serialNumber": "urn:uuid:0516e92f-a8d0-420a-8184-10b51b36fe4b",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-08T19:30:47+00:00",
+    "timestamp": "2023-04-09T14:33:12+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.0"
+        "version": "0.39.1"
       }
     ],
     "component": {
-      "bom-ref": "45e799f1-40f2-45a4-89f2-c210ba24507b",
+      "bom-ref": "4640ddd8-051c-430b-a552-baf576447c7d",
       "type": "container",
       "name": "ics_v1.1.0",
       "properties": [
@@ -2096,7 +2096,7 @@
       ]
     },
     {
-      "bom-ref": "f3535223-dcd8-4aa8-afaf-f1e8450cbd34",
+      "bom-ref": "ff25107b-1dcf-4bab-9546-769d6a77c7a3",
       "type": "application",
       "name": "bin/interchain-security-pd",
       "properties": [
@@ -2111,7 +2111,7 @@
       ]
     },
     {
-      "bom-ref": "cd2388e9-449e-409f-9192-bef46b7ca12e",
+      "bom-ref": "697139de-4c37-43bd-af85-6693e2cf6975",
       "type": "application",
       "name": "bin/interchain-security-cd",
       "properties": [
@@ -2128,14 +2128,14 @@
   ],
   "dependencies": [
     {
-      "ref": "45e799f1-40f2-45a4-89f2-c210ba24507b",
+      "ref": "4640ddd8-051c-430b-a552-baf576447c7d",
       "dependsOn": [
-        "f3535223-dcd8-4aa8-afaf-f1e8450cbd34",
-        "cd2388e9-449e-409f-9192-bef46b7ca12e"
+        "ff25107b-1dcf-4bab-9546-769d6a77c7a3",
+        "697139de-4c37-43bd-af85-6693e2cf6975"
       ]
     },
     {
-      "ref": "cd2388e9-449e-409f-9192-bef46b7ca12e",
+      "ref": "697139de-4c37-43bd-af85-6693e2cf6975",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2238,7 +2238,7 @@
       ]
     },
     {
-      "ref": "f3535223-dcd8-4aa8-afaf-f1e8450cbd34",
+      "ref": "ff25107b-1dcf-4bab-9546-769d6a77c7a3",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
