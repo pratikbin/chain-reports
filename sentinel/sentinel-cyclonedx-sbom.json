@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:d1d1eda9-6b25-4b9b-8632-45eccc3c6b9d",
+  "serialNumber": "urn:uuid:f14e6e92-1146-4baa-8376-20d1dafb4eab",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T23:33:42+00:00",
+    "timestamp": "2023-04-16T14:18:13+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "c745f4ea-f996-49a6-a8ec-78f97ef0c9b6",
+      "bom-ref": "256d7ed6-8f1a-4b2d-ad7f-d63ce7709b52",
       "type": "container",
       "name": "sentinel_v0.10.1",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "0f7af754-06d0-48bb-b678-d00d0a92fee7",
+      "bom-ref": "decb99d3-dc58-44ab-9fea-c574ba6d21e7",
       "type": "application",
       "name": "bin/sentinelhub",
       "properties": [
@@ -2151,7 +2151,13 @@
   ],
   "dependencies": [
     {
-      "ref": "0f7af754-06d0-48bb-b678-d00d0a92fee7",
+      "ref": "256d7ed6-8f1a-4b2d-ad7f-d63ce7709b52",
+      "dependsOn": [
+        "decb99d3-dc58-44ab-9fea-c574ba6d21e7"
+      ]
+    },
+    {
+      "ref": "decb99d3-dc58-44ab-9fea-c574ba6d21e7",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2253,12 +2259,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "c745f4ea-f996-49a6-a8ec-78f97ef0c9b6",
-      "dependsOn": [
-        "0f7af754-06d0-48bb-b678-d00d0a92fee7"
       ]
     }
   ],
