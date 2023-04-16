@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:594699a9-eb45-4061-8c1c-bc9491a6fbb4",
+  "serialNumber": "urn:uuid:825e8029-60bc-42ce-a612-fbb37a3f0717",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T19:57:03+00:00",
+    "timestamp": "2023-04-16T14:39:01+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "10184da0-94ec-4e46-81d7-6f5edbb9505c",
+      "bom-ref": "fc54fc16-2f0e-4d57-b3aa-0cd3746add41",
       "type": "container",
       "name": "gravitybridge_v1.8.2",
       "properties": [
@@ -2659,7 +2659,7 @@
       ]
     },
     {
-      "bom-ref": "2c91fdb4-3479-4624-81ec-a66c24cc292c",
+      "bom-ref": "28f68321-d056-41d8-bc90-dbc40c106a34",
       "type": "application",
       "name": "bin/gravity",
       "properties": [
@@ -2676,13 +2676,7 @@
   ],
   "dependencies": [
     {
-      "ref": "10184da0-94ec-4e46-81d7-6f5edbb9505c",
-      "dependsOn": [
-        "2c91fdb4-3479-4624-81ec-a66c24cc292c"
-      ]
-    },
-    {
-      "ref": "2c91fdb4-3479-4624-81ec-a66c24cc292c",
+      "ref": "28f68321-d056-41d8-bc90-dbc40c106a34",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2809,6 +2803,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "fc54fc16-2f0e-4d57-b3aa-0cd3746add41",
+      "dependsOn": [
+        "28f68321-d056-41d8-bc90-dbc40c106a34"
       ]
     }
   ],
