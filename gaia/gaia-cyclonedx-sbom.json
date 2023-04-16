@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:2377ffea-8ed4-4dfe-b0ba-6d59f28d3233",
+  "serialNumber": "urn:uuid:40f72b38-4b00-48c6-867e-0c2835b0ff06",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-14T00:03:13+00:00",
+    "timestamp": "2023-04-16T14:16:30+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "ca873f4f-9a8d-4d36-830b-32ff2d0f9805",
+      "bom-ref": "0dc34231-006b-4c46-9937-c8bf1c2bdfee",
       "type": "container",
       "name": "gaia_v9.0.2",
       "properties": [
@@ -2176,7 +2176,7 @@
       ]
     },
     {
-      "bom-ref": "f72b5d85-dc0a-46f0-8dfb-74363861844a",
+      "bom-ref": "3f3273a8-4d3d-4071-b820-bddb31507468",
       "type": "application",
       "name": "bin/gaiad",
       "properties": [
@@ -2193,13 +2193,13 @@
   ],
   "dependencies": [
     {
-      "ref": "ca873f4f-9a8d-4d36-830b-32ff2d0f9805",
+      "ref": "0dc34231-006b-4c46-9937-c8bf1c2bdfee",
       "dependsOn": [
-        "f72b5d85-dc0a-46f0-8dfb-74363861844a"
+        "3f3273a8-4d3d-4071-b820-bddb31507468"
       ]
     },
     {
-      "ref": "f72b5d85-dc0a-46f0-8dfb-74363861844a",
+      "ref": "3f3273a8-4d3d-4071-b820-bddb31507468",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/armon/go-metrics@v0.4.0",
