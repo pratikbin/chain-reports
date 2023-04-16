@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:9c95e16d-6ef7-4e3e-b438-48a3d1785d83",
+  "serialNumber": "urn:uuid:02ec59fd-0d06-4d2b-bb68-f3caa5bcb7da",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T20:45:15+00:00",
+    "timestamp": "2023-04-16T13:52:59+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "7c18fb6c-cb23-4158-a0c3-659f363a8bc5",
+      "bom-ref": "89f3d2ef-aa76-4ddc-87c8-3d116a4cc8c4",
       "type": "container",
       "name": "regen_v5.1.0",
       "properties": [
@@ -2932,7 +2932,7 @@
       ]
     },
     {
-      "bom-ref": "c49a08d6-ee4c-4fea-b858-bf9f991473a0",
+      "bom-ref": "092c06e7-0717-4e80-b5aa-36e35adb248b",
       "type": "application",
       "name": "bin/regen",
       "properties": [
@@ -2949,13 +2949,7 @@
   ],
   "dependencies": [
     {
-      "ref": "7c18fb6c-cb23-4158-a0c3-659f363a8bc5",
-      "dependsOn": [
-        "c49a08d6-ee4c-4fea-b858-bf9f991473a0"
-      ]
-    },
-    {
-      "ref": "c49a08d6-ee4c-4fea-b858-bf9f991473a0",
+      "ref": "092c06e7-0717-4e80-b5aa-36e35adb248b",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.8.0",
@@ -3095,6 +3089,12 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "89f3d2ef-aa76-4ddc-87c8-3d116a4cc8c4",
+      "dependsOn": [
+        "092c06e7-0717-4e80-b5aa-36e35adb248b"
       ]
     }
   ],
