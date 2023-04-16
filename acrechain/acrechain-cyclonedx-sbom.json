@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:bce1b1fd-2e21-47d2-95af-f0bfec652f8f",
+  "serialNumber": "urn:uuid:e9a9ae9b-942d-4e9c-b4f9-03387d7f5506",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T23:57:12+00:00",
+    "timestamp": "2023-04-16T14:25:58+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "70fa865a-fd1b-45b9-9022-7fc0c62f6dd2",
+      "bom-ref": "5f4e3d73-4554-4e81-9254-3e5dd19fbe01",
       "type": "container",
       "name": "acrechain_v1.1.1",
       "properties": [
@@ -2659,7 +2659,7 @@
       ]
     },
     {
-      "bom-ref": "6a9b6bd3-0b6a-49fe-a46c-0f2473a18bab",
+      "bom-ref": "ab923b33-216b-4b63-b63c-f20302c9cf05",
       "type": "application",
       "name": "bin/acred",
       "properties": [
@@ -2676,7 +2676,13 @@
   ],
   "dependencies": [
     {
-      "ref": "6a9b6bd3-0b6a-49fe-a46c-0f2473a18bab",
+      "ref": "5f4e3d73-4554-4e81-9254-3e5dd19fbe01",
+      "dependsOn": [
+        "ab923b33-216b-4b63-b63c-f20302c9cf05"
+      ]
+    },
+    {
+      "ref": "ab923b33-216b-4b63-b63c-f20302c9cf05",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/math@v1.0.0-beta.3",
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
@@ -2803,12 +2809,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7"
-      ]
-    },
-    {
-      "ref": "70fa865a-fd1b-45b9-9022-7fc0c62f6dd2",
-      "dependsOn": [
-        "6a9b6bd3-0b6a-49fe-a46c-0f2473a18bab"
       ]
     }
   ],
