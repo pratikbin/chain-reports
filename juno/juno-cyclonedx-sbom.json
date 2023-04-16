@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:6ee2beef-e178-4342-b4c5-41956634720e",
+  "serialNumber": "urn:uuid:c30cfe6a-ff4b-48dd-93cd-091ff3524a50",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T23:40:37+00:00",
+    "timestamp": "2023-04-16T14:33:37+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "f4a3b556-e7eb-405c-8e47-2688955ac042",
+      "bom-ref": "6214d449-25fd-4c22-9be6-91cddacd159a",
       "type": "container",
       "name": "juno_v14.0.0",
       "properties": [
@@ -2449,7 +2449,7 @@
       ]
     },
     {
-      "bom-ref": "cf231872-51fb-4b99-a04e-c7b3e3057432",
+      "bom-ref": "d430076a-5dfc-441a-9802-2009fe45a63c",
       "type": "application",
       "name": "bin/junod",
       "properties": [
@@ -2466,7 +2466,13 @@
   ],
   "dependencies": [
     {
-      "ref": "cf231872-51fb-4b99-a04e-c7b3e3057432",
+      "ref": "6214d449-25fd-4c22-9be6-91cddacd159a",
+      "dependsOn": [
+        "d430076a-5dfc-441a-9802-2009fe45a63c"
+      ]
+    },
+    {
+      "ref": "d430076a-5dfc-441a-9802-2009fe45a63c",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2583,12 +2589,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7"
-      ]
-    },
-    {
-      "ref": "f4a3b556-e7eb-405c-8e47-2688955ac042",
-      "dependsOn": [
-        "cf231872-51fb-4b99-a04e-c7b3e3057432"
       ]
     }
   ],
