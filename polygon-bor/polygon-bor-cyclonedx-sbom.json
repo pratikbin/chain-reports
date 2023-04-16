@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:dd5a2ed0-143b-421f-b2b0-0183a462cca0",
+  "serialNumber": "urn:uuid:78b36961-5f77-4042-a8d8-f6a2174fce71",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T23:49:55+00:00",
+    "timestamp": "2023-04-16T14:07:30+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "60b012d2-256e-44a9-b08f-3a6cc6091698",
+      "bom-ref": "27807c47-6734-43d2-86b7-db891ffb2129",
       "type": "container",
       "name": "polygon-bor_v0.3.7",
       "properties": [
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "bom-ref": "712b4f35-2d7d-4218-9e5f-b9c22021be3b",
+      "bom-ref": "442bdc9c-1433-4273-b603-c739c8581757",
       "type": "application",
       "name": "bin/bor",
       "properties": [
@@ -2130,13 +2130,13 @@
   ],
   "dependencies": [
     {
-      "ref": "60b012d2-256e-44a9-b08f-3a6cc6091698",
+      "ref": "27807c47-6734-43d2-86b7-db891ffb2129",
       "dependsOn": [
-        "712b4f35-2d7d-4218-9e5f-b9c22021be3b"
+        "442bdc9c-1433-4273-b603-c739c8581757"
       ]
     },
     {
-      "ref": "712b4f35-2d7d-4218-9e5f-b9c22021be3b",
+      "ref": "442bdc9c-1433-4273-b603-c739c8581757",
       "dependsOn": [
         "pkg:golang/github.com/agext/levenshtein@v1.2.1",
         "pkg:golang/github.com/apparentlymart/go-textseg/v13@v13.0.0",
