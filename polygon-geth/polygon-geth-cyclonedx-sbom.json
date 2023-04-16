@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:caa3ad8c-6cef-4939-9119-24103ce658cb",
+  "serialNumber": "urn:uuid:b71e7e51-d500-42ad-9a37-2c1b3299d6f2",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-14T00:13:38+00:00",
+    "timestamp": "2023-04-16T14:11:07+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "14d407f0-4f36-40e5-b65d-13a2996553c8",
+      "bom-ref": "c8ec4428-7fce-4d98-ba95-fbfbb3d4fc74",
       "type": "container",
       "name": "polygon-geth_v0.3.7",
       "properties": [
@@ -1525,7 +1525,7 @@
       ]
     },
     {
-      "bom-ref": "4a4d5ca2-6c32-45c6-808f-ba1e991c7a38",
+      "bom-ref": "9a8c9b71-f38a-49c5-a675-e6562170be7f",
       "type": "application",
       "name": "bin/geth",
       "properties": [
@@ -1542,13 +1542,7 @@
   ],
   "dependencies": [
     {
-      "ref": "14d407f0-4f36-40e5-b65d-13a2996553c8",
-      "dependsOn": [
-        "4a4d5ca2-6c32-45c6-808f-ba1e991c7a38"
-      ]
-    },
-    {
-      "ref": "4a4d5ca2-6c32-45c6-808f-ba1e991c7a38",
+      "ref": "9a8c9b71-f38a-49c5-a675-e6562170be7f",
       "dependsOn": [
         "pkg:golang/github.com/burntsushi/toml@v1.1.0",
         "pkg:golang/github.com/cespare/xxhash/v2@v2.1.1",
@@ -1621,6 +1615,12 @@
         "pkg:golang/gopkg.in/olebedev/go-duktape.v3@v3.0.0-20200619000410-60c24ae608a6",
         "pkg:golang/gopkg.in/urfave/cli.v1@v1.20.0",
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0"
+      ]
+    },
+    {
+      "ref": "c8ec4428-7fce-4d98-ba95-fbfbb3d4fc74",
+      "dependsOn": [
+        "9a8c9b71-f38a-49c5-a675-e6562170be7f"
       ]
     }
   ],
