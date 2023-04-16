@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:2e93139a-46f3-4988-93c9-4975e2066bdc",
+  "serialNumber": "urn:uuid:679015f7-c19b-4f16-b434-a4191e68decf",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T18:10:52+00:00",
+    "timestamp": "2023-04-16T13:52:08+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "808417e6-4ab2-4c50-9059-57dcad624fb5",
+      "bom-ref": "0daf730c-7bdc-49e5-a81d-fa3040a709b7",
       "type": "container",
       "name": "panacea_v2.0.7-1",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "1702b5c9-534a-427a-b21a-c741f9ad12be",
+      "bom-ref": "2b3711f4-9199-4dab-8535-893df8c70d1b",
       "type": "application",
       "name": "bin/panacead",
       "properties": [
@@ -2151,7 +2151,13 @@
   ],
   "dependencies": [
     {
-      "ref": "1702b5c9-534a-427a-b21a-c741f9ad12be",
+      "ref": "0daf730c-7bdc-49e5-a81d-fa3040a709b7",
+      "dependsOn": [
+        "2b3711f4-9199-4dab-8535-893df8c70d1b"
+      ]
+    },
+    {
+      "ref": "2b3711f4-9199-4dab-8535-893df8c70d1b",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2253,12 +2259,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "808417e6-4ab2-4c50-9059-57dcad624fb5",
-      "dependsOn": [
-        "1702b5c9-534a-427a-b21a-c741f9ad12be"
       ]
     }
   ],
