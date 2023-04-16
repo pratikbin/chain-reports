@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:2e574d50-94c9-4378-89b1-edf28e651044",
+  "serialNumber": "urn:uuid:3578c57d-fce1-4909-b916-0427550eb9cf",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-14T00:20:54+00:00",
+    "timestamp": "2023-04-16T14:14:38+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "c0198cb7-59dc-4c54-b5e0-630713e032d7",
+      "bom-ref": "ba0a8711-1e59-44dc-a15a-aa866c882459",
       "type": "container",
       "name": "desmos_v4.8.0",
       "properties": [
@@ -2302,7 +2302,7 @@
       ]
     },
     {
-      "bom-ref": "c834371c-0034-492b-9960-756e49b5ad6d",
+      "bom-ref": "c5387f81-ea67-4353-9fb7-16f8f734edc4",
       "type": "application",
       "name": "bin/desmos",
       "properties": [
@@ -2319,13 +2319,13 @@
   ],
   "dependencies": [
     {
-      "ref": "c0198cb7-59dc-4c54-b5e0-630713e032d7",
+      "ref": "ba0a8711-1e59-44dc-a15a-aa866c882459",
       "dependsOn": [
-        "c834371c-0034-492b-9960-756e49b5ad6d"
+        "c5387f81-ea67-4353-9fb7-16f8f734edc4"
       ]
     },
     {
-      "ref": "c834371c-0034-492b-9960-756e49b5ad6d",
+      "ref": "c5387f81-ea67-4353-9fb7-16f8f734edc4",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.4.1",
