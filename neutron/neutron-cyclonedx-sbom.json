@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:db08cc8f-04a5-4ab5-b438-e68e6135a6d4",
+  "serialNumber": "urn:uuid:cdcf457f-324e-4712-8b3f-9ee27e7a7f50",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T20:04:30+00:00",
+    "timestamp": "2023-04-16T14:24:04+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "65c88f06-90b8-4a4c-b6b4-5a02f2ac3dc8",
+      "bom-ref": "aaae7536-348b-4034-8777-8c3046529fab",
       "type": "container",
       "name": "neutron_v0.4.1",
       "properties": [
@@ -2470,7 +2470,7 @@
       ]
     },
     {
-      "bom-ref": "959c38f4-390c-4658-85a5-976f1e59b445",
+      "bom-ref": "87a0d896-67d5-41f5-bd33-e4c7adb8329e",
       "type": "application",
       "name": "bin/neutrond",
       "properties": [
@@ -2487,13 +2487,7 @@
   ],
   "dependencies": [
     {
-      "ref": "65c88f06-90b8-4a4c-b6b4-5a02f2ac3dc8",
-      "dependsOn": [
-        "959c38f4-390c-4658-85a5-976f1e59b445"
-      ]
-    },
-    {
-      "ref": "959c38f4-390c-4658-85a5-976f1e59b445",
+      "ref": "87a0d896-67d5-41f5-bd33-e4c7adb8329e",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2611,6 +2605,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7"
+      ]
+    },
+    {
+      "ref": "aaae7536-348b-4034-8777-8c3046529fab",
+      "dependsOn": [
+        "87a0d896-67d5-41f5-bd33-e4c7adb8329e"
       ]
     }
   ],
