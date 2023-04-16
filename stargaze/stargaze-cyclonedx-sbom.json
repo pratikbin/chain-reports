@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:8aded3b2-e721-421e-9bab-fa725a1745c5",
+  "serialNumber": "urn:uuid:88b1204f-c84a-4e53-a562-e8fc5b9dbe2a",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T21:17:23+00:00",
+    "timestamp": "2023-04-16T14:01:43+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "2a218ee3-d744-4e2b-9ca2-094b5a43c8f1",
+      "bom-ref": "925b2ff4-ba07-4458-b246-2efbd331a1a9",
       "type": "container",
       "name": "stargaze_v9.0.1",
       "properties": [
@@ -2365,7 +2365,7 @@
       ]
     },
     {
-      "bom-ref": "6990bdf1-14a1-49b2-89be-8741aabaea75",
+      "bom-ref": "4cfb8031-7684-450e-836d-230402f73279",
       "type": "application",
       "name": "bin/starsd",
       "properties": [
@@ -2382,13 +2382,7 @@
   ],
   "dependencies": [
     {
-      "ref": "2a218ee3-d744-4e2b-9ca2-094b5a43c8f1",
-      "dependsOn": [
-        "6990bdf1-14a1-49b2-89be-8741aabaea75"
-      ]
-    },
-    {
-      "ref": "6990bdf1-14a1-49b2-89be-8741aabaea75",
+      "ref": "4cfb8031-7684-450e-836d-230402f73279",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2501,6 +2495,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "925b2ff4-ba07-4458-b246-2efbd331a1a9",
+      "dependsOn": [
+        "4cfb8031-7684-450e-836d-230402f73279"
       ]
     }
   ],
