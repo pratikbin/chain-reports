@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:e93913da-e22d-47d6-8596-b54c45b3b5d5",
+  "serialNumber": "urn:uuid:8b08a995-e70f-4e18-acb6-ceffeec67a5c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-13T20:33:01+00:00",
+    "timestamp": "2023-04-16T14:03:26+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.39.1"
+        "version": "0.40.0"
       }
     ],
     "component": {
-      "bom-ref": "5a524322-f6c7-497d-b4a9-8cbcec005188",
+      "bom-ref": "55f3036c-ea10-4c05-9f89-fae55c976ce6",
       "type": "container",
       "name": "quasar_v0.1.0",
       "properties": [
@@ -2386,7 +2386,7 @@
       ]
     },
     {
-      "bom-ref": "3e7a1bc4-4f8c-42bc-924a-cb027e207cf9",
+      "bom-ref": "22afe82a-91c0-455c-a9b8-d8709b400c5c",
       "type": "application",
       "name": "bin/quasarnoded",
       "properties": [
@@ -2403,7 +2403,7 @@
   ],
   "dependencies": [
     {
-      "ref": "3e7a1bc4-4f8c-42bc-924a-cb027e207cf9",
+      "ref": "22afe82a-91c0-455c-a9b8-d8709b400c5c",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2520,9 +2520,9 @@
       ]
     },
     {
-      "ref": "5a524322-f6c7-497d-b4a9-8cbcec005188",
+      "ref": "55f3036c-ea10-4c05-9f89-fae55c976ce6",
       "dependsOn": [
-        "3e7a1bc4-4f8c-42bc-924a-cb027e207cf9"
+        "22afe82a-91c0-455c-a9b8-d8709b400c5c"
       ]
     }
   ],
