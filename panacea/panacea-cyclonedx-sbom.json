@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:679015f7-c19b-4f16-b434-a4191e68decf",
+  "serialNumber": "urn:uuid:1641ba47-22db-4463-8b91-d4381191d0b0",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T13:52:08+00:00",
+    "timestamp": "2023-04-28T06:36:54+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "0daf730c-7bdc-49e5-a81d-fa3040a709b7",
+      "bom-ref": "ba87e673-9203-4650-aeb5-47f8475ef3c5",
       "type": "container",
       "name": "panacea_v2.0.7-1",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "2b3711f4-9199-4dab-8535-893df8c70d1b",
+      "bom-ref": "22aa7975-7942-45a1-b375-36ea1ea09072",
       "type": "application",
       "name": "bin/panacead",
       "properties": [
@@ -2151,13 +2151,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0daf730c-7bdc-49e5-a81d-fa3040a709b7",
-      "dependsOn": [
-        "2b3711f4-9199-4dab-8535-893df8c70d1b"
-      ]
-    },
-    {
-      "ref": "2b3711f4-9199-4dab-8535-893df8c70d1b",
+      "ref": "22aa7975-7942-45a1-b375-36ea1ea09072",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2259,6 +2253,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "ba87e673-9203-4650-aeb5-47f8475ef3c5",
+      "dependsOn": [
+        "22aa7975-7942-45a1-b375-36ea1ea09072"
       ]
     }
   ],
