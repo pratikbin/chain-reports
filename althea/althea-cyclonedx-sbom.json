@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:b76e974e-7fae-4f9a-bcca-3453e4c004d5",
+  "serialNumber": "urn:uuid:f108619d-67da-40e9-a1a4-d22ee718497d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T14:28:52+00:00",
+    "timestamp": "2023-04-28T07:10:50+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "8d2c02cc-e00c-41fc-89b4-af5a6bd9793b",
+      "bom-ref": "3bbce2c3-d2bd-4b26-8e2a-ff7d343e8f79",
       "type": "container",
       "name": "althea_v0.4.0",
       "properties": [
@@ -2680,7 +2680,7 @@
       ]
     },
     {
-      "bom-ref": "66fb8359-4622-43d2-be72-3bdd900a8d40",
+      "bom-ref": "632068e5-2064-4d8f-beee-64203835aa03",
       "type": "application",
       "name": "bin/althea",
       "properties": [
@@ -2697,7 +2697,13 @@
   ],
   "dependencies": [
     {
-      "ref": "66fb8359-4622-43d2-be72-3bdd900a8d40",
+      "ref": "3bbce2c3-d2bd-4b26-8e2a-ff7d343e8f79",
+      "dependsOn": [
+        "632068e5-2064-4d8f-beee-64203835aa03"
+      ]
+    },
+    {
+      "ref": "632068e5-2064-4d8f-beee-64203835aa03",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/math@v1.0.0-beta.4",
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
@@ -2825,12 +2831,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7"
-      ]
-    },
-    {
-      "ref": "8d2c02cc-e00c-41fc-89b4-af5a6bd9793b",
-      "dependsOn": [
-        "66fb8359-4622-43d2-be72-3bdd900a8d40"
       ]
     }
   ],
