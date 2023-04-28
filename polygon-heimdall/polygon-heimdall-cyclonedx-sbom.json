@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:8a4cca9e-c3c0-4128-b840-4f01e554b350",
+  "serialNumber": "urn:uuid:b5d58d2f-fe00-4ffe-a70a-4298f33e3887",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T14:37:11+00:00",
+    "timestamp": "2023-04-28T07:17:39+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "2f85015d-95d4-4a68-88bf-5446910c7ff0",
+      "bom-ref": "1b057a6d-a6df-498c-9740-2c6729db2592",
       "type": "container",
       "name": "polygon-heimdall_v0.3.3",
       "properties": [
@@ -2222,7 +2222,7 @@
       ]
     },
     {
-      "bom-ref": "aea37840-c4af-4e03-968a-f98323761370",
+      "bom-ref": "1c3c927e-3cf5-4618-9c8b-0f4810a6dc5e",
       "type": "application",
       "name": "bin/heimdalld",
       "properties": [
@@ -2279,7 +2279,7 @@
       ]
     },
     {
-      "bom-ref": "bbf397d4-1325-4aa6-b986-e3fd261c6e46",
+      "bom-ref": "596d58da-734a-4c97-9514-be5df8cfbbb9",
       "type": "application",
       "name": "bin/heimdallcli",
       "properties": [
@@ -2296,14 +2296,14 @@
   ],
   "dependencies": [
     {
-      "ref": "2f85015d-95d4-4a68-88bf-5446910c7ff0",
+      "ref": "1b057a6d-a6df-498c-9740-2c6729db2592",
       "dependsOn": [
-        "aea37840-c4af-4e03-968a-f98323761370",
-        "bbf397d4-1325-4aa6-b986-e3fd261c6e46"
+        "1c3c927e-3cf5-4618-9c8b-0f4810a6dc5e",
+        "596d58da-734a-4c97-9514-be5df8cfbbb9"
       ]
     },
     {
-      "ref": "aea37840-c4af-4e03-968a-f98323761370",
+      "ref": "1c3c927e-3cf5-4618-9c8b-0f4810a6dc5e",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/pubsub@v1.3.1",
         "pkg:golang/cloud.google.com/go@v0.65.0",
@@ -2412,7 +2412,7 @@
       ]
     },
     {
-      "ref": "bbf397d4-1325-4aa6-b986-e3fd261c6e46",
+      "ref": "596d58da-734a-4c97-9514-be5df8cfbbb9",
       "dependsOn": [
         "pkg:golang/github.com/bartekn/go-bip39@v0.0.0-20171116152956-a05967ea095d",
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
