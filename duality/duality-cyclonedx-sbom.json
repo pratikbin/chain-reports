@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:d045ec58-18c0-4220-b287-322b572e84cf",
+  "serialNumber": "urn:uuid:cb50541b-f6db-40fb-b6ec-81342bc40f23",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-18T16:58:00+00:00",
+    "timestamp": "2023-04-28T06:35:54+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "afff9c03-2648-4860-a07b-e619d60a9993",
+      "bom-ref": "e932b9f4-e02b-46db-acf7-f3c8c5bddb0a",
       "type": "container",
       "name": "duality_v0.2.0",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "2979400e-4dc5-4f35-9217-7067dade2c33",
+      "bom-ref": "77f70737-9eb8-4e5c-832e-96c32e13e1f0",
       "type": "application",
       "name": "bin/dualityd",
       "properties": [
@@ -2151,7 +2151,7 @@
   ],
   "dependencies": [
     {
-      "ref": "2979400e-4dc5-4f35-9217-7067dade2c33",
+      "ref": "77f70737-9eb8-4e5c-832e-96c32e13e1f0",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2256,9 +2256,9 @@
       ]
     },
     {
-      "ref": "afff9c03-2648-4860-a07b-e619d60a9993",
+      "ref": "e932b9f4-e02b-46db-acf7-f3c8c5bddb0a",
       "dependsOn": [
-        "2979400e-4dc5-4f35-9217-7067dade2c33"
+        "77f70737-9eb8-4e5c-832e-96c32e13e1f0"
       ]
     }
   ],
