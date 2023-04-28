@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:b7502fc4-a17c-4c16-990c-9c01963265fa",
+  "serialNumber": "urn:uuid:b56e3e83-60fa-48b5-bc3f-8d65825e3fa1",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-25T11:03:36+00:00",
+    "timestamp": "2023-04-28T07:04:43+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "50de923f-fe45-4b43-ace4-ef0778f5aeb6",
+      "bom-ref": "216fed92-9513-4cef-a2ef-eb69f31a6492",
       "type": "container",
       "name": "ibc-go-simd_v4.4.0",
       "properties": [
@@ -2197,7 +2197,7 @@
       ]
     },
     {
-      "bom-ref": "64a6aa21-4896-4328-bc05-b152eb8e9c9f",
+      "bom-ref": "c8c93766-4076-46c9-88d9-f3322a0d5786",
       "type": "application",
       "name": "bin/simd",
       "properties": [
@@ -2214,13 +2214,13 @@
   ],
   "dependencies": [
     {
-      "ref": "50de923f-fe45-4b43-ace4-ef0778f5aeb6",
+      "ref": "216fed92-9513-4cef-a2ef-eb69f31a6492",
       "dependsOn": [
-        "64a6aa21-4896-4328-bc05-b152eb8e9c9f"
+        "c8c93766-4076-46c9-88d9-f3322a0d5786"
       ]
     },
     {
-      "ref": "64a6aa21-4896-4328-bc05-b152eb8e9c9f",
+      "ref": "c8c93766-4076-46c9-88d9-f3322a0d5786",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
