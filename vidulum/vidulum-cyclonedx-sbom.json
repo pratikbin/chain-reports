@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:e619def8-1310-4abc-ad53-d20bfb283435",
+  "serialNumber": "urn:uuid:2e342451-6a00-465d-a861-c847a5446898",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T14:05:31+00:00",
+    "timestamp": "2023-04-28T06:47:37+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "51505824-586f-4fe7-9fe1-6486289b0279",
+      "bom-ref": "377753d1-e759-454f-bb84-fe169c5d5365",
       "type": "container",
       "name": "vidulum_v1.2.0",
       "properties": [
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "bom-ref": "b92fc4b7-17a7-4cb3-9785-da25dd6058b7",
+      "bom-ref": "21469e39-c4d8-4626-b736-fbcab047b17b",
       "type": "application",
       "name": "bin/vidulumd",
       "properties": [
@@ -2130,13 +2130,7 @@
   ],
   "dependencies": [
     {
-      "ref": "51505824-586f-4fe7-9fe1-6486289b0279",
-      "dependsOn": [
-        "b92fc4b7-17a7-4cb3-9785-da25dd6058b7"
-      ]
-    },
-    {
-      "ref": "b92fc4b7-17a7-4cb3-9785-da25dd6058b7",
+      "ref": "21469e39-c4d8-4626-b736-fbcab047b17b",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.3.10",
@@ -2237,6 +2231,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "377753d1-e759-454f-bb84-fe169c5d5365",
+      "dependsOn": [
+        "21469e39-c4d8-4626-b736-fbcab047b17b"
       ]
     }
   ],
