@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:b1ccaefb-d545-4206-949c-bbbe94e1517b",
+  "serialNumber": "urn:uuid:b75019ae-b31e-4aca-8179-83e4e8786804",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T14:27:50+00:00",
+    "timestamp": "2023-04-28T07:15:04+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "8ae3bf5c-c474-4cf0-a219-3778548399b7",
+      "bom-ref": "f6d948ae-35ee-4e13-96ba-852ee4c34eb4",
       "type": "container",
       "name": "kujira_v0.8.5",
       "properties": [
@@ -2890,7 +2890,7 @@
       ]
     },
     {
-      "bom-ref": "5da48425-8acc-4ce5-9fbc-aa467807abd5",
+      "bom-ref": "fcc23de6-b86e-4cb3-a2fb-1752bf12a51f",
       "type": "application",
       "name": "bin/kujirad",
       "properties": [
@@ -2907,7 +2907,13 @@
   ],
   "dependencies": [
     {
-      "ref": "5da48425-8acc-4ce5-9fbc-aa467807abd5",
+      "ref": "f6d948ae-35ee-4e13-96ba-852ee4c34eb4",
+      "dependsOn": [
+        "fcc23de6-b86e-4cb3-a2fb-1752bf12a51f"
+      ]
+    },
+    {
+      "ref": "fcc23de6-b86e-4cb3-a2fb-1752bf12a51f",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.11.0",
@@ -3045,12 +3051,6 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
-      ]
-    },
-    {
-      "ref": "8ae3bf5c-c474-4cf0-a219-3778548399b7",
-      "dependsOn": [
-        "5da48425-8acc-4ce5-9fbc-aa467807abd5"
       ]
     }
   ],
