@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:f4e330dc-5b52-4396-a04f-4840da455245",
+  "serialNumber": "urn:uuid:90376dac-a30d-47d7-b425-93568f700a3e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T13:58:36+00:00",
+    "timestamp": "2023-04-28T06:50:21+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "69601b27-52d6-45f5-a4a1-88eccc3bbe68",
+      "bom-ref": "0b6193ea-a0b5-42e6-a18d-59fc24589f4f",
       "type": "container",
       "name": "bitcanna_v1.6.3",
       "properties": [
@@ -2218,7 +2218,7 @@
       ]
     },
     {
-      "bom-ref": "e0360542-7110-4292-8080-268af15472a2",
+      "bom-ref": "6a519bea-c18c-4dae-98c8-d6c21e134ae9",
       "type": "application",
       "name": "bin/bcnad",
       "properties": [
@@ -2235,13 +2235,13 @@
   ],
   "dependencies": [
     {
-      "ref": "69601b27-52d6-45f5-a4a1-88eccc3bbe68",
+      "ref": "0b6193ea-a0b5-42e6-a18d-59fc24589f4f",
       "dependsOn": [
-        "e0360542-7110-4292-8080-268af15472a2"
+        "6a519bea-c18c-4dae-98c8-d6c21e134ae9"
       ]
     },
     {
-      "ref": "e0360542-7110-4292-8080-268af15472a2",
+      "ref": "6a519bea-c18c-4dae-98c8-d6c21e134ae9",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
