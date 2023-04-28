@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:5ead6826-c718-46e6-a211-33ce3957265f",
+  "serialNumber": "urn:uuid:6a9e4a9d-034a-4400-b3a8-b85b2123b015",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-20T02:40:39+00:00",
+    "timestamp": "2023-04-28T06:56:04+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "8236aab1-362c-40a0-bad1-f37f3c6ddd89",
+      "bom-ref": "b73fcd74-16c5-4408-b312-4087281e1ee6",
       "type": "container",
       "name": "terra_v2.3.1",
       "properties": [
@@ -2932,7 +2932,7 @@
       ]
     },
     {
-      "bom-ref": "726d7a24-b2a8-4c9a-8635-229fb98243a6",
+      "bom-ref": "68b9a3c9-2dda-45e4-9c89-725e2de8cb74",
       "type": "application",
       "name": "bin/terrad",
       "properties": [
@@ -2949,7 +2949,7 @@
   ],
   "dependencies": [
     {
-      "ref": "726d7a24-b2a8-4c9a-8635-229fb98243a6",
+      "ref": "68b9a3c9-2dda-45e4-9c89-725e2de8cb74",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.8.0",
@@ -3092,9 +3092,9 @@
       ]
     },
     {
-      "ref": "8236aab1-362c-40a0-bad1-f37f3c6ddd89",
+      "ref": "b73fcd74-16c5-4408-b312-4087281e1ee6",
       "dependsOn": [
-        "726d7a24-b2a8-4c9a-8635-229fb98243a6"
+        "68b9a3c9-2dda-45e4-9c89-725e2de8cb74"
       ]
     }
   ],
