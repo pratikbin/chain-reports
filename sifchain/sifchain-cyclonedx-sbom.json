@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:5fafff01-791c-452d-bf25-7b22335bd26e",
+  "serialNumber": "urn:uuid:a64985ba-f2a2-498a-8c3d-7966fc99f9c7",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T13:53:54+00:00",
+    "timestamp": "2023-04-28T06:37:38+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "de05bea0-5409-4cbb-9cf3-227f7bf094ba",
+      "bom-ref": "dcb29ba4-8d11-4726-9608-e0b03677f3bd",
       "type": "container",
       "name": "sifchain_v1.1.0-beta",
       "properties": [
@@ -2134,7 +2134,7 @@
       ]
     },
     {
-      "bom-ref": "491eb519-8c6f-4fbf-ab78-ba57189ee180",
+      "bom-ref": "46eef1b2-c307-4d42-92f9-f51febcff6db",
       "type": "application",
       "name": "bin/sifnoded",
       "properties": [
@@ -2151,7 +2151,7 @@
   ],
   "dependencies": [
     {
-      "ref": "491eb519-8c6f-4fbf-ab78-ba57189ee180",
+      "ref": "46eef1b2-c307-4d42-92f9-f51febcff6db",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2256,9 +2256,9 @@
       ]
     },
     {
-      "ref": "de05bea0-5409-4cbb-9cf3-227f7bf094ba",
+      "ref": "dcb29ba4-8d11-4726-9608-e0b03677f3bd",
       "dependsOn": [
-        "491eb519-8c6f-4fbf-ab78-ba57189ee180"
+        "46eef1b2-c307-4d42-92f9-f51febcff6db"
       ]
     }
   ],
