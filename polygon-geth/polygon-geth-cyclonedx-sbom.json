@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:b71e7e51-d500-42ad-9a37-2c1b3299d6f2",
+  "serialNumber": "urn:uuid:cedfca47-559b-448d-a567-5d1d497b4529",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T14:11:07+00:00",
+    "timestamp": "2023-04-28T06:58:26+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "c8ec4428-7fce-4d98-ba95-fbfbb3d4fc74",
+      "bom-ref": "37802138-8207-415e-b635-bceca8343686",
       "type": "container",
       "name": "polygon-geth_v0.3.7",
       "properties": [
@@ -1525,7 +1525,7 @@
       ]
     },
     {
-      "bom-ref": "9a8c9b71-f38a-49c5-a675-e6562170be7f",
+      "bom-ref": "10fa8c7b-dff2-4fe0-954b-95d5f83c044b",
       "type": "application",
       "name": "bin/geth",
       "properties": [
@@ -1542,7 +1542,7 @@
   ],
   "dependencies": [
     {
-      "ref": "9a8c9b71-f38a-49c5-a675-e6562170be7f",
+      "ref": "10fa8c7b-dff2-4fe0-954b-95d5f83c044b",
       "dependsOn": [
         "pkg:golang/github.com/burntsushi/toml@v1.1.0",
         "pkg:golang/github.com/cespare/xxhash/v2@v2.1.1",
@@ -1618,9 +1618,9 @@
       ]
     },
     {
-      "ref": "c8ec4428-7fce-4d98-ba95-fbfbb3d4fc74",
+      "ref": "37802138-8207-415e-b635-bceca8343686",
       "dependsOn": [
-        "9a8c9b71-f38a-49c5-a675-e6562170be7f"
+        "10fa8c7b-dff2-4fe0-954b-95d5f83c044b"
       ]
     }
   ],
