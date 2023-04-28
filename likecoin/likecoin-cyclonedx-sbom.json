@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:f7bafebe-ea4c-49d8-a3d9-27a05890b698",
+  "serialNumber": "urn:uuid:23f14b71-0862-4771-86ef-98fa8bfc3103",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-16T14:10:15+00:00",
+    "timestamp": "2023-04-28T06:55:21+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.40.0"
+        "version": "0.41.0"
       }
     ],
     "component": {
-      "bom-ref": "4b14e6f8-8c7e-4ea8-b90b-1ddbac1f2bba",
+      "bom-ref": "080eed97-b4de-4986-aff7-c36f2bf972df",
       "type": "container",
       "name": "likecoin_v3.1.1",
       "properties": [
@@ -2239,7 +2239,7 @@
       ]
     },
     {
-      "bom-ref": "4c86789a-bbda-4a37-a44a-897ea369b90e",
+      "bom-ref": "ac8006a2-63ec-4006-81e6-cbbc24efccf3",
       "type": "application",
       "name": "bin/liked",
       "properties": [
@@ -2256,13 +2256,13 @@
   ],
   "dependencies": [
     {
-      "ref": "4b14e6f8-8c7e-4ea8-b90b-1ddbac1f2bba",
+      "ref": "080eed97-b4de-4986-aff7-c36f2bf972df",
       "dependsOn": [
-        "4c86789a-bbda-4a37-a44a-897ea369b90e"
+        "ac8006a2-63ec-4006-81e6-cbbc24efccf3"
       ]
     },
     {
-      "ref": "4c86789a-bbda-4a37-a44a-897ea369b90e",
+      "ref": "ac8006a2-63ec-4006-81e6-cbbc24efccf3",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.3.10",
