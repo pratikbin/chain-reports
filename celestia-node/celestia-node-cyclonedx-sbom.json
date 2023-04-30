@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:f0e3a922-0f5d-47c7-b999-5b42212041ac",
+  "serialNumber": "urn:uuid:d26cf17e-9f53-4c67-abce-d7d9aaa9a38a",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T07:14:13+00:00",
+    "timestamp": "2023-04-30T09:44:13+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "382a6fee-9079-4860-9b96-9184853e9ffa",
+      "bom-ref": "a55e43a8-d193-4801-819f-967b2867effb",
       "type": "container",
       "name": "celestia-node_v0.9.1",
       "properties": [
@@ -5851,7 +5851,7 @@
       ]
     },
     {
-      "bom-ref": "5624a136-4e09-43db-9510-8745e3ebb404",
+      "bom-ref": "e83d40a6-8997-495d-88b0-9d1c91217245",
       "type": "application",
       "name": "bin/celestia",
       "properties": [
@@ -5868,13 +5868,13 @@
   ],
   "dependencies": [
     {
-      "ref": "382a6fee-9079-4860-9b96-9184853e9ffa",
+      "ref": "a55e43a8-d193-4801-819f-967b2867effb",
       "dependsOn": [
-        "5624a136-4e09-43db-9510-8745e3ebb404"
+        "e83d40a6-8997-495d-88b0-9d1c91217245"
       ]
     },
     {
-      "ref": "5624a136-4e09-43db-9510-8745e3ebb404",
+      "ref": "e83d40a6-8997-495d-88b0-9d1c91217245",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.8.0",
