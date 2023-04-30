@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:4999dc68-2e10-4f4d-8f1e-8f9e57314cb4",
+  "serialNumber": "urn:uuid:a44d901e-8399-4190-ae07-1d4738456fa9",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T07:01:50+00:00",
+    "timestamp": "2023-04-30T13:31:12+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5fb133a2-a011-4967-a9d8-76d6dca4a4ee",
+      "bom-ref": "475dac60-d0e3-4c18-aa9e-e2c3934eaaac",
       "type": "container",
       "name": "juno_v14.1.0",
       "properties": [
@@ -2449,7 +2449,7 @@
       ]
     },
     {
-      "bom-ref": "098a4e6b-1414-4df8-a2ce-7527d960fa51",
+      "bom-ref": "ab129000-dd82-4de1-98ef-72eff6c2b1ba",
       "type": "application",
       "name": "bin/junod",
       "properties": [
@@ -2466,7 +2466,13 @@
   ],
   "dependencies": [
     {
-      "ref": "098a4e6b-1414-4df8-a2ce-7527d960fa51",
+      "ref": "475dac60-d0e3-4c18-aa9e-e2c3934eaaac",
+      "dependsOn": [
+        "ab129000-dd82-4de1-98ef-72eff6c2b1ba"
+      ]
+    },
+    {
+      "ref": "ab129000-dd82-4de1-98ef-72eff6c2b1ba",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2583,12 +2589,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7"
-      ]
-    },
-    {
-      "ref": "5fb133a2-a011-4967-a9d8-76d6dca4a4ee",
-      "dependsOn": [
-        "098a4e6b-1414-4df8-a2ce-7527d960fa51"
       ]
     }
   ],
