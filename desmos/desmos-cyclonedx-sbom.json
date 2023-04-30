@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:45179914-e816-4661-9e9a-3e066079f01f",
+  "serialNumber": "urn:uuid:6c0b4a67-54e5-4da9-9df7-38ce90e1992f",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T07:07:46+00:00",
+    "timestamp": "2023-04-30T13:20:59+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "8c60cfe1-a0ba-4a88-b15c-57f40f7b7a3d",
+      "bom-ref": "2876532e-4e83-4a73-86d1-03b6e3a849e7",
       "type": "container",
       "name": "desmos_v4.8.1",
       "properties": [
@@ -2302,7 +2302,7 @@
       ]
     },
     {
-      "bom-ref": "ea67c4c0-fca1-4752-bb61-d8e414653cc7",
+      "bom-ref": "9dade47a-e1e2-4a45-af8b-b6f7a17a58de",
       "type": "application",
       "name": "bin/desmos",
       "properties": [
@@ -2319,13 +2319,13 @@
   ],
   "dependencies": [
     {
-      "ref": "8c60cfe1-a0ba-4a88-b15c-57f40f7b7a3d",
+      "ref": "2876532e-4e83-4a73-86d1-03b6e3a849e7",
       "dependsOn": [
-        "ea67c4c0-fca1-4752-bb61-d8e414653cc7"
+        "9dade47a-e1e2-4a45-af8b-b6f7a17a58de"
       ]
     },
     {
-      "ref": "ea67c4c0-fca1-4752-bb61-d8e414653cc7",
+      "ref": "9dade47a-e1e2-4a45-af8b-b6f7a17a58de",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.4.1",
