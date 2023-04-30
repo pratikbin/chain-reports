@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:f96388ae-92fa-47e2-8aa4-8a75dd1128c8",
+  "serialNumber": "urn:uuid:8ce73f85-7dfa-4c4f-ad0c-d9a0d03e9bdc",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T07:18:49+00:00",
+    "timestamp": "2023-04-30T13:38:07+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "8adcfefa-6042-47f6-8b01-ee3316b0a1b0",
+      "bom-ref": "0448614d-3871-4ad8-a5c0-ee77c0aa8c4a",
       "type": "container",
       "name": "onomy_v1.0.1",
       "properties": [
@@ -2113,7 +2113,7 @@
       ]
     },
     {
-      "bom-ref": "3edf3100-af64-42d3-96b1-7c4f7341aafd",
+      "bom-ref": "f4c91c40-70fa-4ed0-8621-2bf08b70633a",
       "type": "application",
       "name": "bin/onomyd",
       "properties": [
@@ -2130,7 +2130,13 @@
   ],
   "dependencies": [
     {
-      "ref": "3edf3100-af64-42d3-96b1-7c4f7341aafd",
+      "ref": "0448614d-3871-4ad8-a5c0-ee77c0aa8c4a",
+      "dependsOn": [
+        "f4c91c40-70fa-4ed0-8621-2bf08b70633a"
+      ]
+    },
+    {
+      "ref": "f4c91c40-70fa-4ed0-8621-2bf08b70633a",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2231,12 +2237,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "8adcfefa-6042-47f6-8b01-ee3316b0a1b0",
-      "dependsOn": [
-        "3edf3100-af64-42d3-96b1-7c4f7341aafd"
       ]
     }
   ],
