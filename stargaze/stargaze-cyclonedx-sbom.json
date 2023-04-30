@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:a1a1cbd8-dbc3-47fe-b970-d9d66a362877",
+  "serialNumber": "urn:uuid:372de6f4-a3b7-44da-abcb-2f2ccda441d6",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T06:51:57+00:00",
+    "timestamp": "2023-04-30T13:44:53+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5ea62d4f-3c90-4f7e-a798-6e477d9d43ad",
+      "bom-ref": "bcebc943-9045-454e-8485-39b28eb19e7c",
       "type": "container",
       "name": "stargaze_v9.0.1",
       "properties": [
@@ -2365,7 +2365,7 @@
       ]
     },
     {
-      "bom-ref": "4a726f7b-f823-4192-acb5-d6f249ff5e04",
+      "bom-ref": "eb1a88f0-d687-4622-9324-e5c901eeda01",
       "type": "application",
       "name": "bin/starsd",
       "properties": [
@@ -2382,7 +2382,13 @@
   ],
   "dependencies": [
     {
-      "ref": "4a726f7b-f823-4192-acb5-d6f249ff5e04",
+      "ref": "bcebc943-9045-454e-8485-39b28eb19e7c",
+      "dependsOn": [
+        "eb1a88f0-d687-4622-9324-e5c901eeda01"
+      ]
+    },
+    {
+      "ref": "eb1a88f0-d687-4622-9324-e5c901eeda01",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2495,12 +2501,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "5ea62d4f-3c90-4f7e-a798-6e477d9d43ad",
-      "dependsOn": [
-        "4a726f7b-f823-4192-acb5-d6f249ff5e04"
       ]
     }
   ],
