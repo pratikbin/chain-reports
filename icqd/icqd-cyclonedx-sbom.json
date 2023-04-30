@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:6b552b21-c51c-4cd6-8b64-fa884c759d2a",
+  "serialNumber": "urn:uuid:df535808-eb7e-4154-a958-e8b4a9d6464a",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T06:33:41+00:00",
+    "timestamp": "2023-04-30T13:29:08+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "9ed0a55a-eaf1-4303-b50b-680e305f8d93",
+      "bom-ref": "eb743e05-5b7e-4359-8e77-7efa7704f33f",
       "type": "container",
       "name": "icqd_latest",
       "properties": [
@@ -2008,7 +2008,7 @@
       ]
     },
     {
-      "bom-ref": "2f8e6f9b-8d15-4ae1-9950-dd3a3063b62e",
+      "bom-ref": "f2ad66f3-fe85-45ef-a2b8-5dc9fb4dc063",
       "type": "application",
       "name": "bin/icq",
       "properties": [
@@ -2025,7 +2025,13 @@
   ],
   "dependencies": [
     {
-      "ref": "2f8e6f9b-8d15-4ae1-9950-dd3a3063b62e",
+      "ref": "eb743e05-5b7e-4359-8e77-7efa7704f33f",
+      "dependsOn": [
+        "f2ad66f3-fe85-45ef-a2b8-5dc9fb4dc063"
+      ]
+    },
+    {
+      "ref": "f2ad66f3-fe85-45ef-a2b8-5dc9fb4dc063",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2121,12 +2127,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "9ed0a55a-eaf1-4303-b50b-680e305f8d93",
-      "dependsOn": [
-        "2f8e6f9b-8d15-4ae1-9950-dd3a3063b62e"
       ]
     }
   ],
