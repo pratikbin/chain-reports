@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:b5d58d2f-fe00-4ffe-a70a-4298f33e3887",
+  "serialNumber": "urn:uuid:ebbab1aa-87c4-49f4-b7b5-29cbdc5e9679",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T07:17:39+00:00",
+    "timestamp": "2023-04-30T09:44:55+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "1b057a6d-a6df-498c-9740-2c6729db2592",
+      "bom-ref": "f419f32e-b7f3-405a-9a3c-579df918b94d",
       "type": "container",
       "name": "polygon-heimdall_v0.3.3",
       "properties": [
@@ -2222,7 +2222,7 @@
       ]
     },
     {
-      "bom-ref": "1c3c927e-3cf5-4618-9c8b-0f4810a6dc5e",
+      "bom-ref": "0c80713b-381b-4cb1-8a27-c666a2bb4cee",
       "type": "application",
       "name": "bin/heimdalld",
       "properties": [
@@ -2279,7 +2279,7 @@
       ]
     },
     {
-      "bom-ref": "596d58da-734a-4c97-9514-be5df8cfbbb9",
+      "bom-ref": "d2f26f8f-6c02-4739-bbbc-0dfba84632bc",
       "type": "application",
       "name": "bin/heimdallcli",
       "properties": [
@@ -2296,14 +2296,7 @@
   ],
   "dependencies": [
     {
-      "ref": "1b057a6d-a6df-498c-9740-2c6729db2592",
-      "dependsOn": [
-        "1c3c927e-3cf5-4618-9c8b-0f4810a6dc5e",
-        "596d58da-734a-4c97-9514-be5df8cfbbb9"
-      ]
-    },
-    {
-      "ref": "1c3c927e-3cf5-4618-9c8b-0f4810a6dc5e",
+      "ref": "0c80713b-381b-4cb1-8a27-c666a2bb4cee",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/pubsub@v1.3.1",
         "pkg:golang/cloud.google.com/go@v0.65.0",
@@ -2412,7 +2405,7 @@
       ]
     },
     {
-      "ref": "596d58da-734a-4c97-9514-be5df8cfbbb9",
+      "ref": "d2f26f8f-6c02-4739-bbbc-0dfba84632bc",
       "dependsOn": [
         "pkg:golang/github.com/bartekn/go-bip39@v0.0.0-20171116152956-a05967ea095d",
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
@@ -2487,6 +2480,13 @@
         "pkg:golang/google.golang.org/protobuf@v1.28.1",
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1"
+      ]
+    },
+    {
+      "ref": "f419f32e-b7f3-405a-9a3c-579df918b94d",
+      "dependsOn": [
+        "0c80713b-381b-4cb1-8a27-c666a2bb4cee",
+        "d2f26f8f-6c02-4739-bbbc-0dfba84632bc"
       ]
     }
   ],
