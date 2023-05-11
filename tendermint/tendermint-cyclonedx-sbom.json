@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:1617dfce-f1a8-4707-86d0-60afe22c53a1",
+  "serialNumber": "urn:uuid:47d0268b-184b-4242-9e97-a8b8c426a270",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-04-28T07:15:54+00:00",
+    "timestamp": "2023-05-11T20:26:03+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "7ead69e0-08c4-41c2-8cf6-b0b35096c445",
+      "bom-ref": "22029c34-d0b8-46db-a805-3094bce3dcfe",
       "type": "container",
       "name": "tendermint_v0.34.24",
       "properties": [
@@ -1084,7 +1084,7 @@
       ]
     },
     {
-      "bom-ref": "240a7aa4-f719-4055-8564-998c52f49804",
+      "bom-ref": "d03adfbb-a3e4-41c8-b6b1-6e6b974cd51d",
       "type": "application",
       "name": "bin/tendermint",
       "properties": [
@@ -1101,7 +1101,13 @@
   ],
   "dependencies": [
     {
-      "ref": "240a7aa4-f719-4055-8564-998c52f49804",
+      "ref": "22029c34-d0b8-46db-a805-3094bce3dcfe",
+      "dependsOn": [
+        "d03adfbb-a3e4-41c8-b6b1-6e6b974cd51d"
+      ]
+    },
+    {
+      "ref": "d03adfbb-a3e4-41c8-b6b1-6e6b974cd51d",
       "dependsOn": [
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
         "pkg:golang/github.com/btcsuite/btcd@v0.22.1",
@@ -1153,12 +1159,6 @@
         "pkg:golang/google.golang.org/protobuf@v1.28.2-0.20220831092852-f930b1dc76e8",
         "pkg:golang/gopkg.in/ini.v1@v1.67.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1"
-      ]
-    },
-    {
-      "ref": "7ead69e0-08c4-41c2-8cf6-b0b35096c445",
-      "dependsOn": [
-        "240a7aa4-f719-4055-8564-998c52f49804"
       ]
     }
   ],
