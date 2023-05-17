@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:0b912a1c-01f1-4ffe-a7c7-f48df74a0bdb",
+  "serialNumber": "urn:uuid:ac816e5a-7ed2-4949-98ac-86aedbc29ea0",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-11T23:35:20+00:00",
+    "timestamp": "2023-05-17T05:38:41+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "8cc42350-4c55-450e-9919-15a76706976d",
+      "bom-ref": "d271cc6e-5a48-477e-8437-0d0e5b7a7803",
       "type": "container",
       "name": "burnt_v0.0.2",
       "properties": [
@@ -2281,7 +2281,7 @@
       ]
     },
     {
-      "bom-ref": "7a7f76c6-049d-4aeb-85ba-8bdba2e8e7e0",
+      "bom-ref": "da1b0faa-b4a0-49b9-b566-a74e5a33a982",
       "type": "application",
       "name": "bin/burntd",
       "properties": [
@@ -2298,7 +2298,13 @@
   ],
   "dependencies": [
     {
-      "ref": "7a7f76c6-049d-4aeb-85ba-8bdba2e8e7e0",
+      "ref": "d271cc6e-5a48-477e-8437-0d0e5b7a7803",
+      "dependsOn": [
+        "da1b0faa-b4a0-49b9-b566-a74e5a33a982"
+      ]
+    },
+    {
+      "ref": "da1b0faa-b4a0-49b9-b566-a74e5a33a982",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2407,12 +2413,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "8cc42350-4c55-450e-9919-15a76706976d",
-      "dependsOn": [
-        "7a7f76c6-049d-4aeb-85ba-8bdba2e8e7e0"
       ]
     }
   ],
