@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:32fe3984-dde1-4c66-af3a-20cd8caf3296",
+  "serialNumber": "urn:uuid:104239ef-b84a-431a-a1cb-c3e4b63790cd",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-16T09:08:19+00:00",
+    "timestamp": "2023-05-17T05:11:02+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "534ef14a-2b48-43a1-bbf4-d0ce08f36bc5",
+      "bom-ref": "0c3ffbcd-f3d6-4c2d-be24-68c409169c47",
       "type": "container",
       "name": "fetchhub_v0.10.7",
       "properties": [
@@ -2176,7 +2176,7 @@
       ]
     },
     {
-      "bom-ref": "2d639d93-c506-4062-9f0d-698872ba63cd",
+      "bom-ref": "d992a799-84a8-4007-b96c-5f185d12fe79",
       "type": "application",
       "name": "bin/fetchd",
       "properties": [
@@ -2193,7 +2193,13 @@
   ],
   "dependencies": [
     {
-      "ref": "2d639d93-c506-4062-9f0d-698872ba63cd",
+      "ref": "0c3ffbcd-f3d6-4c2d-be24-68c409169c47",
+      "dependsOn": [
+        "d992a799-84a8-4007-b96c-5f185d12fe79"
+      ]
+    },
+    {
+      "ref": "d992a799-84a8-4007-b96c-5f185d12fe79",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2297,12 +2303,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "534ef14a-2b48-43a1-bbf4-d0ce08f36bc5",
-      "dependsOn": [
-        "2d639d93-c506-4062-9f0d-698872ba63cd"
       ]
     }
   ],
