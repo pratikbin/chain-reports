@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:67fb59a8-bfab-4554-9300-1462aa1fdfd7",
+  "serialNumber": "urn:uuid:38035c16-c9b5-4bdd-b03d-adac04e8528d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-15T08:03:56+00:00",
+    "timestamp": "2023-05-17T05:44:03+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "17f8b829-bd87-457f-9639-e8edda6b6716",
+      "bom-ref": "8e18745f-a899-4dcc-aa89-0c0108b0d5f5",
       "type": "container",
       "name": "archway_v0.5.2",
       "properties": [
@@ -2323,7 +2323,7 @@
       ]
     },
     {
-      "bom-ref": "11dab892-d34e-4cc4-b903-b21147e84ece",
+      "bom-ref": "fe93d055-fc1c-4766-a005-16667914d5ea",
       "type": "application",
       "name": "bin/archwayd",
       "properties": [
@@ -2340,7 +2340,13 @@
   ],
   "dependencies": [
     {
-      "ref": "11dab892-d34e-4cc4-b903-b21147e84ece",
+      "ref": "8e18745f-a899-4dcc-aa89-0c0108b0d5f5",
+      "dependsOn": [
+        "fe93d055-fc1c-4766-a005-16667914d5ea"
+      ]
+    },
+    {
+      "ref": "fe93d055-fc1c-4766-a005-16667914d5ea",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2451,12 +2457,6 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
-      ]
-    },
-    {
-      "ref": "17f8b829-bd87-457f-9639-e8edda6b6716",
-      "dependsOn": [
-        "11dab892-d34e-4cc4-b903-b21147e84ece"
       ]
     }
   ],
