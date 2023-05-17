@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:62e94bf7-c1aa-4d28-a936-dc79088f6e38",
+  "serialNumber": "urn:uuid:238ccb49-1ab8-437c-933a-1740c888ed58",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-11T20:13:58+00:00",
+    "timestamp": "2023-05-17T05:09:28+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "6218b434-961e-413d-b2ef-48ff76ecfd0c",
+      "bom-ref": "fd4df8c5-dcb6-4247-aa93-39c966ad9c31",
       "type": "container",
       "name": "cheqd_v1.4.0",
       "properties": [
@@ -3016,7 +3016,7 @@
       ]
     },
     {
-      "bom-ref": "e2ecaa09-eefa-43d4-9ba3-122713e44142",
+      "bom-ref": "ead9789f-203a-4429-afde-6156f80ca405",
       "type": "application",
       "name": "bin/cheqd-noded",
       "properties": [
@@ -3033,13 +3033,7 @@
   ],
   "dependencies": [
     {
-      "ref": "6218b434-961e-413d-b2ef-48ff76ecfd0c",
-      "dependsOn": [
-        "e2ecaa09-eefa-43d4-9ba3-122713e44142"
-      ]
-    },
-    {
-      "ref": "e2ecaa09-eefa-43d4-9ba3-122713e44142",
+      "ref": "ead9789f-203a-4429-afde-6156f80ca405",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.8.0",
@@ -3183,6 +3177,12 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "fd4df8c5-dcb6-4247-aa93-39c966ad9c31",
+      "dependsOn": [
+        "ead9789f-203a-4429-afde-6156f80ca405"
       ]
     }
   ],
