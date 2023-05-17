@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:02bff453-5f22-4e97-8df0-b8aa415636d2",
+  "serialNumber": "urn:uuid:ed4421e3-05a7-4085-942e-f2a83667ff7d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-12T01:52:51+00:00",
+    "timestamp": "2023-05-17T05:39:31+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "c2919469-0b4d-47dd-9b0a-09e2c33f5e78",
+      "bom-ref": "0f100c32-b93b-49ee-96e2-e13d7fb7212c",
       "type": "container",
       "name": "sommelier_v6.0.0",
       "properties": [
@@ -2239,7 +2239,7 @@
       ]
     },
     {
-      "bom-ref": "b387a26c-fe82-4533-9b37-da5b185e47bc",
+      "bom-ref": "a6e85e25-e8d5-4e2a-b136-6fb3ad569f46",
       "type": "application",
       "name": "bin/sommelier",
       "properties": [
@@ -2256,7 +2256,13 @@
   ],
   "dependencies": [
     {
-      "ref": "b387a26c-fe82-4533-9b37-da5b185e47bc",
+      "ref": "0f100c32-b93b-49ee-96e2-e13d7fb7212c",
+      "dependsOn": [
+        "a6e85e25-e8d5-4e2a-b136-6fb3ad569f46"
+      ]
+    },
+    {
+      "ref": "a6e85e25-e8d5-4e2a-b136-6fb3ad569f46",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2363,12 +2369,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "c2919469-0b4d-47dd-9b0a-09e2c33f5e78",
-      "dependsOn": [
-        "b387a26c-fe82-4533-9b37-da5b185e47bc"
       ]
     }
   ],
