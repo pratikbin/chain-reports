@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:6194bf61-4396-41c5-ab2f-7eaccf595770",
+  "serialNumber": "urn:uuid:5cc78754-5a15-4c5d-8ed3-d1fc7ce9563a",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-11T21:43:05+00:00",
+    "timestamp": "2023-05-17T05:18:23+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "9ee21cb5-eff3-4ce2-9833-3157caf80a69",
+      "bom-ref": "cc0e468b-8fd0-4b56-9913-e777025dcd0a",
       "type": "container",
       "name": "cronos_v1.0.5",
       "properties": [
@@ -3352,7 +3352,7 @@
       ]
     },
     {
-      "bom-ref": "5b841b00-39ff-42fb-b9d9-f3746974ea78",
+      "bom-ref": "f56a6eae-30e7-4057-994f-a440c7ab7b34",
       "type": "application",
       "name": "bin/cronosd",
       "properties": [
@@ -3369,7 +3369,13 @@
   ],
   "dependencies": [
     {
-      "ref": "5b841b00-39ff-42fb-b9d9-f3746974ea78",
+      "ref": "cc0e468b-8fd0-4b56-9913-e777025dcd0a",
+      "dependsOn": [
+        "f56a6eae-30e7-4057-994f-a440c7ab7b34"
+      ]
+    },
+    {
+      "ref": "f56a6eae-30e7-4057-994f-a440c7ab7b34",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.8.0",
@@ -3529,12 +3535,6 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
-      ]
-    },
-    {
-      "ref": "9ee21cb5-eff3-4ce2-9833-3157caf80a69",
-      "dependsOn": [
-        "5b841b00-39ff-42fb-b9d9-f3746974ea78"
       ]
     }
   ],
