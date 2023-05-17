@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:8cafa192-c252-402a-abe2-447f7014d31d",
+  "serialNumber": "urn:uuid:168eacee-2dcf-48f1-ab04-81f07de15c1a",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-12T01:33:38+00:00",
+    "timestamp": "2023-05-17T05:42:03+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "0c3ee6be-1333-49d7-affe-05ca6f175dee",
+      "bom-ref": "707f9e55-3c49-44e9-a7ea-2fd51e3069c9",
       "type": "container",
       "name": "kujira_v0.8.5",
       "properties": [
@@ -2890,7 +2890,7 @@
       ]
     },
     {
-      "bom-ref": "68d74c00-a1e6-4d51-b03b-bf696e27f657",
+      "bom-ref": "a3c5b9cb-2b2e-452e-b424-f785169070e5",
       "type": "application",
       "name": "bin/kujirad",
       "properties": [
@@ -2907,13 +2907,13 @@
   ],
   "dependencies": [
     {
-      "ref": "0c3ee6be-1333-49d7-affe-05ca6f175dee",
+      "ref": "707f9e55-3c49-44e9-a7ea-2fd51e3069c9",
       "dependsOn": [
-        "68d74c00-a1e6-4d51-b03b-bf696e27f657"
+        "a3c5b9cb-2b2e-452e-b424-f785169070e5"
       ]
     },
     {
-      "ref": "68d74c00-a1e6-4d51-b03b-bf696e27f657",
+      "ref": "a3c5b9cb-2b2e-452e-b424-f785169070e5",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.11.0",
