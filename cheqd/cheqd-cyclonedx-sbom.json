@@ -1,56 +1,50 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:ea272c6a-8223-4848-a2f0-5fe1e0a106d4",
+  "serialNumber": "urn:uuid:a178e3be-ae30-4e7a-8528-3c93a01041a4",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-05-27T15:55:52+00:00",
+    "timestamp": "2023-06-02T08:37:06+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.41.0"
+        "version": "0.42.0"
       }
     ],
     "component": {
-      "bom-ref": "a158b55a-5fd2-4fee-87d5-86c9d81b4237",
+      "bom-ref": "124c3c3f-7fc7-4541-b6b7-e4680ad3bcc2",
       "type": "container",
       "name": "cheqd_v1.4.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:SchemaVersion",
-          "value": "2"
+          "name": "aquasecurity:trivy:DiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:ImageID",
           "value": "sha256:ce034a302956f2323b67eebf1b0a3d7d062736815a41d84cb90651de3469c069"
         },
         {
-          "name": "aquasecurity:trivy:DiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
         }
       ]
     }
   },
   "components": [
     {
-      "bom-ref": "pkg:golang/cloud.google.com/go@v0.110.0",
-      "type": "library",
-      "name": "cloud.google.com/go",
-      "version": "v0.110.0",
-      "purl": "pkg:golang/cloud.google.com/go@v0.110.0",
+      "bom-ref": "2a700b62-9b6e-40a8-9c12-9b9ba12add39",
+      "type": "application",
+      "name": "bin/cheqd-noded",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
           "value": "gobinary"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         }
       ]
     },
@@ -62,16 +56,16 @@
       "purl": "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -83,16 +77,16 @@
       "purl": "pkg:golang/cloud.google.com/go/iam@v0.12.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -104,16 +98,37 @@
       "purl": "pkg:golang/cloud.google.com/go/storage@v1.28.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/cloud.google.com/go@v0.110.0",
+      "type": "library",
+      "name": "cloud.google.com/go",
+      "version": "v0.110.0",
+      "purl": "pkg:golang/cloud.google.com/go@v0.110.0",
+      "properties": [
+        {
           "name": "aquasecurity:trivy:LayerDiffID",
           "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -125,16 +140,16 @@
       "purl": "pkg:golang/cosmossdk.io/errors@v1.0.0-beta.7",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -146,16 +161,16 @@
       "purl": "pkg:golang/cosmossdk.io/math@v1.0.0-beta.3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -167,58 +182,16 @@
       "purl": "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
-        }
-      ]
-    },
-    {
-      "bom-ref": "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
-      "type": "library",
-      "name": "github.com/ChainSafe/go-schnorrkel",
-      "version": "v0.0.0-20200405005733-88cbf1b4c40d",
-      "purl": "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
-      "properties": [
-        {
           "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
-        }
-      ]
-    },
-    {
-      "bom-ref": "pkg:golang/github.com/workiva/go-datastructures@v1.0.53",
-      "type": "library",
-      "name": "github.com/Workiva/go-datastructures",
-      "version": "v1.0.53",
-      "purl": "pkg:golang/github.com/workiva/go-datastructures@v1.0.53",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDigest",
-          "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
-        },
-        {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         }
       ]
     },
@@ -230,16 +203,16 @@
       "purl": "pkg:golang/github.com/armon/go-metrics@v0.4.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -251,16 +224,16 @@
       "purl": "pkg:golang/github.com/aws/aws-sdk-go@v1.44.122",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -272,16 +245,16 @@
       "purl": "pkg:golang/github.com/beorn7/perks@v1.0.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -293,16 +266,16 @@
       "purl": "pkg:golang/github.com/bgentry/go-netrc@v0.0.0-20140422174119-9fd32a8b3d3d",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -314,16 +287,16 @@
       "purl": "pkg:golang/github.com/bgentry/speakeasy@v0.1.1-0.20220910012023-760eaf8b6816",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -335,16 +308,16 @@
       "purl": "pkg:golang/github.com/btcsuite/btcd/btcec/v2@v2.3.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -356,16 +329,16 @@
       "purl": "pkg:golang/github.com/cenkalti/backoff/v4@v4.1.3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -377,16 +350,37 @@
       "purl": "pkg:golang/github.com/cespare/xxhash/v2@v2.2.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
+      "type": "library",
+      "name": "github.com/ChainSafe/go-schnorrkel",
+      "version": "v0.0.0-20200405005733-88cbf1b4c40d",
+      "purl": "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
+      "properties": [
+        {
           "name": "aquasecurity:trivy:LayerDiffID",
           "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -398,16 +392,16 @@
       "purl": "pkg:golang/github.com/cheqd/cosmos-sdk@v0.46.10-state-sync",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -419,16 +413,16 @@
       "purl": "pkg:golang/github.com/cheqd/iavl@v0.19.5-cheqd",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -440,16 +434,16 @@
       "purl": "pkg:golang/github.com/chzyer/readline@v0.0.0-20180603132655-2972be24d48e",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -461,16 +455,16 @@
       "purl": "pkg:golang/github.com/cockroachdb/apd/v2@v2.0.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -482,16 +476,16 @@
       "purl": "pkg:golang/github.com/coinbase/rosetta-sdk-go@v0.7.9",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -503,16 +497,16 @@
       "purl": "pkg:golang/github.com/confio/ics23/go@v0.9.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -524,16 +518,16 @@
       "purl": "pkg:golang/github.com/cosmos/btcutil@v1.0.5",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -545,16 +539,16 @@
       "purl": "pkg:golang/github.com/cosmos/cosmos-proto@v1.0.0-alpha8",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -566,16 +560,16 @@
       "purl": "pkg:golang/github.com/cosmos/go-bip39@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -587,16 +581,16 @@
       "purl": "pkg:golang/github.com/cosmos/gogoproto@v1.4.10",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -608,16 +602,16 @@
       "purl": "pkg:golang/github.com/cosmos/ibc-go/v6@v6.1.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -629,16 +623,16 @@
       "purl": "pkg:golang/github.com/cosmos/keyring@v1.2.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -650,16 +644,16 @@
       "purl": "pkg:golang/github.com/cosmos/ledger-cosmos-go@v0.12.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -671,16 +665,16 @@
       "purl": "pkg:golang/github.com/creachadair/taskgroup@v0.3.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -692,16 +686,16 @@
       "purl": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -713,16 +707,16 @@
       "purl": "pkg:golang/github.com/decred/dcrd/dcrec/secp256k1/v4@v4.0.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -734,16 +728,16 @@
       "purl": "pkg:golang/github.com/desertbit/timer@v0.0.0-20180107155436-c41aec40b27f",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -755,16 +749,16 @@
       "purl": "pkg:golang/github.com/dvsekhvalnov/jose2go@v1.5.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -776,16 +770,16 @@
       "purl": "pkg:golang/github.com/felixge/httpsnoop@v1.0.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -797,16 +791,16 @@
       "purl": "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -818,16 +812,16 @@
       "purl": "pkg:golang/github.com/gabriel-vasile/mimetype@v1.4.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -839,16 +833,16 @@
       "purl": "pkg:golang/github.com/go-kit/kit@v0.12.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -860,16 +854,16 @@
       "purl": "pkg:golang/github.com/go-kit/log@v0.2.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -881,16 +875,16 @@
       "purl": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -902,16 +896,16 @@
       "purl": "pkg:golang/github.com/go-ozzo/ozzo-validation/v4@v4.3.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -923,16 +917,16 @@
       "purl": "pkg:golang/github.com/godbus/dbus@v0.0.0-20190726142602-4481cbc300e2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -944,16 +938,16 @@
       "purl": "pkg:golang/github.com/gogo/gateway@v1.1.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -965,16 +959,16 @@
       "purl": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -986,16 +980,16 @@
       "purl": "pkg:golang/github.com/golang/protobuf@v1.5.3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1007,16 +1001,16 @@
       "purl": "pkg:golang/github.com/golang/snappy@v0.0.4",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1028,16 +1022,16 @@
       "purl": "pkg:golang/github.com/google/btree@v1.1.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1049,16 +1043,16 @@
       "purl": "pkg:golang/github.com/google/go-cmp@v0.5.9",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1070,16 +1064,16 @@
       "purl": "pkg:golang/github.com/google/orderedcode@v0.0.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1091,16 +1085,16 @@
       "purl": "pkg:golang/github.com/google/uuid@v1.3.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1112,16 +1106,16 @@
       "purl": "pkg:golang/github.com/googleapis/enterprise-certificate-proxy@v0.2.3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1133,16 +1127,16 @@
       "purl": "pkg:golang/github.com/googleapis/gax-go/v2@v2.7.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1154,16 +1148,16 @@
       "purl": "pkg:golang/github.com/gorilla/handlers@v1.5.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1175,16 +1169,16 @@
       "purl": "pkg:golang/github.com/gorilla/mux@v1.8.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1196,16 +1190,16 @@
       "purl": "pkg:golang/github.com/gorilla/websocket@v1.5.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1217,16 +1211,16 @@
       "purl": "pkg:golang/github.com/grpc-ecosystem/go-grpc-middleware@v1.3.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1238,16 +1232,16 @@
       "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@v1.16.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1259,16 +1253,16 @@
       "purl": "pkg:golang/github.com/gsterjov/go-libsecret@v0.0.0-20161001094733-a6f4afe4910c",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1280,16 +1274,16 @@
       "purl": "pkg:golang/github.com/gtank/merlin@v0.1.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1301,16 +1295,16 @@
       "purl": "pkg:golang/github.com/gtank/ristretto255@v0.1.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1322,16 +1316,16 @@
       "purl": "pkg:golang/github.com/hashicorp/go-cleanhttp@v0.5.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1343,16 +1337,16 @@
       "purl": "pkg:golang/github.com/hashicorp/go-getter@v1.7.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1364,16 +1358,16 @@
       "purl": "pkg:golang/github.com/hashicorp/go-immutable-radix@v1.3.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1385,16 +1379,16 @@
       "purl": "pkg:golang/github.com/hashicorp/go-safetemp@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1406,16 +1400,16 @@
       "purl": "pkg:golang/github.com/hashicorp/go-version@v1.6.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1427,16 +1421,16 @@
       "purl": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.5-0.20210104140557-80c98217689d",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1448,16 +1442,16 @@
       "purl": "pkg:golang/github.com/hashicorp/hcl@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1469,16 +1463,16 @@
       "purl": "pkg:golang/github.com/hdevalence/ed25519consensus@v0.0.0-20220222234857-c00d1f31bab3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1490,16 +1484,16 @@
       "purl": "pkg:golang/github.com/improbable-eng/grpc-web@v0.15.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1511,16 +1505,16 @@
       "purl": "pkg:golang/github.com/informalsystems/tendermint@v0.34.26",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1532,16 +1526,16 @@
       "purl": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1553,16 +1547,16 @@
       "purl": "pkg:golang/github.com/klauspost/compress@v1.15.11",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1574,16 +1568,16 @@
       "purl": "pkg:golang/github.com/lestrrat-go/backoff/v2@v2.0.8",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1595,16 +1589,16 @@
       "purl": "pkg:golang/github.com/lestrrat-go/blackmagic@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1616,16 +1610,16 @@
       "purl": "pkg:golang/github.com/lestrrat-go/httpcc@v1.0.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1637,16 +1631,16 @@
       "purl": "pkg:golang/github.com/lestrrat-go/iter@v1.0.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1658,16 +1652,16 @@
       "purl": "pkg:golang/github.com/lestrrat-go/jwx@v1.2.25",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1679,16 +1673,16 @@
       "purl": "pkg:golang/github.com/lestrrat-go/option@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1700,16 +1694,16 @@
       "purl": "pkg:golang/github.com/lib/pq@v1.10.6",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1721,16 +1715,16 @@
       "purl": "pkg:golang/github.com/libp2p/go-buffer-pool@v0.1.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1742,16 +1736,16 @@
       "purl": "pkg:golang/github.com/magiconair/properties@v1.8.6",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1763,16 +1757,16 @@
       "purl": "pkg:golang/github.com/manifoldco/promptui@v0.9.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1784,16 +1778,16 @@
       "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1805,16 +1799,16 @@
       "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.16",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1826,16 +1820,16 @@
       "purl": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1847,16 +1841,16 @@
       "purl": "pkg:golang/github.com/mimoo/strobego@v0.0.0-20210601165009-122bf33a46e0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1868,16 +1862,16 @@
       "purl": "pkg:golang/github.com/minio/highwayhash@v1.0.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1889,16 +1883,16 @@
       "purl": "pkg:golang/github.com/mitchellh/go-homedir@v1.1.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1910,16 +1904,16 @@
       "purl": "pkg:golang/github.com/mitchellh/go-testing-interface@v1.14.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1931,16 +1925,16 @@
       "purl": "pkg:golang/github.com/mitchellh/mapstructure@v1.5.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1952,16 +1946,16 @@
       "purl": "pkg:golang/github.com/mr-tron/base58@v1.2.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1973,16 +1967,16 @@
       "purl": "pkg:golang/github.com/mtibben/percent@v0.2.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -1994,16 +1988,16 @@
       "purl": "pkg:golang/github.com/multiformats/go-base32@v0.0.3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2015,16 +2009,16 @@
       "purl": "pkg:golang/github.com/multiformats/go-base36@v0.1.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2036,16 +2030,16 @@
       "purl": "pkg:golang/github.com/multiformats/go-multibase@v0.2.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2057,16 +2051,16 @@
       "purl": "pkg:golang/github.com/pelletier/go-toml/v2@v2.0.5",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2078,16 +2072,16 @@
       "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2099,16 +2093,16 @@
       "purl": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2120,16 +2114,16 @@
       "purl": "pkg:golang/github.com/prometheus/client_golang@v1.14.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2141,16 +2135,16 @@
       "purl": "pkg:golang/github.com/prometheus/client_model@v0.3.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2162,16 +2156,16 @@
       "purl": "pkg:golang/github.com/prometheus/common@v0.37.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2183,16 +2177,16 @@
       "purl": "pkg:golang/github.com/prometheus/procfs@v0.8.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2204,16 +2198,16 @@
       "purl": "pkg:golang/github.com/rakyll/statik@v0.1.7",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2225,16 +2219,16 @@
       "purl": "pkg:golang/github.com/rcrowley/go-metrics@v0.0.0-20201227073835-cf1acfcdf475",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2246,16 +2240,16 @@
       "purl": "pkg:golang/github.com/regen-network/cosmos-proto@v0.3.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2267,16 +2261,16 @@
       "purl": "pkg:golang/github.com/regen-network/protobuf@v1.3.3-alpha.regen.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2288,16 +2282,16 @@
       "purl": "pkg:golang/github.com/rs/cors@v1.8.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2309,16 +2303,16 @@
       "purl": "pkg:golang/github.com/rs/zerolog@v1.27.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2330,16 +2324,16 @@
       "purl": "pkg:golang/github.com/spf13/afero@v1.9.2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2351,16 +2345,16 @@
       "purl": "pkg:golang/github.com/spf13/cast@v1.5.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2372,16 +2366,16 @@
       "purl": "pkg:golang/github.com/spf13/cobra@v1.7.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2393,16 +2387,16 @@
       "purl": "pkg:golang/github.com/spf13/jwalterweatherman@v1.1.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2414,16 +2408,16 @@
       "purl": "pkg:golang/github.com/spf13/pflag@v1.0.5",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2435,16 +2429,16 @@
       "purl": "pkg:golang/github.com/spf13/viper@v1.14.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2456,16 +2450,16 @@
       "purl": "pkg:golang/github.com/stretchr/testify@v1.8.3",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2477,16 +2471,16 @@
       "purl": "pkg:golang/github.com/subosito/gotenv@v1.4.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2498,16 +2492,16 @@
       "purl": "pkg:golang/github.com/syndtr/goleveldb@v1.0.1-0.20210819022825-2ae1ddf74ef7",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2519,16 +2513,16 @@
       "purl": "pkg:golang/github.com/tendermint/go-amino@v0.16.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2540,16 +2534,16 @@
       "purl": "pkg:golang/github.com/tendermint/tm-db@v0.6.7",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2561,16 +2555,16 @@
       "purl": "pkg:golang/github.com/tidwall/btree@v1.5.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2582,16 +2576,37 @@
       "purl": "pkg:golang/github.com/ulikunitz/xz@v0.5.10",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/workiva/go-datastructures@v1.0.53",
+      "type": "library",
+      "name": "github.com/Workiva/go-datastructures",
+      "version": "v1.0.53",
+      "purl": "pkg:golang/github.com/workiva/go-datastructures@v1.0.53",
+      "properties": [
+        {
           "name": "aquasecurity:trivy:LayerDiffID",
           "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+        },
+        {
+          "name": "aquasecurity:trivy:LayerDigest",
+          "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2603,16 +2618,16 @@
       "purl": "pkg:golang/github.com/zondax/hid@v0.9.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2624,16 +2639,16 @@
       "purl": "pkg:golang/github.com/zondax/ledger-go@v0.14.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2645,16 +2660,16 @@
       "purl": "pkg:golang/go.opencensus.io@v0.24.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2666,16 +2681,16 @@
       "purl": "pkg:golang/golang.org/x/crypto@v0.5.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2687,16 +2702,16 @@
       "purl": "pkg:golang/golang.org/x/exp@v0.0.0-20230131160201-f062dba9d201",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2708,16 +2723,16 @@
       "purl": "pkg:golang/golang.org/x/net@v0.10.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2729,16 +2744,16 @@
       "purl": "pkg:golang/golang.org/x/oauth2@v0.6.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2750,16 +2765,16 @@
       "purl": "pkg:golang/golang.org/x/sys@v0.8.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2771,16 +2786,16 @@
       "purl": "pkg:golang/golang.org/x/term@v0.8.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2792,16 +2807,16 @@
       "purl": "pkg:golang/golang.org/x/text@v0.9.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2813,16 +2828,16 @@
       "purl": "pkg:golang/golang.org/x/xerrors@v0.0.0-20220907171357-04be3eba64a2",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2834,16 +2849,16 @@
       "purl": "pkg:golang/google.golang.org/api@v0.110.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2855,16 +2870,16 @@
       "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20230306155012-7f2fa6fef1f4",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2876,16 +2891,16 @@
       "purl": "pkg:golang/google.golang.org/grpc@v1.55.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2897,16 +2912,16 @@
       "purl": "pkg:golang/google.golang.org/protobuf@v1.30.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2918,16 +2933,16 @@
       "purl": "pkg:golang/gopkg.in/ini.v1@v1.67.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2939,16 +2954,16 @@
       "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2960,16 +2975,16 @@
       "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -2981,16 +2996,16 @@
       "purl": "pkg:golang/nhooyr.io/websocket@v1.8.6",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "gobinary"
         }
       ]
     },
@@ -3002,44 +3017,29 @@
       "purl": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
       "properties": [
         {
-          "name": "aquasecurity:trivy:PkgType",
-          "value": "gobinary"
+          "name": "aquasecurity:trivy:LayerDiffID",
+          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
         },
         {
           "name": "aquasecurity:trivy:LayerDigest",
           "value": "sha256:4af542208b675d19a857e8319915033fad3d0040e811584e037062dc47769a3d"
         },
         {
-          "name": "aquasecurity:trivy:LayerDiffID",
-          "value": "sha256:886c48390a344837f2d9d65fcc66a7c9ca1c257d8b419036abdc173dada4caf0"
-        }
-      ]
-    },
-    {
-      "bom-ref": "ad091938-02c3-48d6-bdac-f2a54e96272b",
-      "type": "application",
-      "name": "bin/cheqd-noded",
-      "properties": [
-        {
-          "name": "aquasecurity:trivy:Type",
+          "name": "aquasecurity:trivy:PkgType",
           "value": "gobinary"
-        },
-        {
-          "name": "aquasecurity:trivy:Class",
-          "value": "lang-pkgs"
         }
       ]
     }
   ],
   "dependencies": [
     {
-      "ref": "a158b55a-5fd2-4fee-87d5-86c9d81b4237",
+      "ref": "124c3c3f-7fc7-4541-b6b7-e4680ad3bcc2",
       "dependsOn": [
-        "ad091938-02c3-48d6-bdac-f2a54e96272b"
+        "2a700b62-9b6e-40a8-9c12-9b9ba12add39"
       ]
     },
     {
-      "ref": "ad091938-02c3-48d6-bdac-f2a54e96272b",
+      "ref": "2a700b62-9b6e-40a8-9c12-9b9ba12add39",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -3184,6 +3184,574 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
       ]
+    },
+    {
+      "ref": "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/cloud.google.com/go/iam@v0.12.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/cloud.google.com/go/storage@v1.28.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/cloud.google.com/go@v0.110.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/cosmossdk.io/errors@v1.0.0-beta.7",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/cosmossdk.io/math@v1.0.0-beta.3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/armon/go-metrics@v0.4.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/aws/aws-sdk-go@v1.44.122",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/bgentry/go-netrc@v0.0.0-20140422174119-9fd32a8b3d3d",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/bgentry/speakeasy@v0.1.1-0.20220910012023-760eaf8b6816",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/btcsuite/btcd/btcec/v2@v2.3.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cenkalti/backoff/v4@v4.1.3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cespare/xxhash/v2@v2.2.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cheqd/cosmos-sdk@v0.46.10-state-sync",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cheqd/iavl@v0.19.5-cheqd",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/chzyer/readline@v0.0.0-20180603132655-2972be24d48e",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cockroachdb/apd/v2@v2.0.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/coinbase/rosetta-sdk-go@v0.7.9",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/confio/ics23/go@v0.9.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cosmos/btcutil@v1.0.5",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cosmos/cosmos-proto@v1.0.0-alpha8",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cosmos/go-bip39@v1.0.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cosmos/gogoproto@v1.4.10",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cosmos/ibc-go/v6@v6.1.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cosmos/keyring@v1.2.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/cosmos/ledger-cosmos-go@v0.12.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/creachadair/taskgroup@v0.3.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/decred/dcrd/dcrec/secp256k1/v4@v4.0.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/desertbit/timer@v0.0.0-20180107155436-c41aec40b27f",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/dvsekhvalnov/jose2go@v1.5.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/felixge/httpsnoop@v1.0.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gabriel-vasile/mimetype@v1.4.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/go-kit/kit@v0.12.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/go-kit/log@v0.2.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/go-ozzo/ozzo-validation/v4@v4.3.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/godbus/dbus@v0.0.0-20190726142602-4481cbc300e2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gogo/gateway@v1.1.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/golang/groupcache@v0.0.0-20210331224755-41bb18bfe9da",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/golang/protobuf@v1.5.3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/golang/snappy@v0.0.4",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/google/btree@v1.1.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/google/go-cmp@v0.5.9",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/google/orderedcode@v0.0.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/google/uuid@v1.3.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/googleapis/enterprise-certificate-proxy@v0.2.3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/googleapis/gax-go/v2@v2.7.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gorilla/handlers@v1.5.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gorilla/mux@v1.8.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gorilla/websocket@v1.5.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/grpc-ecosystem/go-grpc-middleware@v1.3.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@v1.16.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gsterjov/go-libsecret@v0.0.0-20161001094733-a6f4afe4910c",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gtank/merlin@v0.1.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/gtank/ristretto255@v0.1.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hashicorp/go-cleanhttp@v0.5.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hashicorp/go-getter@v1.7.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hashicorp/go-immutable-radix@v1.3.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hashicorp/go-safetemp@v1.0.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hashicorp/go-version@v1.6.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.5-0.20210104140557-80c98217689d",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hashicorp/hcl@v1.0.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/hdevalence/ed25519consensus@v0.0.0-20220222234857-c00d1f31bab3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/improbable-eng/grpc-web@v0.15.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/informalsystems/tendermint@v0.34.26",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/jmespath/go-jmespath@v0.4.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/klauspost/compress@v1.15.11",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/lestrrat-go/backoff/v2@v2.0.8",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/lestrrat-go/blackmagic@v1.0.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/lestrrat-go/httpcc@v1.0.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/lestrrat-go/iter@v1.0.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/lestrrat-go/jwx@v1.2.25",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/lestrrat-go/option@v1.0.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/lib/pq@v1.10.6",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/libp2p/go-buffer-pool@v0.1.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/magiconair/properties@v1.8.6",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/manifoldco/promptui@v0.9.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mattn/go-isatty@v0.0.16",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mimoo/strobego@v0.0.0-20210601165009-122bf33a46e0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/minio/highwayhash@v1.0.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mitchellh/go-homedir@v1.1.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mitchellh/go-testing-interface@v1.14.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mitchellh/mapstructure@v1.5.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mr-tron/base58@v1.2.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/mtibben/percent@v0.2.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/multiformats/go-base32@v0.0.3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/multiformats/go-base36@v0.1.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/multiformats/go-multibase@v0.2.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/pelletier/go-toml/v2@v2.0.5",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/pkg/errors@v0.9.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/prometheus/client_golang@v1.14.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/prometheus/client_model@v0.3.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/prometheus/common@v0.37.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/prometheus/procfs@v0.8.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/rakyll/statik@v0.1.7",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/rcrowley/go-metrics@v0.0.0-20201227073835-cf1acfcdf475",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/regen-network/cosmos-proto@v0.3.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/regen-network/protobuf@v1.3.3-alpha.regen.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/rs/cors@v1.8.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/rs/zerolog@v1.27.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/spf13/afero@v1.9.2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/spf13/cast@v1.5.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/spf13/cobra@v1.7.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/spf13/jwalterweatherman@v1.1.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/spf13/pflag@v1.0.5",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/spf13/viper@v1.14.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/stretchr/testify@v1.8.3",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/subosito/gotenv@v1.4.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/syndtr/goleveldb@v1.0.1-0.20210819022825-2ae1ddf74ef7",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/tendermint/go-amino@v0.16.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/tendermint/tm-db@v0.6.7",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/tidwall/btree@v1.5.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/ulikunitz/xz@v0.5.10",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/workiva/go-datastructures@v1.0.53",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/zondax/hid@v0.9.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/github.com/zondax/ledger-go@v0.14.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/go.opencensus.io@v0.24.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/crypto@v0.5.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/exp@v0.0.0-20230131160201-f062dba9d201",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/net@v0.10.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/oauth2@v0.6.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/sys@v0.8.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/term@v0.8.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/text@v0.9.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/golang.org/x/xerrors@v0.0.0-20220907171357-04be3eba64a2",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/google.golang.org/api@v0.110.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20230306155012-7f2fa6fef1f4",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/google.golang.org/grpc@v1.55.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/google.golang.org/protobuf@v1.30.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/ini.v1@v1.67.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/nhooyr.io/websocket@v1.8.6",
+      "dependsOn": null
+    },
+    {
+      "ref": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
+      "dependsOn": null
     }
   ],
   "vulnerabilities": []
