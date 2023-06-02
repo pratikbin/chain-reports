@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:3338a307-95f1-4514-9bbc-972a2a3a69f1",
+  "serialNumber": "urn:uuid:5c5e31e1-ad39-4287-b4c5-e417859a0708",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T08:21:10+00:00",
+    "timestamp": "2023-06-02T12:17:08+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "8f4b9b63-e842-4aef-93fb-91618afb2ae1",
+      "bom-ref": "fb7e9115-9bca-4e50-8445-813e2beb2df7",
       "type": "container",
       "name": "likecoin_v4.0.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "a5052490-942b-4c61-a52e-6833f2b7d250",
+      "bom-ref": "6fa184d3-7dfd-498a-beba-62cce07ff696",
       "type": "application",
       "name": "bin/liked",
       "properties": [
@@ -2949,13 +2949,7 @@
   ],
   "dependencies": [
     {
-      "ref": "8f4b9b63-e842-4aef-93fb-91618afb2ae1",
-      "dependsOn": [
-        "a5052490-942b-4c61-a52e-6833f2b7d250"
-      ]
-    },
-    {
-      "ref": "a5052490-942b-4c61-a52e-6833f2b7d250",
+      "ref": "6fa184d3-7dfd-498a-beba-62cce07ff696",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.11.0",
@@ -3095,6 +3089,12 @@
         "pkg:golang/lukechampine.com/blake3@v1.1.6",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "fb7e9115-9bca-4e50-8445-813e2beb2df7",
+      "dependsOn": [
+        "6fa184d3-7dfd-498a-beba-62cce07ff696"
       ]
     },
     {
