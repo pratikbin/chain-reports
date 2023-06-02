@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:75fac2ce-a28e-4cd9-b676-2e3fc62fada2",
+  "serialNumber": "urn:uuid:f01d6354-49ce-4497-98b2-ca7cf83a923c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T08:22:54+00:00",
+    "timestamp": "2023-06-02T12:28:34+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "71269f82-19ed-4b7b-8674-303ce228607a",
+      "bom-ref": "35673fba-149b-4fbc-9779-62f1fc15f2c5",
       "type": "container",
       "name": "gravitybridge_v1.9.3",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "e2b5a447-9be0-40ac-960c-9d440ec93718",
+      "bom-ref": "1b906dd9-8d1f-4487-b396-7b34ff30cf1c",
       "type": "application",
       "name": "bin/gravity",
       "properties": [
@@ -2802,13 +2802,7 @@
   ],
   "dependencies": [
     {
-      "ref": "71269f82-19ed-4b7b-8674-303ce228607a",
-      "dependsOn": [
-        "e2b5a447-9be0-40ac-960c-9d440ec93718"
-      ]
-    },
-    {
-      "ref": "e2b5a447-9be0-40ac-960c-9d440ec93718",
+      "ref": "1b906dd9-8d1f-4487-b396-7b34ff30cf1c",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2941,6 +2935,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "35673fba-149b-4fbc-9779-62f1fc15f2c5",
+      "dependsOn": [
+        "1b906dd9-8d1f-4487-b396-7b34ff30cf1c"
       ]
     },
     {
