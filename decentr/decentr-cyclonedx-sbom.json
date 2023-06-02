@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:a04c705d-f91d-4605-9477-7a7215e88f7b",
+  "serialNumber": "urn:uuid:1ab12930-77f3-47bb-8014-9397fe302f0b",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T08:34:42+00:00",
+    "timestamp": "2023-06-02T12:20:02+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "a7f788eb-99dc-433e-b301-ab565f4e32af",
+      "bom-ref": "21ff99a2-c109-4c56-849e-7c0f39daf4bc",
       "type": "container",
       "name": "decentr_v1.6.2",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "56ad8b8f-3e02-4f37-9ada-4d7fd816276a",
+      "bom-ref": "9589eb92-86cf-418b-9cc5-b2c87e6c84e4",
       "type": "application",
       "name": "bin/decentrd",
       "properties": [
@@ -2088,7 +2088,13 @@
   ],
   "dependencies": [
     {
-      "ref": "56ad8b8f-3e02-4f37-9ada-4d7fd816276a",
+      "ref": "21ff99a2-c109-4c56-849e-7c0f39daf4bc",
+      "dependsOn": [
+        "9589eb92-86cf-418b-9cc5-b2c87e6c84e4"
+      ]
+    },
+    {
+      "ref": "9589eb92-86cf-418b-9cc5-b2c87e6c84e4",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.3.10",
@@ -2187,12 +2193,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "a7f788eb-99dc-433e-b301-ab565f4e32af",
-      "dependsOn": [
-        "56ad8b8f-3e02-4f37-9ada-4d7fd816276a"
       ]
     },
     {
