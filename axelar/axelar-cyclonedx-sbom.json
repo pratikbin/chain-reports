@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:46de9515-0595-45c9-bfbd-7f123b25ae12",
+  "serialNumber": "urn:uuid:2c647ade-1a74-4272-8b5e-d0ad06a5b12d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T08:33:53+00:00",
+    "timestamp": "2023-06-02T12:33:28+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5baeb70b-8ff4-4296-857d-d7c4f85639cb",
+      "bom-ref": "c33186d3-319d-4c04-9118-474973fa5467",
       "type": "container",
       "name": "axelar_v0.33.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "ea334c86-ffc0-416a-8aff-e8d996565ebc",
+      "bom-ref": "acd0d122-32bd-454d-a514-749889492e45",
       "type": "application",
       "name": "bin/axelard",
       "properties": [
@@ -2403,13 +2403,7 @@
   ],
   "dependencies": [
     {
-      "ref": "5baeb70b-8ff4-4296-857d-d7c4f85639cb",
-      "dependsOn": [
-        "ea334c86-ffc0-416a-8aff-e8d996565ebc"
-      ]
-    },
-    {
-      "ref": "ea334c86-ffc0-416a-8aff-e8d996565ebc",
+      "ref": "acd0d122-32bd-454d-a514-749889492e45",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2523,6 +2517,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "c33186d3-319d-4c04-9118-474973fa5467",
+      "dependsOn": [
+        "acd0d122-32bd-454d-a514-749889492e45"
       ]
     },
     {
