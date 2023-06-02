@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:3ec10cb1-210e-40e3-a279-4623a2f95712",
+  "serialNumber": "urn:uuid:3ae351ef-f1e3-4171-b4ac-814a5b0980be",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T08:26:31+00:00",
+    "timestamp": "2023-06-02T12:20:43+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "709e525f-eaac-42fd-8171-25fa3a5417fa",
+      "bom-ref": "aa11af01-481d-4728-ae5c-876988b2bc8c",
       "type": "container",
       "name": "emoney_v1.2.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "2141e57b-6f8d-45b1-b066-9c3ce34b6b60",
+      "bom-ref": "dafbdf4b-0a6a-4684-98ea-74837ba026df",
       "type": "application",
       "name": "bin/emd",
       "properties": [
@@ -1941,7 +1941,13 @@
   ],
   "dependencies": [
     {
-      "ref": "2141e57b-6f8d-45b1-b066-9c3ce34b6b60",
+      "ref": "aa11af01-481d-4728-ae5c-876988b2bc8c",
+      "dependsOn": [
+        "dafbdf4b-0a6a-4684-98ea-74837ba026df"
+      ]
+    },
+    {
+      "ref": "dafbdf4b-0a6a-4684-98ea-74837ba026df",
       "dependsOn": [
         "pkg:golang/./ics23@%28devel%29",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2033,12 +2039,6 @@
         "pkg:golang/gopkg.in/ini.v1@v1.61.0",
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.0-20210107192922-496545a6307b"
-      ]
-    },
-    {
-      "ref": "709e525f-eaac-42fd-8171-25fa3a5417fa",
-      "dependsOn": [
-        "2141e57b-6f8d-45b1-b066-9c3ce34b6b60"
       ]
     },
     {
