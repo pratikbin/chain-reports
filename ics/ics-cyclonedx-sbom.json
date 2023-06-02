@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:1b55c8f3-6c0e-4627-b220-6eb5ea2c62e0",
+  "serialNumber": "urn:uuid:f85375ee-813e-4a0e-8822-717f7d155e14",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T08:31:59+00:00",
+    "timestamp": "2023-06-02T12:14:13+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "d49d4333-1ed8-410d-b990-f713de5d03c4",
+      "bom-ref": "d9c0a08a-dd96-4228-8d72-b80455aff118",
       "type": "container",
       "name": "ics_v2.0.0-rc0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "a453f735-e00c-4ded-87b6-bcbffd436cb5",
+      "bom-ref": "4d7dd59f-234b-4ffd-ad26-b8e8d338964a",
       "type": "application",
       "name": "bin/interchain-security-pd",
       "properties": [
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "bom-ref": "b01edfb2-841e-4f16-b4f5-ade5c31b2aef",
+      "bom-ref": "dc1f7de7-0e2c-4a82-bc04-1f49dbb01ed7",
       "type": "application",
       "name": "bin/interchain-security-cd",
       "properties": [
@@ -2229,7 +2229,7 @@
   ],
   "dependencies": [
     {
-      "ref": "a453f735-e00c-4ded-87b6-bcbffd436cb5",
+      "ref": "4d7dd59f-234b-4ffd-ad26-b8e8d338964a",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2337,7 +2337,14 @@
       ]
     },
     {
-      "ref": "b01edfb2-841e-4f16-b4f5-ade5c31b2aef",
+      "ref": "d9c0a08a-dd96-4228-8d72-b80455aff118",
+      "dependsOn": [
+        "4d7dd59f-234b-4ffd-ad26-b8e8d338964a",
+        "dc1f7de7-0e2c-4a82-bc04-1f49dbb01ed7"
+      ]
+    },
+    {
+      "ref": "dc1f7de7-0e2c-4a82-bc04-1f49dbb01ed7",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2442,13 +2449,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "d49d4333-1ed8-410d-b990-f713de5d03c4",
-      "dependsOn": [
-        "a453f735-e00c-4ded-87b6-bcbffd436cb5",
-        "b01edfb2-841e-4f16-b4f5-ade5c31b2aef"
       ]
     },
     {
