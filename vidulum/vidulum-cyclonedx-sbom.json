@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:70d00aa7-3c71-4cae-8983-2b94a8ae61c9",
+  "serialNumber": "urn:uuid:e33d7a7a-91db-44fd-a0a4-77a0b7deb8ab",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T09:02:34+00:00",
+    "timestamp": "2023-06-02T12:53:24+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "296114e0-4cd0-43ba-9624-2d91073c3ecf",
+      "bom-ref": "3bf4d45f-edc3-4f6a-897a-eac40110e7a0",
       "type": "container",
       "name": "vidulum_v1.2.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "b35864ee-b893-42fb-8fa0-49b2c830ee90",
+      "bom-ref": "db64e942-1b1f-4fd7-af04-65214e361613",
       "type": "application",
       "name": "bin/vidulumd",
       "properties": [
@@ -2130,13 +2130,13 @@
   ],
   "dependencies": [
     {
-      "ref": "296114e0-4cd0-43ba-9624-2d91073c3ecf",
+      "ref": "3bf4d45f-edc3-4f6a-897a-eac40110e7a0",
       "dependsOn": [
-        "b35864ee-b893-42fb-8fa0-49b2c830ee90"
+        "db64e942-1b1f-4fd7-af04-65214e361613"
       ]
     },
     {
-      "ref": "b35864ee-b893-42fb-8fa0-49b2c830ee90",
+      "ref": "db64e942-1b1f-4fd7-af04-65214e361613",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.3.10",
