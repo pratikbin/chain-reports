@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:04a52064-217d-43c1-8bdc-5d6b85f33371",
+  "serialNumber": "urn:uuid:fe859b48-5c0d-4da8-b290-4af9778e3620",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T12:41:15+00:00",
+    "timestamp": "2023-06-07T05:02:42+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "4a6bd476-9398-4586-8b7c-981f1e3c8bc5",
+      "bom-ref": "e57ff1fa-51a9-4505-ac6e-f5615f340325",
       "type": "container",
       "name": "celestia-app_v0.13.3",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "963e4f42-6b53-4a8c-ae10-558ccad8f14c",
+      "bom-ref": "b7326960-46f0-4d6f-832a-6a16f6ad9f05",
       "type": "application",
       "name": "bin/celestia-appd",
       "properties": [
@@ -3075,13 +3075,7 @@
   ],
   "dependencies": [
     {
-      "ref": "4a6bd476-9398-4586-8b7c-981f1e3c8bc5",
-      "dependsOn": [
-        "963e4f42-6b53-4a8c-ae10-558ccad8f14c"
-      ]
-    },
-    {
-      "ref": "963e4f42-6b53-4a8c-ae10-558ccad8f14c",
+      "ref": "b7326960-46f0-4d6f-832a-6a16f6ad9f05",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.1",
         "pkg:golang/cloud.google.com/go/iam@v0.4.0",
@@ -3227,6 +3221,12 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "e57ff1fa-51a9-4505-ac6e-f5615f340325",
+      "dependsOn": [
+        "b7326960-46f0-4d6f-832a-6a16f6ad9f05"
       ]
     },
     {
