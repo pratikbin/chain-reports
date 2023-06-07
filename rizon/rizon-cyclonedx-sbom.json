@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:952050c8-5f8f-4cac-ae40-41cd120b8732",
+  "serialNumber": "urn:uuid:40257598-8d6e-457f-acf7-461e5538e484",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T12:56:05+00:00",
+    "timestamp": "2023-06-07T05:11:54+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "af70b28b-8bdc-41d2-9bd5-5b61753588db",
+      "bom-ref": "3727ef46-fa8e-42de-b54c-85c0eafd77e3",
       "type": "container",
       "name": "rizon_v0.4.1",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "7bd5b36b-e16b-4268-b2af-b0a5ca29a212",
+      "bom-ref": "a1a55793-f85a-43f4-8bdf-6f7b8294cd99",
       "type": "application",
       "name": "bin/rizond",
       "properties": [
@@ -2130,7 +2130,13 @@
   ],
   "dependencies": [
     {
-      "ref": "7bd5b36b-e16b-4268-b2af-b0a5ca29a212",
+      "ref": "3727ef46-fa8e-42de-b54c-85c0eafd77e3",
+      "dependsOn": [
+        "a1a55793-f85a-43f4-8bdf-6f7b8294cd99"
+      ]
+    },
+    {
+      "ref": "a1a55793-f85a-43f4-8bdf-6f7b8294cd99",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2231,12 +2237,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "af70b28b-8bdc-41d2-9bd5-5b61753588db",
-      "dependsOn": [
-        "7bd5b36b-e16b-4268-b2af-b0a5ca29a212"
       ]
     },
     {
