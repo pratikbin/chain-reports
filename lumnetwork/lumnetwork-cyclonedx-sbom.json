@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:68d861c2-5c64-4b40-aeeb-574bbafd464b",
+  "serialNumber": "urn:uuid:00a138cc-a7af-4f3c-9fed-3a604a4ec72b",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-04T16:26:56+00:00",
+    "timestamp": "2023-06-07T04:32:50+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "b6c939ef-afc1-4163-9d00-f55ca6970cf2",
+      "bom-ref": "491ce58a-8393-4fda-b980-516f647d16f3",
       "type": "container",
       "name": "lumnetwork_v1.4.2",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "c90f6446-3e75-494e-b8f5-37903ee30198",
+      "bom-ref": "96e8c385-aa42-484a-81bf-87a092902565",
       "type": "application",
       "name": "bin/lumd",
       "properties": [
@@ -2781,13 +2781,13 @@
   ],
   "dependencies": [
     {
-      "ref": "b6c939ef-afc1-4163-9d00-f55ca6970cf2",
+      "ref": "491ce58a-8393-4fda-b980-516f647d16f3",
       "dependsOn": [
-        "c90f6446-3e75-494e-b8f5-37903ee30198"
+        "96e8c385-aa42-484a-81bf-87a092902565"
       ]
     },
     {
-      "ref": "c90f6446-3e75-494e-b8f5-37903ee30198",
+      "ref": "96e8c385-aa42-484a-81bf-87a092902565",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.13.0",
