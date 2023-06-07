@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:fa598f82-1d20-41ee-96d5-7ff5c2197ada",
+  "serialNumber": "urn:uuid:68e3a236-f381-4ceb-aac1-29f8e2b37da6",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T12:34:50+00:00",
+    "timestamp": "2023-06-07T04:49:21+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "09f95609-350a-45df-a2f9-17e551b45ba8",
+      "bom-ref": "f49287ce-41c4-41de-aee8-8f1d97be3171",
       "type": "container",
       "name": "bitcanna_v1.7.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "7be4e00b-9320-46be-9f71-0062c2eebaf8",
+      "bom-ref": "4001cbb1-7ecd-4491-9f25-2985969bf241",
       "type": "application",
       "name": "bin/bcnad",
       "properties": [
@@ -2235,13 +2235,7 @@
   ],
   "dependencies": [
     {
-      "ref": "09f95609-350a-45df-a2f9-17e551b45ba8",
-      "dependsOn": [
-        "7be4e00b-9320-46be-9f71-0062c2eebaf8"
-      ]
-    },
-    {
-      "ref": "7be4e00b-9320-46be-9f71-0062c2eebaf8",
+      "ref": "4001cbb1-7ecd-4491-9f25-2985969bf241",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2347,6 +2341,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "f49287ce-41c4-41de-aee8-8f1d97be3171",
+      "dependsOn": [
+        "4001cbb1-7ecd-4491-9f25-2985969bf241"
       ]
     },
     {
