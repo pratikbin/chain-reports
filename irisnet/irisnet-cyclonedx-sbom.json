@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:a90b7655-b3f4-476d-aefc-aff05b962b47",
+  "serialNumber": "urn:uuid:e9ac8942-b60a-4e71-b0bf-6fc8d90602a7",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T12:18:41+00:00",
+    "timestamp": "2023-06-07T04:38:47+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "e8a973d7-5ec3-4eb7-b287-6af7a1b57e15",
+      "bom-ref": "23a3842d-c9e7-45e3-8290-f5fd813286ce",
       "type": "container",
       "name": "irisnet_v2.0.2",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "01b0ce19-f3a0-41b2-bf13-9788f0ba6823",
+      "bom-ref": "40699f0a-c94f-412a-97d8-b4767155c071",
       "type": "application",
       "name": "bin/iris",
       "properties": [
@@ -3537,7 +3537,13 @@
   ],
   "dependencies": [
     {
-      "ref": "01b0ce19-f3a0-41b2-bf13-9788f0ba6823",
+      "ref": "23a3842d-c9e7-45e3-8290-f5fd813286ce",
+      "dependsOn": [
+        "40699f0a-c94f-412a-97d8-b4767155c071"
+      ]
+    },
+    {
+      "ref": "40699f0a-c94f-412a-97d8-b4767155c071",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.1",
         "pkg:golang/cloud.google.com/go/iam@v0.7.0",
@@ -3705,12 +3711,6 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
-      ]
-    },
-    {
-      "ref": "e8a973d7-5ec3-4eb7-b287-6af7a1b57e15",
-      "dependsOn": [
-        "01b0ce19-f3a0-41b2-bf13-9788f0ba6823"
       ]
     },
     {
