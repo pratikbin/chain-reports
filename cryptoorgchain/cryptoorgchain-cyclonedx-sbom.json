@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:95f52b3e-22bc-498a-be7e-a1674824089a",
+  "serialNumber": "urn:uuid:d0665cd5-a1ea-4450-9cb4-5f8c6e212a58",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T12:27:52+00:00",
+    "timestamp": "2023-06-07T04:46:26+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "6b49646f-14ac-47a5-be70-748ab901a564",
+      "bom-ref": "f812829d-d954-447c-9bfb-f8359032722e",
       "type": "container",
       "name": "cryptoorgchain_v4.2.5",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "e07efe3a-2079-4883-9bc1-255db3c97a7d",
+      "bom-ref": "3efb6a7f-bd89-41f8-a339-09f5791056c4",
       "type": "application",
       "name": "bin/chain-maind",
       "properties": [
@@ -3012,13 +3012,7 @@
   ],
   "dependencies": [
     {
-      "ref": "6b49646f-14ac-47a5-be70-748ab901a564",
-      "dependsOn": [
-        "e07efe3a-2079-4883-9bc1-255db3c97a7d"
-      ]
-    },
-    {
-      "ref": "e07efe3a-2079-4883-9bc1-255db3c97a7d",
+      "ref": "3efb6a7f-bd89-41f8-a339-09f5791056c4",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.8.0",
@@ -3161,6 +3155,12 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "f812829d-d954-447c-9bfb-f8359032722e",
+      "dependsOn": [
+        "3efb6a7f-bd89-41f8-a339-09f5791056c4"
       ]
     },
     {
