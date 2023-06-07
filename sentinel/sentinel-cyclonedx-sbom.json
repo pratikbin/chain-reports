@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:aa133076-0770-4f26-8ea8-da91245b8a40",
+  "serialNumber": "urn:uuid:c0bc0e1f-bdad-404d-8d07-9334fabd23c1",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T12:48:20+00:00",
+    "timestamp": "2023-06-07T05:05:33+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "1630eacd-c271-4bd3-9c32-a559a120c59e",
+      "bom-ref": "4afea43b-cc0f-41ae-9530-b49560f24daa",
       "type": "container",
       "name": "sentinel_v0.10.1",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "884dd3ef-521d-449a-862e-e8bc641b5859",
+      "bom-ref": "897b594f-b675-4e4c-995b-a7cc0d9fdb73",
       "type": "application",
       "name": "bin/sentinelhub",
       "properties": [
@@ -2151,13 +2151,13 @@
   ],
   "dependencies": [
     {
-      "ref": "1630eacd-c271-4bd3-9c32-a559a120c59e",
+      "ref": "4afea43b-cc0f-41ae-9530-b49560f24daa",
       "dependsOn": [
-        "884dd3ef-521d-449a-862e-e8bc641b5859"
+        "897b594f-b675-4e4c-995b-a7cc0d9fdb73"
       ]
     },
     {
-      "ref": "884dd3ef-521d-449a-862e-e8bc641b5859",
+      "ref": "897b594f-b675-4e4c-995b-a7cc0d9fdb73",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
