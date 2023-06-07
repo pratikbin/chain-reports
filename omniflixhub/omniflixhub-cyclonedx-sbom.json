@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:d7f4d55b-875a-401a-8d41-ad7391ad82fa",
+  "serialNumber": "urn:uuid:c9c38082-1c80-4bac-9a73-93ff834d01b5",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-02T12:49:12+00:00",
+    "timestamp": "2023-06-07T05:06:23+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "c441d6e0-0093-400f-9e7b-a21665e6a097",
+      "bom-ref": "092d3b9b-ef13-466c-a571-4ce6859ea342",
       "type": "container",
       "name": "omniflixhub_v0.10.1",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "7320793a-b4fb-477d-96df-33d2e0096174",
+      "bom-ref": "e4dd9919-f19b-4a42-baf3-a3ccaf847700",
       "type": "application",
       "name": "bin/omniflixhubd",
       "properties": [
@@ -2298,7 +2298,13 @@
   ],
   "dependencies": [
     {
-      "ref": "7320793a-b4fb-477d-96df-33d2e0096174",
+      "ref": "092d3b9b-ef13-466c-a571-4ce6859ea342",
+      "dependsOn": [
+        "e4dd9919-f19b-4a42-baf3-a3ccaf847700"
+      ]
+    },
+    {
+      "ref": "e4dd9919-f19b-4a42-baf3-a3ccaf847700",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2407,12 +2413,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "c441d6e0-0093-400f-9e7b-a21665e6a097",
-      "dependsOn": [
-        "7320793a-b4fb-477d-96df-33d2e0096174"
       ]
     },
     {
