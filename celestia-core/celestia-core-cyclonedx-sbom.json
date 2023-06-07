@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:66d55623-6387-4840-8354-a89959ec7019",
+  "serialNumber": "urn:uuid:c4985279-d1dc-4fbb-a231-09eb558a50f1",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-05T15:34:18+00:00",
+    "timestamp": "2023-06-07T05:07:03+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "f6c4be8e-2a31-4528-b78e-a9c62a2f8bfd",
+      "bom-ref": "328b8018-0252-45d4-badf-1f6bfc3c13a8",
       "type": "container",
       "name": "celestia-core_v1.21.2-tm-v0.34.27",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "d006c82c-caf4-49ec-a26d-bfdae35e7c2a",
+      "bom-ref": "006056da-395c-4b05-853e-c52808c5a88a",
       "type": "application",
       "name": "bin/cometbft",
       "properties": [
@@ -1206,7 +1206,7 @@
   ],
   "dependencies": [
     {
-      "ref": "d006c82c-caf4-49ec-a26d-bfdae35e7c2a",
+      "ref": "006056da-395c-4b05-853e-c52808c5a88a",
       "dependsOn": [
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
         "pkg:golang/github.com/btcsuite/btcd/btcec/v2@v2.2.1",
@@ -1266,9 +1266,9 @@
       ]
     },
     {
-      "ref": "f6c4be8e-2a31-4528-b78e-a9c62a2f8bfd",
+      "ref": "328b8018-0252-45d4-badf-1f6bfc3c13a8",
       "dependsOn": [
-        "d006c82c-caf4-49ec-a26d-bfdae35e7c2a"
+        "006056da-395c-4b05-853e-c52808c5a88a"
       ]
     },
     {
