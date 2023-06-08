@@ -1,19 +1,19 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:e26c1742-ee93-42c9-bef8-c175b7cbab30",
+  "serialNumber": "urn:uuid:9c751dc6-e227-4083-b683-242da39fe0d0",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-07T04:51:32+00:00",
+    "timestamp": "2023-06-08T15:42:05+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.0"
+        "version": "0.42.1"
       }
     ],
     "component": {
-      "bom-ref": "c1cf1786-c885-40fe-a306-b5c5578d7581",
+      "bom-ref": "2ae21509-d755-444e-9c7c-469d93391f1f",
       "type": "container",
       "name": "quasar_v0.1.1",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "7233a774-5219-4299-a10b-fd1dc3de3d84",
+      "bom-ref": "f69c08aa-f265-49a9-93da-bc4828a527c3",
       "type": "application",
       "name": "bin/quasarnoded",
       "properties": [
@@ -2403,7 +2403,13 @@
   ],
   "dependencies": [
     {
-      "ref": "7233a774-5219-4299-a10b-fd1dc3de3d84",
+      "ref": "2ae21509-d755-444e-9c7c-469d93391f1f",
+      "dependsOn": [
+        "f69c08aa-f265-49a9-93da-bc4828a527c3"
+      ]
+    },
+    {
+      "ref": "f69c08aa-f265-49a9-93da-bc4828a527c3",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2520,458 +2526,452 @@
       ]
     },
     {
-      "ref": "c1cf1786-c885-40fe-a306-b5c5578d7581",
-      "dependsOn": [
-        "7233a774-5219-4299-a10b-fd1dc3de3d84"
-      ]
-    },
-    {
       "ref": "pkg:golang/cosmossdk.io/api@v0.2.6",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/cosmossdk.io/core@v0.5.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/cosmossdk.io/depinject@v1.0.0-alpha.3",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/99designs/keyring@v1.2.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/armon/go-metrics@v0.4.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/beorn7/perks@v1.0.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/bgentry/speakeasy@v0.1.1-0.20220910012023-760eaf8b6816",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/btcsuite/btcd/btcec/v2@v2.3.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/btcsuite/btcd@v0.22.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cespare/xxhash/v2@v2.1.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/chainsafe/go-schnorrkel@v0.0.0-20200405005733-88cbf1b4c40d",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/coinbase/rosetta-sdk-go@v0.7.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/btcutil@v1.0.5",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/cosmos-db@v0.0.0-20221226095112-f3c38ecb5e32",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/cosmos-proto@v1.0.0-beta.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/cosmos-sdk/ics23/go@v0.8.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/cosmos-sdk@v0.45.14",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/go-bip39@v1.0.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/gogoproto@v1.4.6",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/iavl@v0.19.5",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/ibc-go/v4@v4.3.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmos/ledger-cosmos-go@v0.12.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmwasm/wasmd@v0.31.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/cosmwasm/wasmvm@v1.2.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/creachadair/taskgroup@v0.3.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/decred/dcrd/dcrec/secp256k1/v4@v4.0.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/desertbit/timer@v0.0.0-20180107155436-c41aec40b27f",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/docker/distribution@v2.8.1+incompatible",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/dvsekhvalnov/jose2go@v1.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/felixge/httpsnoop@v1.0.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/go-kit/kit@v0.12.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/go-kit/log@v0.2.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/go-logfmt/logfmt@v0.5.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/godbus/dbus@v0.0.0-20190726142602-4481cbc300e2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/gogo/gateway@v1.1.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/golang/protobuf@v1.5.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/golang/snappy@v0.0.4",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/google/btree@v1.1.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/google/go-cmp@v0.5.9",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/google/gofuzz@v1.2.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/google/orderedcode@v0.0.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/gorilla/handlers@v1.5.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/gorilla/mux@v1.8.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/gorilla/websocket@v1.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/grpc-ecosystem/go-grpc-middleware@v1.3.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway@v1.16.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/gsterjov/go-libsecret@v0.0.0-20161001094733-a6f4afe4910c",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/gtank/merlin@v0.1.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/gtank/ristretto255@v0.1.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/hashicorp/go-immutable-radix@v1.3.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.5-0.20210104140557-80c98217689d",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/hashicorp/hcl@v1.0.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/hdevalence/ed25519consensus@v0.0.0-20220222234857-c00d1f31bab3",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/improbable-eng/grpc-web@v0.14.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/informalsystems/tendermint@v0.34.26",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/klauspost/compress@v1.15.11",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/lib/pq@v1.10.6",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/libp2p/go-buffer-pool@v0.1.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/magiconair/properties@v1.8.6",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/mattn/go-isatty@v0.0.16",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/matttproud/golang_protobuf_extensions@v1.0.2-0.20181231171920-c182affec369",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/mimoo/strobego@v0.0.0-20210601165009-122bf33a46e0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/minio/highwayhash@v1.0.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/mitchellh/mapstructure@v1.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/mtibben/percent@v0.2.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/pelletier/go-toml/v2@v2.0.5",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/pkg/errors@v0.9.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/pmezard/go-difflib@v1.0.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/prometheus/client_golang@v1.14.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/prometheus/client_model@v0.3.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/prometheus/common@v0.37.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/prometheus/procfs@v0.8.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/rakyll/statik@v0.1.7",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/rcrowley/go-metrics@v0.0.0-20201227073835-cf1acfcdf475",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/regen-network/cosmos-proto@v0.3.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/regen-network/protobuf@v1.3.3-alpha.regen.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/rs/cors@v1.8.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/rs/zerolog@v1.27.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/spf13/afero@v1.9.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/spf13/cast@v1.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/spf13/cobra@v1.6.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/spf13/jwalterweatherman@v1.1.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/spf13/pflag@v1.0.5",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/spf13/viper@v1.14.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/strangelove-ventures/async-icq/v4@v4.0.0-rc0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/stretchr/testify@v1.8.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/subosito/gotenv@v1.4.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/syndtr/goleveldb@v1.0.1-0.20210819022825-2ae1ddf74ef7",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/tendermint/go-amino@v0.16.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/tendermint/tm-db@v0.6.7",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/tidwall/btree@v1.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/workiva/go-datastructures@v1.0.53",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/zondax/hid@v0.9.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/github.com/zondax/ledger-go@v0.14.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/golang.org/x/crypto@v0.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/golang.org/x/exp@v0.0.0-20230131160201-f062dba9d201",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/golang.org/x/net@v0.6.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/golang.org/x/sys@v0.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/golang.org/x/term@v0.5.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/golang.org/x/text@v0.7.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/google.golang.org/genproto@v0.0.0-20230125152338-dcaf20b6aeaa",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/google.golang.org/grpc@v1.33.2",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/google.golang.org/protobuf@v1.28.2-0.20220831092852-f930b1dc76e8",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/gopkg.in/ini.v1@v1.67.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
-      "dependsOn": null
+      "dependsOn": []
     },
     {
       "ref": "pkg:golang/nhooyr.io/websocket@v1.8.6",
-      "dependsOn": null
+      "dependsOn": []
     }
   ],
   "vulnerabilities": []
