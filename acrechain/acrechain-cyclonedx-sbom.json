@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:a70d0e4b-872c-4845-a709-eb5fee2a4e10",
+  "serialNumber": "urn:uuid:3aea9ea6-eab7-4b49-82b1-ca73cc5bb86a",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-19T21:45:51+00:00",
+    "timestamp": "2023-06-28T07:26:57+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "ff25c990-a31d-4363-b098-9cf5160e9f9d",
+      "bom-ref": "669889cf-a729-48c8-ab61-64fc8e960c31",
       "type": "container",
       "name": "acrechain_v1.2.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "ca22ede0-d5bf-441f-82c2-3d1630f64909",
+      "bom-ref": "6d642aaf-cedd-4a98-96f1-036598b88556",
       "type": "application",
       "name": "bin/acred",
       "properties": [
@@ -2676,7 +2676,13 @@
   ],
   "dependencies": [
     {
-      "ref": "ca22ede0-d5bf-441f-82c2-3d1630f64909",
+      "ref": "669889cf-a729-48c8-ab61-64fc8e960c31",
+      "dependsOn": [
+        "6d642aaf-cedd-4a98-96f1-036598b88556"
+      ]
+    },
+    {
+      "ref": "6d642aaf-cedd-4a98-96f1-036598b88556",
       "dependsOn": [
         "pkg:golang/./ethermint@%28devel%29",
         "pkg:golang/cosmossdk.io/math@v1.0.0-beta.3",
@@ -2803,12 +2809,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7"
-      ]
-    },
-    {
-      "ref": "ff25c990-a31d-4363-b098-9cf5160e9f9d",
-      "dependsOn": [
-        "ca22ede0-d5bf-441f-82c2-3d1630f64909"
       ]
     },
     {
