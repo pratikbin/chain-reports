@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:e17ff3e1-6b7b-4604-80a7-ec9b900edce1",
+  "serialNumber": "urn:uuid:f0e8babd-b8f1-4649-9be9-bc8216ace12f",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-27T09:53:09+00:00",
+    "timestamp": "2023-06-28T07:15:30+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "a75a521e-f9ef-454f-9058-e8fda446f4e3",
+      "bom-ref": "a67c67e4-c2ee-4fc4-a998-a44db1887102",
       "type": "container",
       "name": "polygon-geth_v0.4.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "4d983e3f-ff0b-4722-9fbb-b7a4bedc52da",
+      "bom-ref": "f5bbfe84-a39d-4dde-ab2e-3ca6d62c2a12",
       "type": "application",
       "name": "bin/geth",
       "properties": [
@@ -3075,7 +3075,13 @@
   ],
   "dependencies": [
     {
-      "ref": "4d983e3f-ff0b-4722-9fbb-b7a4bedc52da",
+      "ref": "a67c67e4-c2ee-4fc4-a998-a44db1887102",
+      "dependsOn": [
+        "f5bbfe84-a39d-4dde-ab2e-3ca6d62c2a12"
+      ]
+    },
+    {
+      "ref": "f5bbfe84-a39d-4dde-ab2e-3ca6d62c2a12",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/pubsub@v1.3.1",
         "pkg:golang/cloud.google.com/go@v0.65.0",
@@ -3221,12 +3227,6 @@
         "pkg:golang/gopkg.in/urfave/cli.v1@v1.20.0",
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1"
-      ]
-    },
-    {
-      "ref": "a75a521e-f9ef-454f-9058-e8fda446f4e3",
-      "dependsOn": [
-        "4d983e3f-ff0b-4722-9fbb-b7a4bedc52da"
       ]
     },
     {
