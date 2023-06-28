@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:0455f2cc-d734-4344-a9e0-c4e8966e3ba7",
+  "serialNumber": "urn:uuid:76c3a597-314e-40f9-bb13-ae67415555ca",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-23T15:36:53+00:00",
+    "timestamp": "2023-06-28T07:05:44+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "321c4001-7348-4883-bae8-3bf5978eb315",
+      "bom-ref": "8569185b-1699-4467-bb57-81a2951dcf83",
       "type": "container",
       "name": "desmos_v5.2.0",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "ff01c970-fbac-4458-a457-90b1308b3334",
+      "bom-ref": "6bbd05e7-0c53-41a1-9e55-be9804b26be6",
       "type": "application",
       "name": "bin/desmos",
       "properties": [
@@ -3201,13 +3201,7 @@
   ],
   "dependencies": [
     {
-      "ref": "321c4001-7348-4883-bae8-3bf5978eb315",
-      "dependsOn": [
-        "ff01c970-fbac-4458-a457-90b1308b3334"
-      ]
-    },
-    {
-      "ref": "ff01c970-fbac-4458-a457-90b1308b3334",
+      "ref": "6bbd05e7-0c53-41a1-9e55-be9804b26be6",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.13.0",
@@ -3359,6 +3353,12 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/pgregory.net/rapid@v0.5.5",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "8569185b-1699-4467-bb57-81a2951dcf83",
+      "dependsOn": [
+        "6bbd05e7-0c53-41a1-9e55-be9804b26be6"
       ]
     },
     {
