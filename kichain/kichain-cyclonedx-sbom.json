@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:01359919-5edd-4962-9654-67deba2cded1",
+  "serialNumber": "urn:uuid:dbec7c3f-725e-454a-b197-55bb64bb88dd",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-19T19:37:08+00:00",
+    "timestamp": "2023-06-28T07:01:08+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "08f9cb73-fd11-4425-bafd-8a4e0074e31b",
+      "bom-ref": "f852750e-ef1b-4a68-be79-4f88ce2437ec",
       "type": "container",
       "name": "kichain_5.0.2",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "84866cbb-ca4c-4fbd-9516-8938f54fb6a4",
+      "bom-ref": "4f88e583-790e-42ed-9a8e-a8852b952680",
       "type": "application",
       "name": "bin/kid",
       "properties": [
@@ -2193,13 +2193,7 @@
   ],
   "dependencies": [
     {
-      "ref": "08f9cb73-fd11-4425-bafd-8a4e0074e31b",
-      "dependsOn": [
-        "84866cbb-ca4c-4fbd-9516-8938f54fb6a4"
-      ]
-    },
-    {
-      "ref": "84866cbb-ca4c-4fbd-9516-8938f54fb6a4",
+      "ref": "4f88e583-790e-42ed-9a8e-a8852b952680",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2303,6 +2297,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "f852750e-ef1b-4a68-be79-4f88ce2437ec",
+      "dependsOn": [
+        "4f88e583-790e-42ed-9a8e-a8852b952680"
       ]
     },
     {
