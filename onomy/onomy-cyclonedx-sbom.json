@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:49990f45-5405-488a-a328-9c79d5203d4c",
+  "serialNumber": "urn:uuid:a67bf000-c029-457a-9183-a772225764f1",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-19T22:07:27+00:00",
+    "timestamp": "2023-06-28T06:51:06+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "236bf944-6158-4a47-bd4b-10062fd0b727",
+      "bom-ref": "ba9c80f3-c08c-4df1-afac-5b746a90dadd",
       "type": "container",
       "name": "onomy_v1.1.1",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "d75d306e-c394-4438-9fd7-1dec53a73123",
+      "bom-ref": "98a75dbe-a9cf-43a9-8434-d21c23b70ab3",
       "type": "application",
       "name": "bin/onomyd",
       "properties": [
@@ -2235,13 +2235,7 @@
   ],
   "dependencies": [
     {
-      "ref": "236bf944-6158-4a47-bd4b-10062fd0b727",
-      "dependsOn": [
-        "d75d306e-c394-4438-9fd7-1dec53a73123"
-      ]
-    },
-    {
-      "ref": "d75d306e-c394-4438-9fd7-1dec53a73123",
+      "ref": "98a75dbe-a9cf-43a9-8434-d21c23b70ab3",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2347,6 +2341,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "ba9c80f3-c08c-4df1-afac-5b746a90dadd",
+      "dependsOn": [
+        "98a75dbe-a9cf-43a9-8434-d21c23b70ab3"
       ]
     },
     {
