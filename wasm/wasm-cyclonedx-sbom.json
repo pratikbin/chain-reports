@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:d5b16b37-440c-424b-8dfe-c5280a98955b",
+  "serialNumber": "urn:uuid:6ec73bc4-d40c-46ca-84f9-55d402274641",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-19T21:59:06+00:00",
+    "timestamp": "2023-06-28T06:55:33+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -13,7 +13,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5a7a1ce1-57fb-4272-ac31-d7c581f1e083",
+      "bom-ref": "374839ed-5cb1-4f7b-a540-c58d5a404e0f",
       "type": "container",
       "name": "wasm_v0.40.1",
       "properties": [
@@ -34,7 +34,7 @@
   },
   "components": [
     {
-      "bom-ref": "55873be9-acfa-40be-b467-3b6b42dbb4ec",
+      "bom-ref": "c035e8c3-236a-4c03-b46f-fa2f9a684d1d",
       "type": "application",
       "name": "bin/wasmd",
       "properties": [
@@ -2991,7 +2991,13 @@
   ],
   "dependencies": [
     {
-      "ref": "55873be9-acfa-40be-b467-3b6b42dbb4ec",
+      "ref": "374839ed-5cb1-4f7b-a540-c58d5a404e0f",
+      "dependsOn": [
+        "c035e8c3-236a-4c03-b46f-fa2f9a684d1d"
+      ]
+    },
+    {
+      "ref": "c035e8c3-236a-4c03-b46f-fa2f9a684d1d",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -3133,12 +3139,6 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/pgregory.net/rapid@v0.5.5",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
-      ]
-    },
-    {
-      "ref": "5a7a1ce1-57fb-4272-ac31-d7c581f1e083",
-      "dependsOn": [
-        "55873be9-acfa-40be-b467-3b6b42dbb4ec"
       ]
     },
     {
