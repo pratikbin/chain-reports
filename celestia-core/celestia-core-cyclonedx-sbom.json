@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:4f9a1ec7-02ad-4b4d-affd-1af45857ae9f",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:37b6b165-51c5-47a9-b339-48c59c9bb4df",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:20:33+00:00",
+    "timestamp": "2023-06-30T09:44:41+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "18df2e42-49a9-4031-b02e-e4d79f1fad11",
+      "bom-ref": "277041a7-ce90-4ca1-9275-80aebc7d90bc",
       "type": "container",
       "name": "celestia-core_v1.22.0-tm-v0.34.28",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "ff1d0d25-2578-49fc-b1b2-e11e95217e07",
+      "bom-ref": "03794c53-e323-4988-b223-f113a9b40527",
       "type": "application",
       "name": "bin/cometbft",
       "properties": [
@@ -1206,13 +1207,7 @@
   ],
   "dependencies": [
     {
-      "ref": "18df2e42-49a9-4031-b02e-e4d79f1fad11",
-      "dependsOn": [
-        "ff1d0d25-2578-49fc-b1b2-e11e95217e07"
-      ]
-    },
-    {
-      "ref": "ff1d0d25-2578-49fc-b1b2-e11e95217e07",
+      "ref": "03794c53-e323-4988-b223-f113a9b40527",
       "dependsOn": [
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
         "pkg:golang/github.com/btcsuite/btcd/btcec/v2@v2.2.1",
@@ -1269,6 +1264,12 @@
         "pkg:golang/google.golang.org/protobuf@v1.28.2-0.20220831092852-f930b1dc76e8",
         "pkg:golang/gopkg.in/ini.v1@v1.67.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1"
+      ]
+    },
+    {
+      "ref": "277041a7-ce90-4ca1-9275-80aebc7d90bc",
+      "dependsOn": [
+        "03794c53-e323-4988-b223-f113a9b40527"
       ]
     },
     {
