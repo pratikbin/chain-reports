@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:6ec73bc4-d40c-46ca-84f9-55d402274641",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:ea248c12-a540-438e-91a0-2cbbe83e4c3c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T06:55:33+00:00",
+    "timestamp": "2023-06-30T09:24:29+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "374839ed-5cb1-4f7b-a540-c58d5a404e0f",
+      "bom-ref": "86903190-d4bb-4582-ac89-7ff835000323",
       "type": "container",
       "name": "wasm_v0.40.1",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "c035e8c3-236a-4c03-b46f-fa2f9a684d1d",
+      "bom-ref": "1b7552fc-14ed-413a-b2b4-d379da6c5b7e",
       "type": "application",
       "name": "bin/wasmd",
       "properties": [
@@ -2991,13 +2992,7 @@
   ],
   "dependencies": [
     {
-      "ref": "374839ed-5cb1-4f7b-a540-c58d5a404e0f",
-      "dependsOn": [
-        "c035e8c3-236a-4c03-b46f-fa2f9a684d1d"
-      ]
-    },
-    {
-      "ref": "c035e8c3-236a-4c03-b46f-fa2f9a684d1d",
+      "ref": "1b7552fc-14ed-413a-b2b4-d379da6c5b7e",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -3139,6 +3134,12 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/pgregory.net/rapid@v0.5.5",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "86903190-d4bb-4582-ac89-7ff835000323",
+      "dependsOn": [
+        "1b7552fc-14ed-413a-b2b4-d379da6c5b7e"
       ]
     },
     {
