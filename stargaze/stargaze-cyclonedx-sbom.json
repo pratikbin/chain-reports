@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:605679dd-c948-4823-aa5f-46304f4daa51",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:a63639f9-168f-42e0-9b04-cdf3ce95b4db",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T06:46:40+00:00",
+    "timestamp": "2023-06-30T09:17:23+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "42be9bfa-4948-4349-8279-68344eb227d7",
+      "bom-ref": "60b5e250-5f3d-4adf-9960-653267135ccc",
       "type": "container",
       "name": "stargaze_v10.0.1",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "5269401f-1aff-4b1e-9be2-793e051ea659",
+      "bom-ref": "ce20d8a1-16bc-47dc-bd3e-00e9e8c8895b",
       "type": "application",
       "name": "bin/starsd",
       "properties": [
@@ -2403,13 +2404,13 @@
   ],
   "dependencies": [
     {
-      "ref": "42be9bfa-4948-4349-8279-68344eb227d7",
+      "ref": "60b5e250-5f3d-4adf-9960-653267135ccc",
       "dependsOn": [
-        "5269401f-1aff-4b1e-9be2-793e051ea659"
+        "ce20d8a1-16bc-47dc-bd3e-00e9e8c8895b"
       ]
     },
     {
-      "ref": "5269401f-1aff-4b1e-9be2-793e051ea659",
+      "ref": "ce20d8a1-16bc-47dc-bd3e-00e9e8c8895b",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
