@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:3a1ba2ae-d5a2-4151-8cde-623d4e8e1a7f",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:5bcf1fa3-416b-4374-9f8f-769717fdedb4",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:08:16+00:00",
+    "timestamp": "2023-06-30T09:26:50+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "3f26e464-727f-4130-a6b0-5f3dc673270e",
+      "bom-ref": "7473dd9d-5481-462d-a089-fd14cd77093b",
       "type": "container",
       "name": "icad_v0.5.1",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "b8550c4f-435c-4ade-a660-ff1b6e74074d",
+      "bom-ref": "15e7781c-08c6-4144-871b-793f3bca11da",
       "type": "application",
       "name": "bin/icad",
       "properties": [
@@ -2928,13 +2929,7 @@
   ],
   "dependencies": [
     {
-      "ref": "3f26e464-727f-4130-a6b0-5f3dc673270e",
-      "dependsOn": [
-        "b8550c4f-435c-4ade-a660-ff1b6e74074d"
-      ]
-    },
-    {
-      "ref": "b8550c4f-435c-4ade-a660-ff1b6e74074d",
+      "ref": "15e7781c-08c6-4144-871b-793f3bca11da",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -3073,6 +3068,12 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/pgregory.net/rapid@v0.5.5",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "7473dd9d-5481-462d-a089-fd14cd77093b",
+      "dependsOn": [
+        "15e7781c-08c6-4144-871b-793f3bca11da"
       ]
     },
     {
