@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:a364f218-263e-471d-8b01-8f9845b7f354",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:f0fba798-d05d-4da1-9899-ea47dd218179",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T06:58:05+00:00",
+    "timestamp": "2023-06-30T09:04:23+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "718bbf95-769c-43dc-a7f2-3580ab6e9ddc",
+      "bom-ref": "aa772b59-cc07-4a5a-8a26-c4ddd5c04e56",
       "type": "container",
       "name": "dig_v3.6.0",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "166f6d9c-9060-49e1-beed-eae1d0c98b37",
+      "bom-ref": "e88e17bc-8b35-4f5f-ab03-01292cbb7d52",
       "type": "application",
       "name": "bin/digd",
       "properties": [
@@ -2928,7 +2929,13 @@
   ],
   "dependencies": [
     {
-      "ref": "166f6d9c-9060-49e1-beed-eae1d0c98b37",
+      "ref": "aa772b59-cc07-4a5a-8a26-c4ddd5c04e56",
+      "dependsOn": [
+        "e88e17bc-8b35-4f5f-ab03-01292cbb7d52"
+      ]
+    },
+    {
+      "ref": "e88e17bc-8b35-4f5f-ab03-01292cbb7d52",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute@v1.7.0",
         "pkg:golang/cloud.google.com/go/iam@v0.4.0",
@@ -3067,12 +3074,6 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
-      ]
-    },
-    {
-      "ref": "718bbf95-769c-43dc-a7f2-3580ab6e9ddc",
-      "dependsOn": [
-        "166f6d9c-9060-49e1-beed-eae1d0c98b37"
       ]
     },
     {
