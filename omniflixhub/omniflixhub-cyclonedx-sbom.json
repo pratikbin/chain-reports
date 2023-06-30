@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:15d88e83-c351-4363-9e9b-028efe235bff",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:1f8b0d36-c0ca-4f30-ae6c-fd07c480a6bd",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:22:13+00:00",
+    "timestamp": "2023-06-30T09:39:58+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "5c4d1b74-54cf-40a0-84e9-76b7912fb6ad",
+      "bom-ref": "bd8b0850-38ce-486b-9d15-b2137cd85dbc",
       "type": "container",
       "name": "omniflixhub_v0.11.1",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "16cbf5a1-d4fe-49b5-a990-36cfa8b68d93",
+      "bom-ref": "a6e4b443-4a17-4784-8354-3b4f6ef28845",
       "type": "application",
       "name": "bin/omniflixhubd",
       "properties": [
@@ -2319,7 +2320,7 @@
   ],
   "dependencies": [
     {
-      "ref": "16cbf5a1-d4fe-49b5-a990-36cfa8b68d93",
+      "ref": "a6e4b443-4a17-4784-8354-3b4f6ef28845",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2432,9 +2433,9 @@
       ]
     },
     {
-      "ref": "5c4d1b74-54cf-40a0-84e9-76b7912fb6ad",
+      "ref": "bd8b0850-38ce-486b-9d15-b2137cd85dbc",
       "dependsOn": [
-        "16cbf5a1-d4fe-49b5-a990-36cfa8b68d93"
+        "a6e4b443-4a17-4784-8354-3b4f6ef28845"
       ]
     },
     {
