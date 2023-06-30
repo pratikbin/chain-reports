@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:562abc48-3fd9-4258-8e70-db07d3fe5023",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:52c998f7-5a97-4192-8db1-0c02318eb933",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T06:53:18+00:00",
+    "timestamp": "2023-06-30T09:21:26+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "e1923187-0e85-45d1-9406-db318ecad867",
+      "bom-ref": "7821f712-fdf0-45c9-ac08-3c3641d1f51e",
       "type": "container",
       "name": "quasar_v0.1.1",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "1efd615d-3349-4c8d-850b-3984a16e9458",
+      "bom-ref": "c7823c15-db92-46e6-8470-454a5138bbbb",
       "type": "application",
       "name": "bin/quasarnoded",
       "properties": [
@@ -2403,7 +2404,13 @@
   ],
   "dependencies": [
     {
-      "ref": "1efd615d-3349-4c8d-850b-3984a16e9458",
+      "ref": "7821f712-fdf0-45c9-ac08-3c3641d1f51e",
+      "dependsOn": [
+        "c7823c15-db92-46e6-8470-454a5138bbbb"
+      ]
+    },
+    {
+      "ref": "c7823c15-db92-46e6-8470-454a5138bbbb",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2517,12 +2524,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "e1923187-0e85-45d1-9406-db318ecad867",
-      "dependsOn": [
-        "1efd615d-3349-4c8d-850b-3984a16e9458"
       ]
     },
     {
