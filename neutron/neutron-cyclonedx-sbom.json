@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:878387a3-b476-44a0-863a-c9a417bcef70",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:d687b26c-49b2-4ba9-a9ac-e9c64d6984cd",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:29:20+00:00",
+    "timestamp": "2023-06-30T09:47:33+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "6f984aa1-4979-42e3-8b8b-55e91724c32c",
+      "bom-ref": "34fcc7f9-69b7-495e-aa4b-e7dc7becb7a2",
       "type": "container",
       "name": "neutron_v1.0.2",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "cfd43fd5-1d69-4cac-a534-67f52b0ed329",
+      "bom-ref": "48f8bd91-8a67-40cb-8d56-1a99c6f31eff",
       "type": "application",
       "name": "bin/neutrond",
       "properties": [
@@ -2487,13 +2488,13 @@
   ],
   "dependencies": [
     {
-      "ref": "6f984aa1-4979-42e3-8b8b-55e91724c32c",
+      "ref": "34fcc7f9-69b7-495e-aa4b-e7dc7becb7a2",
       "dependsOn": [
-        "cfd43fd5-1d69-4cac-a534-67f52b0ed329"
+        "48f8bd91-8a67-40cb-8d56-1a99c6f31eff"
       ]
     },
     {
-      "ref": "cfd43fd5-1d69-4cac-a534-67f52b0ed329",
+      "ref": "48f8bd91-8a67-40cb-8d56-1a99c6f31eff",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
