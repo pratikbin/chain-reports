@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:f49f8b06-a9f6-4070-a1eb-ef9d6da2f78c",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:905d888c-9ed1-4334-900c-eb1ba8b5fcc6",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:09:58+00:00",
+    "timestamp": "2023-06-30T09:29:01+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "53ae3a2d-60fd-42d2-91ea-63b4ee093efe",
+      "bom-ref": "0595a97c-7e05-4130-8f88-3105966f2c06",
       "type": "container",
       "name": "duality_v0.2.2",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "b500fd7e-8244-4f82-bfbd-589174b71947",
+      "bom-ref": "2dec5bf2-4f7c-42ee-a23d-c025c7588b8a",
       "type": "application",
       "name": "bin/dualityd",
       "properties": [
@@ -2319,13 +2320,13 @@
   ],
   "dependencies": [
     {
-      "ref": "53ae3a2d-60fd-42d2-91ea-63b4ee093efe",
+      "ref": "0595a97c-7e05-4130-8f88-3105966f2c06",
       "dependsOn": [
-        "b500fd7e-8244-4f82-bfbd-589174b71947"
+        "2dec5bf2-4f7c-42ee-a23d-c025c7588b8a"
       ]
     },
     {
-      "ref": "b500fd7e-8244-4f82-bfbd-589174b71947",
+      "ref": "2dec5bf2-4f7c-42ee-a23d-c025c7588b8a",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
