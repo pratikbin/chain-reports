@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:72b5c748-e0e0-4100-a060-4b427dade070",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:8097d09c-93ec-489b-bcdb-49c7e987f97c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T06:58:54+00:00",
+    "timestamp": "2023-06-30T09:18:23+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "54033aed-5055-4b58-b474-437f143112e7",
+      "bom-ref": "ca58f782-9a1f-430b-8a58-ba7ced81e183",
       "type": "container",
       "name": "stride_v11.0.0",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "e3d2b40a-5bba-4394-be90-a37f1d2cac94",
+      "bom-ref": "6e3e362d-d028-4bd0-9c59-15f8e0e44ab3",
       "type": "application",
       "name": "bin/strided",
       "properties": [
@@ -3012,13 +3013,7 @@
   ],
   "dependencies": [
     {
-      "ref": "54033aed-5055-4b58-b474-437f143112e7",
-      "dependsOn": [
-        "e3d2b40a-5bba-4394-be90-a37f1d2cac94"
-      ]
-    },
-    {
-      "ref": "e3d2b40a-5bba-4394-be90-a37f1d2cac94",
+      "ref": "6e3e362d-d028-4bd0-9c59-15f8e0e44ab3",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.13.0",
@@ -3161,6 +3156,12 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/pgregory.net/rapid@v0.5.5",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "ca58f782-9a1f-430b-8a58-ba7ced81e183",
+      "dependsOn": [
+        "6e3e362d-d028-4bd0-9c59-15f8e0e44ab3"
       ]
     },
     {
