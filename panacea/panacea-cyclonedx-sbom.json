@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:c49fe6a5-e81e-47ab-b5dd-8aac6ad3942d",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:818c74fc-1272-475c-991c-052c1c60c2c9",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T06:51:56+00:00",
+    "timestamp": "2023-06-30T09:07:38+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "b76261ac-3040-42a5-bc5f-00c10d14bb26",
+      "bom-ref": "2134e945-d84d-4157-8d7c-eba3a45af341",
       "type": "container",
       "name": "panacea_v2.0.7-2",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "7da816f3-0465-4b3c-8e3c-d72835ab07c1",
+      "bom-ref": "03dcb4c2-3025-48a9-803e-5267ac906295",
       "type": "application",
       "name": "bin/panacead",
       "properties": [
@@ -2151,7 +2152,7 @@
   ],
   "dependencies": [
     {
-      "ref": "7da816f3-0465-4b3c-8e3c-d72835ab07c1",
+      "ref": "03dcb4c2-3025-48a9-803e-5267ac906295",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2256,9 +2257,9 @@
       ]
     },
     {
-      "ref": "b76261ac-3040-42a5-bc5f-00c10d14bb26",
+      "ref": "2134e945-d84d-4157-8d7c-eba3a45af341",
       "dependsOn": [
-        "7da816f3-0465-4b3c-8e3c-d72835ab07c1"
+        "03dcb4c2-3025-48a9-803e-5267ac906295"
       ]
     },
     {
