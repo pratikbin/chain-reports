@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:3aea9ea6-eab7-4b49-82b1-ca73cc5bb86a",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:3e01d4e6-7ff5-470d-b0d7-8516c05f826e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:26:57+00:00",
+    "timestamp": "2023-06-30T09:43:53+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "669889cf-a729-48c8-ab61-64fc8e960c31",
+      "bom-ref": "36e8f643-2a51-4c27-8889-0f9808274788",
       "type": "container",
       "name": "acrechain_v1.2.0",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "6d642aaf-cedd-4a98-96f1-036598b88556",
+      "bom-ref": "a3128dde-71d9-437e-90aa-12fae67ec900",
       "type": "application",
       "name": "bin/acred",
       "properties": [
@@ -2676,13 +2677,13 @@
   ],
   "dependencies": [
     {
-      "ref": "669889cf-a729-48c8-ab61-64fc8e960c31",
+      "ref": "36e8f643-2a51-4c27-8889-0f9808274788",
       "dependsOn": [
-        "6d642aaf-cedd-4a98-96f1-036598b88556"
+        "a3128dde-71d9-437e-90aa-12fae67ec900"
       ]
     },
     {
-      "ref": "6d642aaf-cedd-4a98-96f1-036598b88556",
+      "ref": "a3128dde-71d9-437e-90aa-12fae67ec900",
       "dependsOn": [
         "pkg:golang/./ethermint@%28devel%29",
         "pkg:golang/cosmossdk.io/math@v1.0.0-beta.3",
