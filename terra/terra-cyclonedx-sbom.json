@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:20479b00-1540-4be8-a8d7-b2fea2da271e",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:06cfc456-c4cd-43c6-95cd-ae5a26a7139d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:27:36+00:00",
+    "timestamp": "2023-06-30T09:46:13+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "bc858f0d-6bca-455d-a26c-f22da5f1bba9",
+      "bom-ref": "c2b989e3-85f6-43a5-af33-199cb6c097e3",
       "type": "container",
       "name": "terra_v2.3.5",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "d080b28a-2669-4648-8abf-b3a23cfa77ee",
+      "bom-ref": "329f2b77-a129-4d53-af96-e6d098b1b138",
       "type": "application",
       "name": "bin/terrad",
       "properties": [
@@ -2949,13 +2950,7 @@
   ],
   "dependencies": [
     {
-      "ref": "bc858f0d-6bca-455d-a26c-f22da5f1bba9",
-      "dependsOn": [
-        "d080b28a-2669-4648-8abf-b3a23cfa77ee"
-      ]
-    },
-    {
-      "ref": "d080b28a-2669-4648-8abf-b3a23cfa77ee",
+      "ref": "329f2b77-a129-4d53-af96-e6d098b1b138",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.8.0",
@@ -3095,6 +3090,12 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "c2b989e3-85f6-43a5-af33-199cb6c097e3",
+      "dependsOn": [
+        "329f2b77-a129-4d53-af96-e6d098b1b138"
       ]
     },
     {
