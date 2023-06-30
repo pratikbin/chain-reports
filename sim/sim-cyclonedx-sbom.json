@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:1acf0565-24a0-4d56-a7a6-6f12d50f5bba",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:15b9294d-4adb-40d2-908a-dde3d41c06e5",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:23:06+00:00",
+    "timestamp": "2023-06-30T09:36:38+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "9c96a7ee-1877-45d0-9d15-804124e0fa98",
+      "bom-ref": "a57bfa0a-6df5-42a3-bb0e-b666a26fa5ec",
       "type": "container",
       "name": "sim_v0.46.13",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "f64549eb-1bff-438d-b853-7b71325afa12",
+      "bom-ref": "553f077d-42c9-4595-976e-7a78d19cfb51",
       "type": "application",
       "name": "bin/simd",
       "properties": [
@@ -2739,13 +2740,7 @@
   ],
   "dependencies": [
     {
-      "ref": "9c96a7ee-1877-45d0-9d15-804124e0fa98",
-      "dependsOn": [
-        "f64549eb-1bff-438d-b853-7b71325afa12"
-      ]
-    },
-    {
-      "ref": "f64549eb-1bff-438d-b853-7b71325afa12",
+      "ref": "553f077d-42c9-4595-976e-7a78d19cfb51",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -2875,6 +2870,12 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "a57bfa0a-6df5-42a3-bb0e-b666a26fa5ec",
+      "dependsOn": [
+        "553f077d-42c9-4595-976e-7a78d19cfb51"
       ]
     },
     {
