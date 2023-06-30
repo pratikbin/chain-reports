@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:0e641494-5db1-4fb7-a1ba-f187983b5752",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:5707b421-48eb-44dd-8e07-cec7dddfa072",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:16:12+00:00",
+    "timestamp": "2023-06-30T09:31:25+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "e9327655-82c1-4d2c-b32a-3771b8e57991",
+      "bom-ref": "c78a0563-3740-458d-9856-980ecd66ed24",
       "type": "container",
       "name": "polygon-heimdall_v0.3.4",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "a63eee3f-38e2-42ec-9364-829f5f58498f",
+      "bom-ref": "d542d900-d7e5-4c04-a2a2-c4b66404c4c7",
       "type": "application",
       "name": "bin/heimdalld",
       "properties": [
@@ -49,7 +50,7 @@
       ]
     },
     {
-      "bom-ref": "f9d8e852-5f5d-4d52-98cb-af31d354f5ae",
+      "bom-ref": "d7b001ce-0fab-410e-bc90-162d1d0e7dbc",
       "type": "application",
       "name": "bin/heimdallcli",
       "properties": [
@@ -2292,7 +2293,14 @@
   ],
   "dependencies": [
     {
-      "ref": "a63eee3f-38e2-42ec-9364-829f5f58498f",
+      "ref": "c78a0563-3740-458d-9856-980ecd66ed24",
+      "dependsOn": [
+        "d542d900-d7e5-4c04-a2a2-c4b66404c4c7",
+        "d7b001ce-0fab-410e-bc90-162d1d0e7dbc"
+      ]
+    },
+    {
+      "ref": "d542d900-d7e5-4c04-a2a2-c4b66404c4c7",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/pubsub@v1.3.1",
         "pkg:golang/cloud.google.com/go@v0.65.0",
@@ -2401,14 +2409,7 @@
       ]
     },
     {
-      "ref": "e9327655-82c1-4d2c-b32a-3771b8e57991",
-      "dependsOn": [
-        "a63eee3f-38e2-42ec-9364-829f5f58498f",
-        "f9d8e852-5f5d-4d52-98cb-af31d354f5ae"
-      ]
-    },
-    {
-      "ref": "f9d8e852-5f5d-4d52-98cb-af31d354f5ae",
+      "ref": "d7b001ce-0fab-410e-bc90-162d1d0e7dbc",
       "dependsOn": [
         "pkg:golang/github.com/bartekn/go-bip39@v0.0.0-20171116152956-a05967ea095d",
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
