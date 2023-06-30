@@ -1,19 +1,20 @@
 {
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
-  "specVersion": "1.4",
-  "serialNumber": "urn:uuid:c02bc450-83ba-4e52-bfbf-832828522caa",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:3c42fb15-e373-4327-97b3-678a95eabf93",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-28T07:07:26+00:00",
+    "timestamp": "2023-06-30T09:27:31+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.42.1"
+        "version": "0.43.0"
       }
     ],
     "component": {
-      "bom-ref": "560a06fe-9d35-4590-af53-6c88899df316",
+      "bom-ref": "9b5aa041-38bd-4bb6-9c88-968660e63c3f",
       "type": "container",
       "name": "starname_v0.11.7",
       "properties": [
@@ -34,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "e82d76fd-7cb0-40cd-acd5-85b655ab3a84",
+      "bom-ref": "7cf22b8d-ab7a-46e5-9131-7b7429785afe",
       "type": "application",
       "name": "bin/starnamed",
       "properties": [
@@ -2172,13 +2173,7 @@
   ],
   "dependencies": [
     {
-      "ref": "560a06fe-9d35-4590-af53-6c88899df316",
-      "dependsOn": [
-        "e82d76fd-7cb0-40cd-acd5-85b655ab3a84"
-      ]
-    },
-    {
-      "ref": "e82d76fd-7cb0-40cd-acd5-85b655ab3a84",
+      "ref": "7cf22b8d-ab7a-46e5-9131-7b7429785afe",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2281,6 +2276,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "9b5aa041-38bd-4bb6-9c88-968660e63c3f",
+      "dependsOn": [
+        "7cf22b8d-ab7a-46e5-9131-7b7429785afe"
       ]
     },
     {
