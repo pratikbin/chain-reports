@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:68ccd9ee-61e7-43b6-afb9-96ccaae9564c",
+  "serialNumber": "urn:uuid:3c1426ff-ba03-4cb7-a59a-b7c17af05c57",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:12:57+00:00",
+    "timestamp": "2023-07-07T10:38:22+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "d2eaff73-c9ba-487b-86cd-a79191ad5386",
+      "bom-ref": "9440d06e-4963-40a7-b630-5f87cdf5cbdd",
       "type": "container",
       "name": "onomy_v1.1.1",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "d0becdc9-1889-46f4-961d-a962efbb4c5f",
+      "bom-ref": "314face9-eabb-4b3e-b798-5ff1e1bc34a8",
       "type": "application",
       "name": "bin/onomyd",
       "properties": [
@@ -2236,7 +2236,7 @@
   ],
   "dependencies": [
     {
-      "ref": "d0becdc9-1889-46f4-961d-a962efbb4c5f",
+      "ref": "314face9-eabb-4b3e-b798-5ff1e1bc34a8",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2345,9 +2345,9 @@
       ]
     },
     {
-      "ref": "d2eaff73-c9ba-487b-86cd-a79191ad5386",
+      "ref": "9440d06e-4963-40a7-b630-5f87cdf5cbdd",
       "dependsOn": [
-        "d0becdc9-1889-46f4-961d-a962efbb4c5f"
+        "314face9-eabb-4b3e-b798-5ff1e1bc34a8"
       ]
     },
     {
