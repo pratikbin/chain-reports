@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:29b7d55b-089d-4a94-a525-90c32bebe611",
+  "serialNumber": "urn:uuid:8a6ebf5c-d230-424a-8325-8e77b759c235",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-05T15:22:28+00:00",
+    "timestamp": "2023-07-07T10:42:05+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "862fe9a0-2363-469f-a04b-5bb1d974c862",
+      "bom-ref": "71cd9aec-9344-4b46-ab56-c8adea9578d7",
       "type": "container",
       "name": "gravitybridge_v1.10.1",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "9efc70da-fa30-455f-8d80-45ee5bf4593c",
+      "bom-ref": "ed0f2fac-e6c4-436f-8e02-22933ddc427c",
       "type": "application",
       "name": "bin/gravity",
       "properties": [
@@ -2803,13 +2803,13 @@
   ],
   "dependencies": [
     {
-      "ref": "862fe9a0-2363-469f-a04b-5bb1d974c862",
+      "ref": "71cd9aec-9344-4b46-ab56-c8adea9578d7",
       "dependsOn": [
-        "9efc70da-fa30-455f-8d80-45ee5bf4593c"
+        "ed0f2fac-e6c4-436f-8e02-22933ddc427c"
       ]
     },
     {
-      "ref": "9efc70da-fa30-455f-8d80-45ee5bf4593c",
+      "ref": "ed0f2fac-e6c4-436f-8e02-22933ddc427c",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
