@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:295e2341-18c6-4a64-94e4-72fd84a74399",
+  "serialNumber": "urn:uuid:d0f5ac21-197b-4a10-82a5-e9d5af40f38b",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:32:03+00:00",
+    "timestamp": "2023-07-07T10:52:44+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "8ae7fd79-af42-44f8-b891-55557243adeb",
+      "bom-ref": "de318a82-dabc-4cea-bafc-f983f491c8e1",
       "type": "container",
       "name": "tendermint_v0.34.24",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "9f605f90-c48d-49e8-b5df-706ddf325214",
+      "bom-ref": "8998a2c4-af6f-44be-bace-34d8cfd9f45c",
       "type": "application",
       "name": "bin/tendermint",
       "properties": [
@@ -1102,13 +1102,7 @@
   ],
   "dependencies": [
     {
-      "ref": "8ae7fd79-af42-44f8-b891-55557243adeb",
-      "dependsOn": [
-        "9f605f90-c48d-49e8-b5df-706ddf325214"
-      ]
-    },
-    {
-      "ref": "9f605f90-c48d-49e8-b5df-706ddf325214",
+      "ref": "8998a2c4-af6f-44be-bace-34d8cfd9f45c",
       "dependsOn": [
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
         "pkg:golang/github.com/btcsuite/btcd@v0.22.1",
@@ -1160,6 +1154,12 @@
         "pkg:golang/google.golang.org/protobuf@v1.28.2-0.20220831092852-f930b1dc76e8",
         "pkg:golang/gopkg.in/ini.v1@v1.67.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1"
+      ]
+    },
+    {
+      "ref": "de318a82-dabc-4cea-bafc-f983f491c8e1",
+      "dependsOn": [
+        "8998a2c4-af6f-44be-bace-34d8cfd9f45c"
       ]
     },
     {
