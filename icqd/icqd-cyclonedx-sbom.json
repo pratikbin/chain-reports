@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:2573f568-8654-4ba5-a9ae-2a8f40cd7e55",
+  "serialNumber": "urn:uuid:e83471b9-ccc9-4cc4-9197-ffa67f079caa",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:19:53+00:00",
+    "timestamp": "2023-07-07T10:32:44+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "1381efbb-79bb-4fe5-8f67-c00206c834c7",
+      "bom-ref": "4c235637-dcd4-4399-9e5e-532bb1f4415a",
       "type": "container",
       "name": "icqd_latest",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "b6309d0f-56b3-4ac4-9229-6eb1e01310b5",
+      "bom-ref": "50c1e8bb-4a42-43f4-95f7-d14f533ec1a6",
       "type": "application",
       "name": "bin/icq",
       "properties": [
@@ -2026,13 +2026,13 @@
   ],
   "dependencies": [
     {
-      "ref": "1381efbb-79bb-4fe5-8f67-c00206c834c7",
+      "ref": "4c235637-dcd4-4399-9e5e-532bb1f4415a",
       "dependsOn": [
-        "b6309d0f-56b3-4ac4-9229-6eb1e01310b5"
+        "50c1e8bb-4a42-43f4-95f7-d14f533ec1a6"
       ]
     },
     {
-      "ref": "b6309d0f-56b3-4ac4-9229-6eb1e01310b5",
+      "ref": "50c1e8bb-4a42-43f4-95f7-d14f533ec1a6",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
