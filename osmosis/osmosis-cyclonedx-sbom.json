@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:66575d3b-6814-410f-a699-6d7508f4b996",
+  "serialNumber": "urn:uuid:af761a23-cb17-4900-b2a6-2c4789da2644",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:45:32+00:00",
+    "timestamp": "2023-07-07T11:12:45+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "7ba117b1-da44-412a-8246-4fa849ae0e1f",
+      "bom-ref": "721b115a-205c-43a5-a0c7-dd025b1c43d7",
       "type": "container",
       "name": "osmosis_v15.2.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "897013e2-f76c-43db-9bb1-e89b5b879643",
+      "bom-ref": "44f0ec70-8a2d-432b-adaf-305935f9dd8d",
       "type": "application",
       "name": "bin/osmosisd",
       "properties": [
@@ -2446,13 +2446,7 @@
   ],
   "dependencies": [
     {
-      "ref": "7ba117b1-da44-412a-8246-4fa849ae0e1f",
-      "dependsOn": [
-        "897013e2-f76c-43db-9bb1-e89b5b879643"
-      ]
-    },
-    {
-      "ref": "897013e2-f76c-43db-9bb1-e89b5b879643",
+      "ref": "44f0ec70-8a2d-432b-adaf-305935f9dd8d",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2568,6 +2562,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7"
+      ]
+    },
+    {
+      "ref": "721b115a-205c-43a5-a0c7-dd025b1c43d7",
+      "dependsOn": [
+        "44f0ec70-8a2d-432b-adaf-305935f9dd8d"
       ]
     },
     {
