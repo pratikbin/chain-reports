@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:de3df032-67ad-4908-ab7d-5d41acb1bcaf",
+  "serialNumber": "urn:uuid:d0e573e2-baec-45f1-b56f-14f2d53bd66e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:32:54+00:00",
+    "timestamp": "2023-07-07T11:00:29+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "1dd18cc5-e8a6-4e8f-a37a-71fc2056b1d9",
+      "bom-ref": "a2cd26b5-3cff-464d-b20d-dcdc31aa98e5",
       "type": "container",
       "name": "ununifi_v3.0.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "8fb8a542-4247-4d63-9e94-8e978b414dfc",
+      "bom-ref": "556f0623-dafa-4e3c-93db-fc967cbba20a",
       "type": "application",
       "name": "bin/ununifid",
       "properties": [
@@ -3013,13 +3013,7 @@
   ],
   "dependencies": [
     {
-      "ref": "1dd18cc5-e8a6-4e8f-a37a-71fc2056b1d9",
-      "dependsOn": [
-        "8fb8a542-4247-4d63-9e94-8e978b414dfc"
-      ]
-    },
-    {
-      "ref": "8fb8a542-4247-4d63-9e94-8e978b414dfc",
+      "ref": "556f0623-dafa-4e3c-93db-fc967cbba20a",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -3162,6 +3156,12 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/pgregory.net/rapid@v0.5.5",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "a2cd26b5-3cff-464d-b20d-dcdc31aa98e5",
+      "dependsOn": [
+        "556f0623-dafa-4e3c-93db-fc967cbba20a"
       ]
     },
     {
