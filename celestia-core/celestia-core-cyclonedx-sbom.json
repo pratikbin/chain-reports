@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:89a33b66-9e99-4c92-86b7-527299f487fe",
+  "serialNumber": "urn:uuid:7864f02e-d64c-4ad2-9b05-71fbf49d3edf",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-04T14:20:05+00:00",
+    "timestamp": "2023-07-07T11:05:22+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "12c2ad04-8b3c-4823-9d66-8630ccfea0d0",
+      "bom-ref": "4c7398e1-9660-4065-85c2-743292179340",
       "type": "container",
       "name": "celestia-core_v1.23.0-tm-v0.34.28",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "c95bc5af-5fa5-4ec6-a122-92e8079892f2",
+      "bom-ref": "76d7ed7f-77f4-46a0-9fd1-fdb525cd4111",
       "type": "application",
       "name": "bin/cometbft",
       "properties": [
@@ -1207,13 +1207,13 @@
   ],
   "dependencies": [
     {
-      "ref": "12c2ad04-8b3c-4823-9d66-8630ccfea0d0",
+      "ref": "4c7398e1-9660-4065-85c2-743292179340",
       "dependsOn": [
-        "c95bc5af-5fa5-4ec6-a122-92e8079892f2"
+        "76d7ed7f-77f4-46a0-9fd1-fdb525cd4111"
       ]
     },
     {
-      "ref": "c95bc5af-5fa5-4ec6-a122-92e8079892f2",
+      "ref": "76d7ed7f-77f4-46a0-9fd1-fdb525cd4111",
       "dependsOn": [
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
         "pkg:golang/github.com/btcsuite/btcd/btcec/v2@v2.2.1",
