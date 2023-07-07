@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:7d2d8dba-ae62-487f-b4d4-2c0948a7cf5f",
+  "serialNumber": "urn:uuid:265e7e55-eee8-426d-b9a8-4e9281695f78",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:15:20+00:00",
+    "timestamp": "2023-07-07T10:46:19+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "f3081fe4-28a0-4275-8f57-69950fd61b57",
+      "bom-ref": "cdacfa44-a387-4095-bf41-b06392a7200a",
       "type": "container",
       "name": "crescent_v4.2.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "d18f9920-33e5-47d5-90bb-1ed11c96ee6b",
+      "bom-ref": "094c9717-4840-47fa-aa4f-fd53afc54432",
       "type": "application",
       "name": "bin/crescentd",
       "properties": [
@@ -2152,7 +2152,7 @@
   ],
   "dependencies": [
     {
-      "ref": "d18f9920-33e5-47d5-90bb-1ed11c96ee6b",
+      "ref": "094c9717-4840-47fa-aa4f-fd53afc54432",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2257,9 +2257,9 @@
       ]
     },
     {
-      "ref": "f3081fe4-28a0-4275-8f57-69950fd61b57",
+      "ref": "cdacfa44-a387-4095-bf41-b06392a7200a",
       "dependsOn": [
-        "d18f9920-33e5-47d5-90bb-1ed11c96ee6b"
+        "094c9717-4840-47fa-aa4f-fd53afc54432"
       ]
     },
     {
