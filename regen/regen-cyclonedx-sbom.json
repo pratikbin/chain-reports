@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:5c6f9b1d-1145-4b29-a1ec-2f982a8ff175",
+  "serialNumber": "urn:uuid:d1363c71-fe1b-40b0-b8fb-61780df19f63",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:48:23+00:00",
+    "timestamp": "2023-07-07T11:08:13+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "d1fd15bd-91d9-4fc2-b3ac-5549a418620b",
+      "bom-ref": "1a4a295a-71b0-48e9-86a5-cb8d7c3b930c",
       "type": "container",
       "name": "regen_v5.1.2",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "f6cd1f53-da2a-492c-b469-59ee550cf59f",
+      "bom-ref": "d47d497f-f2ff-4bb0-b00f-1729d18bae36",
       "type": "application",
       "name": "bin/regen",
       "properties": [
@@ -2950,13 +2950,13 @@
   ],
   "dependencies": [
     {
-      "ref": "d1fd15bd-91d9-4fc2-b3ac-5549a418620b",
+      "ref": "1a4a295a-71b0-48e9-86a5-cb8d7c3b930c",
       "dependsOn": [
-        "f6cd1f53-da2a-492c-b469-59ee550cf59f"
+        "d47d497f-f2ff-4bb0-b00f-1729d18bae36"
       ]
     },
     {
-      "ref": "f6cd1f53-da2a-492c-b469-59ee550cf59f",
+      "ref": "d47d497f-f2ff-4bb0-b00f-1729d18bae36",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
