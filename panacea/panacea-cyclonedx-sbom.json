@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:f80b41ac-ca77-4e2d-9d91-4186f0104c39",
+  "serialNumber": "urn:uuid:e041f618-6add-476b-9c2c-5ff95a60c38d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:41:26+00:00",
+    "timestamp": "2023-07-19T06:12:47+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "9baef1cc-5f6e-4e3a-acdc-b20b096dc4ec",
+      "bom-ref": "18c9ed25-3875-49f3-a287-1fd568441fcc",
       "type": "container",
       "name": "panacea_v2.0.7-2",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "22aecf67-e5fb-45ff-98ec-c4c58661371e",
+      "bom-ref": "9310645d-41e2-4087-b018-d1ac3636f51e",
       "type": "application",
       "name": "bin/panacead",
       "properties": [
@@ -2152,7 +2152,13 @@
   ],
   "dependencies": [
     {
-      "ref": "22aecf67-e5fb-45ff-98ec-c4c58661371e",
+      "ref": "18c9ed25-3875-49f3-a287-1fd568441fcc",
+      "dependsOn": [
+        "9310645d-41e2-4087-b018-d1ac3636f51e"
+      ]
+    },
+    {
+      "ref": "9310645d-41e2-4087-b018-d1ac3636f51e",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
@@ -2254,12 +2260,6 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
-      ]
-    },
-    {
-      "ref": "9baef1cc-5f6e-4e3a-acdc-b20b096dc4ec",
-      "dependsOn": [
-        "22aecf67-e5fb-45ff-98ec-c4c58661371e"
       ]
     },
     {
