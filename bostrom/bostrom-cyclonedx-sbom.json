@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:11733e32-c9d4-46fb-ad54-2c3eabc8114f",
+  "serialNumber": "urn:uuid:6c2e39ed-1e20-4148-94c0-43df1d97a83e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:36:59+00:00",
+    "timestamp": "2023-07-19T06:02:03+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "7cad55b5-c94c-4f57-9df4-f1f255438452",
+      "bom-ref": "72b3177d-0d9d-4d1f-8c15-377662858199",
       "type": "container",
       "name": "bostrom_v0.3.2",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "97f36845-5e2e-435b-9c73-682bac549e48",
+      "bom-ref": "000285ba-3721-408d-8e28-2463be1806b2",
       "type": "application",
       "name": "bin/cyber",
       "properties": [
@@ -2383,13 +2383,7 @@
   ],
   "dependencies": [
     {
-      "ref": "7cad55b5-c94c-4f57-9df4-f1f255438452",
-      "dependsOn": [
-        "97f36845-5e2e-435b-9c73-682bac549e48"
-      ]
-    },
-    {
-      "ref": "97f36845-5e2e-435b-9c73-682bac549e48",
+      "ref": "000285ba-3721-408d-8e28-2463be1806b2",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2502,6 +2496,12 @@
         "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.6"
+      ]
+    },
+    {
+      "ref": "72b3177d-0d9d-4d1f-8c15-377662858199",
+      "dependsOn": [
+        "000285ba-3721-408d-8e28-2463be1806b2"
       ]
     },
     {
