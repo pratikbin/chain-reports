@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:6050be48-bd9b-4996-9fe8-4bb9bc64f657",
+  "serialNumber": "urn:uuid:adcee708-b443-4ab3-8f96-7dbde14fc4d4",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:31:44+00:00",
+    "timestamp": "2023-07-19T06:04:17+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "0397654c-bf36-47bf-9d2a-65a6c48833c1",
+      "bom-ref": "2824754f-ef0c-4806-88e6-faaba4331bbc",
       "type": "container",
       "name": "ics_v2.0.0-rc0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "11c18838-dc11-41f1-ac74-d38aa0a594b5",
+      "bom-ref": "0c840e46-4f77-42f9-a2f7-e7f0942fe769",
       "type": "application",
       "name": "bin/interchain-security-cd",
       "properties": [
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "bom-ref": "f4a5a760-a77d-4965-9bce-7a5aec91fbc8",
+      "bom-ref": "ce05efdc-bd17-41bc-9484-4ef4fbfac459",
       "type": "application",
       "name": "bin/interchain-security-pd",
       "properties": [
@@ -2230,14 +2230,7 @@
   ],
   "dependencies": [
     {
-      "ref": "0397654c-bf36-47bf-9d2a-65a6c48833c1",
-      "dependsOn": [
-        "11c18838-dc11-41f1-ac74-d38aa0a594b5",
-        "f4a5a760-a77d-4965-9bce-7a5aec91fbc8"
-      ]
-    },
-    {
-      "ref": "11c18838-dc11-41f1-ac74-d38aa0a594b5",
+      "ref": "0c840e46-4f77-42f9-a2f7-e7f0942fe769",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2345,7 +2338,14 @@
       ]
     },
     {
-      "ref": "f4a5a760-a77d-4965-9bce-7a5aec91fbc8",
+      "ref": "2824754f-ef0c-4806-88e6-faaba4331bbc",
+      "dependsOn": [
+        "0c840e46-4f77-42f9-a2f7-e7f0942fe769",
+        "ce05efdc-bd17-41bc-9484-4ef4fbfac459"
+      ]
+    },
+    {
+      "ref": "ce05efdc-bd17-41bc-9484-4ef4fbfac459",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
