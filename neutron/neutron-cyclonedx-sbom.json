@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:88ae6dc1-0dfe-4bce-94b8-84e0905d09cf",
+  "serialNumber": "urn:uuid:fd695b65-fad2-4c64-84a0-a87d047faab0",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-18T18:12:43+00:00",
+    "timestamp": "2023-07-19T06:45:49+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "4ac8afd3-bf9e-46de-8133-e350804b6750",
+      "bom-ref": "d8ad9649-3357-4f03-9774-1f62b9aa407f",
       "type": "container",
       "name": "neutron_v1.0.4",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "1772450e-b5fb-4550-a1e6-9e3bca3bb493",
+      "bom-ref": "bb0736b2-2597-460b-aa41-fababdcd4022",
       "type": "application",
       "name": "bin/neutrond",
       "properties": [
@@ -2488,7 +2488,7 @@
   ],
   "dependencies": [
     {
-      "ref": "1772450e-b5fb-4550-a1e6-9e3bca3bb493",
+      "ref": "bb0736b2-2597-460b-aa41-fababdcd4022",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2609,9 +2609,9 @@
       ]
     },
     {
-      "ref": "4ac8afd3-bf9e-46de-8133-e350804b6750",
+      "ref": "d8ad9649-3357-4f03-9774-1f62b9aa407f",
       "dependsOn": [
-        "1772450e-b5fb-4550-a1e6-9e3bca3bb493"
+        "bb0736b2-2597-460b-aa41-fababdcd4022"
       ]
     },
     {
