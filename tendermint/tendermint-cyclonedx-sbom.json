@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:d0f5ac21-197b-4a10-82a5-e9d5af40f38b",
+  "serialNumber": "urn:uuid:568f8fcf-def7-47c7-9749-fab8d6f7b10c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:52:44+00:00",
+    "timestamp": "2023-07-19T06:24:38+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "de318a82-dabc-4cea-bafc-f983f491c8e1",
+      "bom-ref": "ebba0142-51fe-40b4-83db-3d2d1b6fa980",
       "type": "container",
       "name": "tendermint_v0.34.24",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "8998a2c4-af6f-44be-bace-34d8cfd9f45c",
+      "bom-ref": "94ea3307-d92c-49f0-aaed-27a75c0229ca",
       "type": "application",
       "name": "bin/tendermint",
       "properties": [
@@ -1102,7 +1102,7 @@
   ],
   "dependencies": [
     {
-      "ref": "8998a2c4-af6f-44be-bace-34d8cfd9f45c",
+      "ref": "94ea3307-d92c-49f0-aaed-27a75c0229ca",
       "dependsOn": [
         "pkg:golang/github.com/beorn7/perks@v1.0.1",
         "pkg:golang/github.com/btcsuite/btcd@v0.22.1",
@@ -1157,9 +1157,9 @@
       ]
     },
     {
-      "ref": "de318a82-dabc-4cea-bafc-f983f491c8e1",
+      "ref": "ebba0142-51fe-40b4-83db-3d2d1b6fa980",
       "dependsOn": [
-        "8998a2c4-af6f-44be-bace-34d8cfd9f45c"
+        "94ea3307-d92c-49f0-aaed-27a75c0229ca"
       ]
     },
     {
