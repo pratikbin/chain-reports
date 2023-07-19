@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:1669981a-0f8a-4272-be60-d6b8d2b3835d",
+  "serialNumber": "urn:uuid:8824f117-bd2a-4ca0-85e3-818b92d96d54",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:56:26+00:00",
+    "timestamp": "2023-07-19T06:30:03+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "18b5e87a-acdf-4a44-8323-7ffee054e39b",
+      "bom-ref": "45194bd9-b4ad-4fbd-91bc-f465b705c6cf",
       "type": "container",
       "name": "burnt_v0.0.2",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "27028f2e-35d8-4679-b39c-6fcd6039e45b",
+      "bom-ref": "5dd3c333-bda7-487a-bfc2-0fa07da8c499",
       "type": "application",
       "name": "bin/burntd",
       "properties": [
@@ -2299,13 +2299,13 @@
   ],
   "dependencies": [
     {
-      "ref": "18b5e87a-acdf-4a44-8323-7ffee054e39b",
+      "ref": "45194bd9-b4ad-4fbd-91bc-f465b705c6cf",
       "dependsOn": [
-        "27028f2e-35d8-4679-b39c-6fcd6039e45b"
+        "5dd3c333-bda7-487a-bfc2-0fa07da8c499"
       ]
     },
     {
-      "ref": "27028f2e-35d8-4679-b39c-6fcd6039e45b",
+      "ref": "5dd3c333-bda7-487a-bfc2-0fa07da8c499",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.2.1",
