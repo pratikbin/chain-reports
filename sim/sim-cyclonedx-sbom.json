@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:d309934b-1378-4afe-9ee7-679febcd7ccc",
+  "serialNumber": "urn:uuid:2ec2ed95-0654-420f-8ace-d29579c30d2c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-17T15:07:47+00:00",
+    "timestamp": "2023-07-19T06:39:06+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "e71ce725-37fa-4a9d-8f65-f1da0cb68231",
+      "bom-ref": "cd2839dc-e010-44de-a68e-9fef32997de9",
       "type": "container",
       "name": "sim_v0.46.14",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "b0966578-e77c-4704-b975-d88bb18ad7c5",
+      "bom-ref": "9e77a1d1-0a30-4ca1-83dd-16ab6d03e6b1",
       "type": "application",
       "name": "bin/simd",
       "properties": [
@@ -2740,7 +2740,7 @@
   ],
   "dependencies": [
     {
-      "ref": "b0966578-e77c-4704-b975-d88bb18ad7c5",
+      "ref": "9e77a1d1-0a30-4ca1-83dd-16ab6d03e6b1",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -2873,9 +2873,9 @@
       ]
     },
     {
-      "ref": "e71ce725-37fa-4a9d-8f65-f1da0cb68231",
+      "ref": "cd2839dc-e010-44de-a68e-9fef32997de9",
       "dependsOn": [
-        "b0966578-e77c-4704-b975-d88bb18ad7c5"
+        "9e77a1d1-0a30-4ca1-83dd-16ab6d03e6b1"
       ]
     },
     {
