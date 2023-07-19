@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:f3a6b736-0aa8-4e18-abef-56e01b45fe18",
+  "serialNumber": "urn:uuid:2f652d0b-98e5-4135-b0b2-e2e75ed57505",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-06-30T09:09:05+00:00",
+    "timestamp": "2023-07-19T06:07:32+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.0"
+        "version": "0.43.1"
       }
     ],
     "component": {
-      "bom-ref": "a493963d-0c5d-4b3a-9e00-0232c2f35e48",
+      "bom-ref": "589e1952-69a5-4623-8ab6-334e0829f8c6",
       "type": "container",
       "name": "lumnetwork_v1.4.5",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "fcfaa45c-7c92-4247-bc92-b5bf58d9feac",
+      "bom-ref": "dd6bb571-d3f8-40d1-8ca9-5073c9470963",
       "type": "application",
       "name": "bin/lumd",
       "properties": [
@@ -2803,13 +2803,13 @@
   ],
   "dependencies": [
     {
-      "ref": "a493963d-0c5d-4b3a-9e00-0232c2f35e48",
+      "ref": "589e1952-69a5-4623-8ab6-334e0829f8c6",
       "dependsOn": [
-        "fcfaa45c-7c92-4247-bc92-b5bf58d9feac"
+        "dd6bb571-d3f8-40d1-8ca9-5073c9470963"
       ]
     },
     {
-      "ref": "fcfaa45c-7c92-4247-bc92-b5bf58d9feac",
+      "ref": "dd6bb571-d3f8-40d1-8ca9-5073c9470963",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.13.0",
