@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:b9282b8a-d9cb-4cb0-97e7-895fba45b3b7",
+  "serialNumber": "urn:uuid:8b0cabc6-a9b5-40be-aef5-2e476a2de68d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:30:52+00:00",
+    "timestamp": "2023-07-19T06:17:53+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "3da5ecff-0732-45a9-9914-c585aea5daa3",
+      "bom-ref": "9c6d47cf-30ab-4bc3-84d2-0e2dfd9ba1cf",
       "type": "container",
       "name": "stargaze_v11.0.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "60292400-4941-4117-9bde-3966059ad3fc",
+      "bom-ref": "bc4b55c6-fcd2-44c6-b993-136c7092d5a4",
       "type": "application",
       "name": "bin/starsd",
       "properties": [
@@ -2404,13 +2404,13 @@
   ],
   "dependencies": [
     {
-      "ref": "3da5ecff-0732-45a9-9914-c585aea5daa3",
+      "ref": "9c6d47cf-30ab-4bc3-84d2-0e2dfd9ba1cf",
       "dependsOn": [
-        "60292400-4941-4117-9bde-3966059ad3fc"
+        "bc4b55c6-fcd2-44c6-b993-136c7092d5a4"
       ]
     },
     {
-      "ref": "60292400-4941-4117-9bde-3966059ad3fc",
+      "ref": "bc4b55c6-fcd2-44c6-b993-136c7092d5a4",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
