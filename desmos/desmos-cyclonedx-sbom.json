@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:dd030fe6-694b-48ae-b395-fb3aafc759f9",
+  "serialNumber": "urn:uuid:c778ebf1-6010-408f-98bc-119235db829e",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:48:33+00:00",
+    "timestamp": "2023-07-19T06:13:27+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "5dbc489b-c94a-43ba-8a5c-1b29d1f020a8",
+      "bom-ref": "8a4ecd39-32ba-4a83-8a55-adcbbc74b8a6",
       "type": "container",
       "name": "desmos_v5.2.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "dba8d4ae-1e1a-4e43-ab91-b33d3078c22b",
+      "bom-ref": "938c421d-b982-4d2a-827f-734677c6fb74",
       "type": "application",
       "name": "bin/desmos",
       "properties": [
@@ -3202,13 +3202,13 @@
   ],
   "dependencies": [
     {
-      "ref": "5dbc489b-c94a-43ba-8a5c-1b29d1f020a8",
+      "ref": "8a4ecd39-32ba-4a83-8a55-adcbbc74b8a6",
       "dependsOn": [
-        "dba8d4ae-1e1a-4e43-ab91-b33d3078c22b"
+        "938c421d-b982-4d2a-827f-734677c6fb74"
       ]
     },
     {
-      "ref": "dba8d4ae-1e1a-4e43-ab91-b33d3078c22b",
+      "ref": "938c421d-b982-4d2a-827f-734677c6fb74",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.13.0",
