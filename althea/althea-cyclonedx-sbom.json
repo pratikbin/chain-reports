@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:120d09c5-f50a-4cfd-aad0-1ba40aeaa116",
+  "serialNumber": "urn:uuid:b47dd2c3-02e0-492c-ac67-a33a29c93ae0",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T11:10:15+00:00",
+    "timestamp": "2023-07-19T06:41:49+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "8af18fa5-e961-42ca-b2b7-3daa678167eb",
+      "bom-ref": "8bc1cada-d3b1-415f-9e4c-fe5b53daddf9",
       "type": "container",
       "name": "althea_v0.4.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "dc568847-390a-4d20-b658-5c7f96e82261",
+      "bom-ref": "c122e1d5-3925-44a8-9ae0-488f88b2d7a5",
       "type": "application",
       "name": "bin/althea",
       "properties": [
@@ -2698,13 +2698,13 @@
   ],
   "dependencies": [
     {
-      "ref": "8af18fa5-e961-42ca-b2b7-3daa678167eb",
+      "ref": "8bc1cada-d3b1-415f-9e4c-fe5b53daddf9",
       "dependsOn": [
-        "dc568847-390a-4d20-b658-5c7f96e82261"
+        "c122e1d5-3925-44a8-9ae0-488f88b2d7a5"
       ]
     },
     {
-      "ref": "dc568847-390a-4d20-b658-5c7f96e82261",
+      "ref": "c122e1d5-3925-44a8-9ae0-488f88b2d7a5",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/math@v1.0.0-beta.4",
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
