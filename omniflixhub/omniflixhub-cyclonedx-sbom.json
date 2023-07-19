@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:71558dde-4fc5-4c30-981e-6f4cbcc5d365",
+  "serialNumber": "urn:uuid:47382cf4-135e-4166-9a54-4e17d172ab60",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T11:01:18+00:00",
+    "timestamp": "2023-07-19T06:35:55+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "b5a86404-96cf-439e-998b-cf6e5b57f780",
+      "bom-ref": "4ed6ddf9-71d0-41b6-aa63-64938c8c170b",
       "type": "container",
       "name": "omniflixhub_v0.11.1",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "d841e98d-b06c-48e2-8de9-3e509ad5f3ba",
+      "bom-ref": "89d46bd4-c39b-48dd-9bec-679578bbef53",
       "type": "application",
       "name": "bin/omniflixhubd",
       "properties": [
@@ -2320,13 +2320,13 @@
   ],
   "dependencies": [
     {
-      "ref": "b5a86404-96cf-439e-998b-cf6e5b57f780",
+      "ref": "4ed6ddf9-71d0-41b6-aa63-64938c8c170b",
       "dependsOn": [
-        "d841e98d-b06c-48e2-8de9-3e509ad5f3ba"
+        "89d46bd4-c39b-48dd-9bec-679578bbef53"
       ]
     },
     {
-      "ref": "d841e98d-b06c-48e2-8de9-3e509ad5f3ba",
+      "ref": "89d46bd4-c39b-48dd-9bec-679578bbef53",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
