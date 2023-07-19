@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:5fd3d811-3629-491b-8a30-e423304345ca",
+  "serialNumber": "urn:uuid:6e10ac24-d87e-47e6-ac2c-5ab5c40ca982",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-07T10:39:02+00:00",
+    "timestamp": "2023-07-19T06:08:53+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "cfc82b20-7c4f-4d83-8e42-e07ebe42676c",
+      "bom-ref": "ad1e2d24-2977-40cd-a632-3fab178bc889",
       "type": "container",
       "name": "quasar_v0.1.1",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "2afc4a91-3636-45d0-92a8-3e896554eb81",
+      "bom-ref": "206b1e45-3877-4dcb-983f-1c44ab51062d",
       "type": "application",
       "name": "bin/quasarnoded",
       "properties": [
@@ -2404,7 +2404,7 @@
   ],
   "dependencies": [
     {
-      "ref": "2afc4a91-3636-45d0-92a8-3e896554eb81",
+      "ref": "206b1e45-3877-4dcb-983f-1c44ab51062d",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2521,9 +2521,9 @@
       ]
     },
     {
-      "ref": "cfc82b20-7c4f-4d83-8e42-e07ebe42676c",
+      "ref": "ad1e2d24-2977-40cd-a632-3fab178bc889",
       "dependsOn": [
-        "2afc4a91-3636-45d0-92a8-3e896554eb81"
+        "206b1e45-3877-4dcb-983f-1c44ab51062d"
       ]
     },
     {
