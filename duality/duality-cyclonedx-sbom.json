@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:def22fbe-3318-4230-b1dd-b7f7a2374c77",
+  "serialNumber": "urn:uuid:cabf2b36-eba0-4055-86a5-21ca63828e7f",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-11T23:45:25+00:00",
+    "timestamp": "2023-07-19T06:26:12+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "af09724d-7d8e-4c8f-81ab-1aa7261926fa",
+      "bom-ref": "a36e2b0a-2968-45f9-b51d-a665fce75143",
       "type": "container",
       "name": "duality_v0.3.4",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "c012dbc4-2e12-414e-8c99-e75eb6080c97",
+      "bom-ref": "8e965ad6-cb7e-45e2-a31b-46672ea229dc",
       "type": "application",
       "name": "bin/dualityd",
       "properties": [
@@ -3181,13 +3181,7 @@
   ],
   "dependencies": [
     {
-      "ref": "af09724d-7d8e-4c8f-81ab-1aa7261926fa",
-      "dependsOn": [
-        "c012dbc4-2e12-414e-8c99-e75eb6080c97"
-      ]
-    },
-    {
-      "ref": "c012dbc4-2e12-414e-8c99-e75eb6080c97",
+      "ref": "8e965ad6-cb7e-45e2-a31b-46672ea229dc",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.13.0",
@@ -3338,6 +3332,12 @@
         "pkg:golang/nhooyr.io/websocket@v1.8.6",
         "pkg:golang/pgregory.net/rapid@v0.5.5",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
+      ]
+    },
+    {
+      "ref": "a36e2b0a-2968-45f9-b51d-a665fce75143",
+      "dependsOn": [
+        "8e965ad6-cb7e-45e2-a31b-46672ea229dc"
       ]
     },
     {
