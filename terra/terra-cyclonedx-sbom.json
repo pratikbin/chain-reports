@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:df9dddc1-801e-4297-a5ea-ef9749d2e9a8",
+  "serialNumber": "urn:uuid:480b2e7e-f75c-4e53-b01f-58898e5bac2d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-10T10:41:26+00:00",
+    "timestamp": "2023-07-19T06:42:28+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "9b9b1beb-0465-4e8d-bb1b-99a8c26bc006",
+      "bom-ref": "a6129f1e-a863-4878-aae8-74631179f71a",
       "type": "container",
       "name": "terra_v2.4.1",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "81a9ef51-e1e3-40fe-8f2e-79dd916dcf95",
+      "bom-ref": "3a5545cb-b629-4bf1-b0a1-672132f7ff65",
       "type": "application",
       "name": "bin/terrad",
       "properties": [
@@ -2950,7 +2950,7 @@
   ],
   "dependencies": [
     {
-      "ref": "81a9ef51-e1e3-40fe-8f2e-79dd916dcf95",
+      "ref": "3a5545cb-b629-4bf1-b0a1-672132f7ff65",
       "dependsOn": [
         "pkg:golang/cloud.google.com/go/compute/metadata@v0.2.3",
         "pkg:golang/cloud.google.com/go/iam@v0.12.0",
@@ -3093,9 +3093,9 @@
       ]
     },
     {
-      "ref": "9b9b1beb-0465-4e8d-bb1b-99a8c26bc006",
+      "ref": "a6129f1e-a863-4878-aae8-74631179f71a",
       "dependsOn": [
-        "81a9ef51-e1e3-40fe-8f2e-79dd916dcf95"
+        "3a5545cb-b629-4bf1-b0a1-672132f7ff65"
       ]
     },
     {
