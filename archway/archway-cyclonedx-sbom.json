@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:520cb56a-3387-4ff3-b466-d6700a651908",
+  "serialNumber": "urn:uuid:cf551f2c-20d3-4c9b-9d5c-5a5c4893f3d1",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-07-29T15:12:30+00:00",
+    "timestamp": "2023-08-01T09:25:21+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.43.1"
+        "version": "0.44.0"
       }
     ],
     "component": {
-      "bom-ref": "3592fd88-1800-4543-9de8-f2958ff7ef35",
+      "bom-ref": "83ed6309-4423-43f9-970e-0c13b0ab6164",
       "type": "container",
       "name": "archway_v2.0.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "ddcfd96e-fd22-48e0-8889-376fc7d3cd34",
+      "bom-ref": "e47fbd3e-eaa1-43a7-b4bd-fea5e7b1240e",
       "type": "application",
       "name": "bin/archwayd",
       "properties": [
@@ -2404,13 +2404,13 @@
   ],
   "dependencies": [
     {
-      "ref": "3592fd88-1800-4543-9de8-f2958ff7ef35",
+      "ref": "83ed6309-4423-43f9-970e-0c13b0ab6164",
       "dependsOn": [
-        "ddcfd96e-fd22-48e0-8889-376fc7d3cd34"
+        "e47fbd3e-eaa1-43a7-b4bd-fea5e7b1240e"
       ]
     },
     {
-      "ref": "ddcfd96e-fd22-48e0-8889-376fc7d3cd34",
+      "ref": "e47fbd3e-eaa1-43a7-b4bd-fea5e7b1240e",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
