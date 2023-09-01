@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:837498ef-6382-4953-a875-d5fdc681e3c7",
+  "serialNumber": "urn:uuid:12417367-a1d3-493a-b941-d15605e192b9",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-08-16T20:04:08+00:00",
+    "timestamp": "2023-09-01T07:07:16+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.44.1"
+        "version": "0.45.0"
       }
     ],
     "component": {
-      "bom-ref": "426ecb7e-a062-484a-8c90-a3e04a0e3049",
+      "bom-ref": "da488e1b-aedc-4bd5-929e-755df69984cf",
       "type": "container",
       "name": "terra-classic_v2.1.2",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "ab95869c-e542-4bf7-be1d-a5b170fa07d8",
+      "bom-ref": "e1dbca0e-efff-49d1-8d90-363c02fb7e46",
       "type": "application",
       "name": "bin/terrad",
       "properties": [
@@ -554,11 +554,11 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+      "bom-ref": "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
       "type": "library",
       "name": "github.com/docker/distribution",
       "version": "v2.8.2+incompatible",
-      "purl": "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+      "purl": "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -2257,13 +2257,13 @@
   ],
   "dependencies": [
     {
-      "ref": "426ecb7e-a062-484a-8c90-a3e04a0e3049",
+      "ref": "da488e1b-aedc-4bd5-929e-755df69984cf",
       "dependsOn": [
-        "ab95869c-e542-4bf7-be1d-a5b170fa07d8"
+        "e1dbca0e-efff-49d1-8d90-363c02fb7e46"
       ]
     },
     {
-      "ref": "ab95869c-e542-4bf7-be1d-a5b170fa07d8",
+      "ref": "e1dbca0e-efff-49d1-8d90-363c02fb7e46",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.4.0",
@@ -2289,7 +2289,7 @@
         "pkg:golang/github.com/creachadair/taskgroup@v0.3.2",
         "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
         "pkg:golang/github.com/desertbit/timer@v0.0.0-20180107155436-c41aec40b27f",
-        "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+        "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
         "pkg:golang/github.com/dvsekhvalnov/jose2go@v1.5.0",
         "pkg:golang/github.com/felixge/httpsnoop@v1.0.1",
         "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0",
@@ -2469,7 +2469,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+      "ref": "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
       "dependsOn": []
     },
     {
