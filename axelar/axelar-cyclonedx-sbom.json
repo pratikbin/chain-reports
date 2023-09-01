@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:a8554107-c96c-4513-bb6f-a833af1af766",
+  "serialNumber": "urn:uuid:7882bc47-6ffc-4fd1-8f9e-1f075ad8ef8c",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-08-16T20:18:19+00:00",
+    "timestamp": "2023-09-01T07:07:57+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.44.1"
+        "version": "0.45.0"
       }
     ],
     "component": {
-      "bom-ref": "7e3a3dba-8015-4be4-b13e-d406ba1839a0",
+      "bom-ref": "1d43cb58-3108-4a2b-9de3-375aa38e1bf9",
       "type": "container",
       "name": "axelar_v0.33.3",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "7e7cb9c7-8e10-43ee-8cf3-c2f772d0bf22",
+      "bom-ref": "3d8552b7-8c3d-4619-bb20-cb4e06600638",
       "type": "application",
       "name": "bin/axelard",
       "properties": [
@@ -1646,11 +1646,11 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5+incompatible",
+      "bom-ref": "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5%2Bincompatible",
       "type": "library",
       "name": "github.com/shirou/gopsutil",
       "version": "v3.21.4-0.20210419000835-c7a38de76ee5+incompatible",
-      "purl": "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5+incompatible",
+      "purl": "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5%2Bincompatible",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -2404,13 +2404,13 @@
   ],
   "dependencies": [
     {
-      "ref": "7e3a3dba-8015-4be4-b13e-d406ba1839a0",
+      "ref": "1d43cb58-3108-4a2b-9de3-375aa38e1bf9",
       "dependsOn": [
-        "7e7cb9c7-8e10-43ee-8cf3-c2f772d0bf22"
+        "3d8552b7-8c3d-4619-bb20-cb4e06600638"
       ]
     },
     {
-      "ref": "7e7cb9c7-8e10-43ee-8cf3-c2f772d0bf22",
+      "ref": "3d8552b7-8c3d-4619-bb20-cb4e06600638",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/99designs/keyring@v1.1.6",
@@ -2488,7 +2488,7 @@
         "pkg:golang/github.com/rs/cors@v1.8.2",
         "pkg:golang/github.com/rs/zerolog@v1.28.0",
         "pkg:golang/github.com/russross/blackfriday/v2@v2.1.0",
-        "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5+incompatible",
+        "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5%2Bincompatible",
         "pkg:golang/github.com/smallnest/chanx@v1.0.1-0.20211205150931-349643806662",
         "pkg:golang/github.com/spf13/afero@v1.9.3",
         "pkg:golang/github.com/spf13/cast@v1.5.0",
@@ -2831,7 +2831,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5+incompatible",
+      "ref": "pkg:golang/github.com/shirou/gopsutil@v3.21.4-0.20210419000835-c7a38de76ee5%2Bincompatible",
       "dependsOn": []
     },
     {
