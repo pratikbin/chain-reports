@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:db5eb201-24e6-4681-a552-aa5e72f865ce",
+  "serialNumber": "urn:uuid:682de09e-0994-497a-8397-71cf3143106f",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-08-24T10:41:03+00:00",
+    "timestamp": "2023-09-01T07:10:09+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.44.1"
+        "version": "0.45.0"
       }
     ],
     "component": {
-      "bom-ref": "ea1e2515-4071-4863-ae47-c73c60c1cb67",
+      "bom-ref": "c038af97-feb6-44f7-b278-2b5cd33c32a3",
       "type": "container",
       "name": "archway_v4.0.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "2d8d38c9-c0c0-494f-aebf-dde6dcb61829",
+      "bom-ref": "e940e2f8-76a7-4cf5-b139-aab43a531651",
       "type": "application",
       "name": "bin/archwayd",
       "properties": [
@@ -680,11 +680,11 @@
       ]
     },
     {
-      "bom-ref": "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+      "bom-ref": "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
       "type": "library",
       "name": "github.com/docker/distribution",
       "version": "v2.8.2+incompatible",
-      "purl": "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+      "purl": "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
       "properties": [
         {
           "name": "aquasecurity:trivy:LayerDiffID",
@@ -2404,7 +2404,13 @@
   ],
   "dependencies": [
     {
-      "ref": "2d8d38c9-c0c0-494f-aebf-dde6dcb61829",
+      "ref": "c038af97-feb6-44f7-b278-2b5cd33c32a3",
+      "dependsOn": [
+        "e940e2f8-76a7-4cf5-b139-aab43a531651"
+      ]
+    },
+    {
+      "ref": "e940e2f8-76a7-4cf5-b139-aab43a531651",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
@@ -2436,7 +2442,7 @@
         "pkg:golang/github.com/davecgh/go-spew@v1.1.1",
         "pkg:golang/github.com/decred/dcrd/dcrec/secp256k1/v4@v4.0.1",
         "pkg:golang/github.com/desertbit/timer@v0.0.0-20180107155436-c41aec40b27f",
-        "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+        "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
         "pkg:golang/github.com/dvsekhvalnov/jose2go@v1.5.0",
         "pkg:golang/github.com/felixge/httpsnoop@v1.0.1",
         "pkg:golang/github.com/fsnotify/fsnotify@v1.6.0",
@@ -2518,12 +2524,6 @@
         "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
         "pkg:golang/nhooyr.io/websocket@v1.8.7",
         "pkg:golang/sigs.k8s.io/yaml@v1.3.0"
-      ]
-    },
-    {
-      "ref": "ea1e2515-4071-4863-ae47-c73c60c1cb67",
-      "dependsOn": [
-        "2d8d38c9-c0c0-494f-aebf-dde6dcb61829"
       ]
     },
     {
@@ -2647,7 +2647,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:golang/github.com/docker/distribution@v2.8.2+incompatible",
+      "ref": "pkg:golang/github.com/docker/distribution@v2.8.2%2Bincompatible",
       "dependsOn": []
     },
     {
