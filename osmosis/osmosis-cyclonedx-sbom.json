@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:24ec0b8b-6fe8-4768-81dc-bd320f30ff82",
+  "serialNumber": "urn:uuid:03caf4ad-7d90-4003-8e0f-a36172452d63",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-09-01T07:08:48+00:00",
+    "timestamp": "2023-09-14T01:52:39+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "3edf6016-2081-4087-9ccb-86da0f85a508",
+      "bom-ref": "7622eaae-a8ca-4e5c-b811-0f7ffd101d95",
       "type": "container",
       "name": "osmosis_v18.0.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "76f1384b-1153-4c18-b105-b173e7773afb",
+      "bom-ref": "f83d39c2-31c9-4925-96f8-2db32f596874",
       "type": "application",
       "name": "bin/osmosisd",
       "properties": [
@@ -2551,13 +2551,13 @@
   ],
   "dependencies": [
     {
-      "ref": "3edf6016-2081-4087-9ccb-86da0f85a508",
+      "ref": "7622eaae-a8ca-4e5c-b811-0f7ffd101d95",
       "dependsOn": [
-        "76f1384b-1153-4c18-b105-b173e7773afb"
+        "f83d39c2-31c9-4925-96f8-2db32f596874"
       ]
     },
     {
-      "ref": "76f1384b-1153-4c18-b105-b173e7773afb",
+      "ref": "f83d39c2-31c9-4925-96f8-2db32f596874",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/errors@v1.0.0",
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
