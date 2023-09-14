@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:12417367-a1d3-493a-b941-d15605e192b9",
+  "serialNumber": "urn:uuid:5786014c-34fb-4c7d-9c8e-826e37a804f7",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-09-01T07:07:16+00:00",
+    "timestamp": "2023-09-14T01:51:58+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "da488e1b-aedc-4bd5-929e-755df69984cf",
+      "bom-ref": "3b8a7396-cd4c-4b35-9c29-b72901711812",
       "type": "container",
       "name": "terra-classic_v2.1.2",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "e1dbca0e-efff-49d1-8d90-363c02fb7e46",
+      "bom-ref": "8a3017ba-466e-4576-af62-96390757f9ed",
       "type": "application",
       "name": "bin/terrad",
       "properties": [
@@ -2257,13 +2257,13 @@
   ],
   "dependencies": [
     {
-      "ref": "da488e1b-aedc-4bd5-929e-755df69984cf",
+      "ref": "3b8a7396-cd4c-4b35-9c29-b72901711812",
       "dependsOn": [
-        "e1dbca0e-efff-49d1-8d90-363c02fb7e46"
+        "8a3017ba-466e-4576-af62-96390757f9ed"
       ]
     },
     {
-      "ref": "e1dbca0e-efff-49d1-8d90-363c02fb7e46",
+      "ref": "8a3017ba-466e-4576-af62-96390757f9ed",
       "dependsOn": [
         "pkg:golang/filippo.io/edwards25519@v1.0.0-beta.2",
         "pkg:golang/github.com/armon/go-metrics@v0.4.0",
