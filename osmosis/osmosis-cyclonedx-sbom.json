@@ -2,19 +2,19 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:03caf4ad-7d90-4003-8e0f-a36172452d63",
+  "serialNumber": "urn:uuid:dd6aa85c-e273-46cd-a4e6-1318c1db8cd8",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-09-14T01:52:39+00:00",
+    "timestamp": "2023-09-16T07:59:48+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
         "name": "trivy",
-        "version": "0.45.0"
+        "version": "0.45.1"
       }
     ],
     "component": {
-      "bom-ref": "7622eaae-a8ca-4e5c-b811-0f7ffd101d95",
+      "bom-ref": "25df2eb0-d92e-48f9-bc9c-5f48e71bd1b1",
       "type": "container",
       "name": "osmosis_v18.0.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "f83d39c2-31c9-4925-96f8-2db32f596874",
+      "bom-ref": "a614b5d7-bfdb-48ef-914a-6a7e6e944f60",
       "type": "application",
       "name": "bin/osmosisd",
       "properties": [
@@ -2551,13 +2551,13 @@
   ],
   "dependencies": [
     {
-      "ref": "7622eaae-a8ca-4e5c-b811-0f7ffd101d95",
+      "ref": "25df2eb0-d92e-48f9-bc9c-5f48e71bd1b1",
       "dependsOn": [
-        "f83d39c2-31c9-4925-96f8-2db32f596874"
+        "a614b5d7-bfdb-48ef-914a-6a7e6e944f60"
       ]
     },
     {
-      "ref": "f83d39c2-31c9-4925-96f8-2db32f596874",
+      "ref": "a614b5d7-bfdb-48ef-914a-6a7e6e944f60",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/errors@v1.0.0",
         "pkg:golang/filippo.io/edwards25519@v1.0.0-rc.1",
