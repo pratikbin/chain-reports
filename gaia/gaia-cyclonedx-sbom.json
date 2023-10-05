@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:a7d2aa31-c2b4-40fe-bccf-dd7cde046c66",
+  "serialNumber": "urn:uuid:3d98b4ad-6b08-42e9-b5e9-7781aa1ea17a",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-09-16T07:58:17+00:00",
+    "timestamp": "2023-10-05T05:59:47+00:00",
     "tools": [
       {
         "vendor": "aquasecurity",
@@ -14,7 +14,7 @@
       }
     ],
     "component": {
-      "bom-ref": "b04e258f-56cd-4b52-816b-141b04590016",
+      "bom-ref": "cd772f14-6859-492f-b942-93796b9f9357",
       "type": "container",
       "name": "gaia_v11.0.0",
       "properties": [
@@ -35,7 +35,7 @@
   },
   "components": [
     {
-      "bom-ref": "c1e1994a-1d75-487d-b4e8-32bd8cfccfd2",
+      "bom-ref": "eda2ed53-9fd8-41a0-86ff-81000c778947",
       "type": "application",
       "name": "bin/gaiad",
       "properties": [
@@ -2320,13 +2320,13 @@
   ],
   "dependencies": [
     {
-      "ref": "b04e258f-56cd-4b52-816b-141b04590016",
+      "ref": "cd772f14-6859-492f-b942-93796b9f9357",
       "dependsOn": [
-        "c1e1994a-1d75-487d-b4e8-32bd8cfccfd2"
+        "eda2ed53-9fd8-41a0-86ff-81000c778947"
       ]
     },
     {
-      "ref": "c1e1994a-1d75-487d-b4e8-32bd8cfccfd2",
+      "ref": "eda2ed53-9fd8-41a0-86ff-81000c778947",
       "dependsOn": [
         "pkg:golang/cosmossdk.io/api@v0.2.6",
         "pkg:golang/cosmossdk.io/core@v0.5.1",
